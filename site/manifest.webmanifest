@@ -1,0 +1,14 @@
+{
+  "name": "THIS IS WHERE WE'RE FROM",
+  "short_name": "Where We're From",
+  "description": "A six-month photography and storytelling learning hub for young photographers in Kibera, Nairobi.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#0F0F0F",
+  "theme_color": "#FBB03B",
+  "icons": [
+    { "src": "/assets/Logo-07.png", "sizes": "any", "type": "image/png", "purpose": "any" },
+    { "src": "/assets/Logo-04.png", "sizes": "any", "type": "image/png", "purpose": "maskable" }
+  ]
+}

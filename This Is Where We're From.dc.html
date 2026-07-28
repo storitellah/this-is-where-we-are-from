@@ -1,0 +1,1344 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet data-dc-atomics>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>THIS IS WHERE WE'RE FROM — Six-Month Photography Learning Hub</title>
+<link rel="icon" href="assets/Logo-07.png">
+<style>
+@font-face{font-family:"Bobby Jones";src:url("fonts/BobbyJonesSoft.otf") format("opentype");font-weight:400;font-style:normal;font-display:swap}
+@font-face{font-family:"TT Norms";src:url("fonts/TTNorms-Regular.otf") format("opentype");font-weight:400;font-style:normal;font-display:swap}
+@font-face{font-family:"TT Norms";src:url("fonts/TTNorms-Italic.otf") format("opentype");font-weight:400;font-style:italic;font-display:swap}
+@font-face{font-family:"TT Norms";src:url("fonts/TTNorms-Light.otf") format("opentype");font-weight:300;font-style:normal;font-display:swap}
+@font-face{font-family:"TT Norms";src:url("fonts/TTNorms-Bold.otf") format("opentype");font-weight:700;font-style:normal;font-display:swap}
+@font-face{font-family:"TT Norms";src:url("fonts/TTNorms-Black.otf") format("opentype");font-weight:900;font-style:normal;font-display:swap}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:#FFFFFF;color:#333333;font-family:"TT Norms",Inter,Arial,sans-serif;font-size:17px;line-height:1.55;-webkit-font-smoothing:antialiased;text-wrap:pretty}
+a{color:#0F0F0F;text-decoration-thickness:2px;text-underline-offset:3px}
+a:hover{color:#0F0F0F;background:#FBB03B}
+:focus-visible{outline:4px solid #FBB03B;outline-offset:2px}
+input,textarea,select,button{font-family:inherit;font-size:inherit;color:inherit}
+textarea{resize:vertical}
+ul{margin:0;padding-left:22px}
+li{margin:5px 0}
+summary::-webkit-details-marker{display:none}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+@media (max-width:1140px){
+  [data-nav-btn]{display:inline-flex!important}
+  [data-nav-list]{position:absolute;left:0;right:0;top:100%;display:none;background:#0F0F0F;border-bottom:4px solid #FBB03B;padding:10px 16px 18px;max-height:70vh;overflow-y:auto}
+  [data-nav-toggle]:checked ~ [data-nav-list]{display:block}
+  [data-nav-list] ul{flex-direction:column;gap:2px}
+  [data-nav-list] a{padding:12px 10px!important;font-size:15px!important}
+}
+@media print{
+  [data-noprint]{display:none!important}
+  [data-lesson][data-open="0"]{display:none!important}
+  body{font-size:11pt;background:#fff}
+  [data-card]{box-shadow:none!important;break-inside:avoid}
+  section{padding:0!important;break-inside:auto}
+  @page{size:A4;margin:14mm}
+}
+</style>
+</helmet>
+
+<div style="min-height:100vh">
+
+<a href="#lessons" style="position:absolute;left:-9999px;top:0;background:#FBB03B;border:3px solid #0F0F0F;padding:10px 16px;z-index:99" style-focus="left:8px;top:8px">Skip to lessons</a>
+
+<header data-noprint style="position:sticky;top:0;z-index:50;background:#0F0F0F;border-bottom:4px solid #FBB03B">
+  <div style="position:relative;max-width:1360px;margin:0 auto;display:flex;align-items:center;gap:14px;padding:10px 16px">
+    <a href="#home" style="flex:none;display:block;line-height:0"><img src="assets/Logo-07.png" alt="This Is Where We're From — home" style="width:44px;height:44px;display:block"></a>
+    <input data-nav-toggle type="checkbox" id="twwf-nav" style="position:absolute;width:1px;height:1px;opacity:0;pointer-events:none">
+    <label data-nav-btn for="twwf-nav" style="display:none;flex:none;align-items:center;gap:9px;min-height:44px;background:#0F0F0F;border:3px solid #FBB03B;padding:9px 14px;font-weight:700;font-size:13px;text-transform:uppercase;letter-spacing:.07em;color:#FBB03B;cursor:pointer">
+      <img src="assets/Logo-04.png" alt="" style="width:24px;height:24px;display:block">
+      <span>Menu</span>
+    </label>
+    <nav data-nav-list aria-label="Main" style="flex:1;min-width:0">
+      <ul style="display:flex;flex-wrap:wrap;gap:2px;list-style:none;margin:0;padding:0">
+        <li><a href="#home" style="display:block;padding:9px 11px;color:#FFFFFF;text-decoration:none;font-weight:700;font-size:13.5px;text-transform:uppercase;letter-spacing:.06em" style-hover="background:#FBB03B;color:#0F0F0F">Home</a></li>
+        <li><a href="#roadmap" style="display:block;padding:9px 11px;color:#FFFFFF;text-decoration:none;font-weight:700;font-size:13.5px;text-transform:uppercase;letter-spacing:.06em" style-hover="background:#FBB03B;color:#0F0F0F">Roadmap</a></li>
+        <li><a href="#lab" style="display:block;padding:9px 11px;color:#FFFFFF;text-decoration:none;font-weight:700;font-size:13.5px;text-transform:uppercase;letter-spacing:.06em" style-hover="background:#FBB03B;color:#0F0F0F">Exposure Lab</a></li>
+        <li><a href="#lessons" style="display:block;padding:9px 11px;color:#FFFFFF;text-decoration:none;font-weight:700;font-size:13.5px;text-transform:uppercase;letter-spacing:.06em" style-hover="background:#FBB03B;color:#0F0F0F">Lessons</a></li>
+        <li><a href="#assignments" style="display:block;padding:9px 11px;color:#FFFFFF;text-decoration:none;font-weight:700;font-size:13.5px;text-transform:uppercase;letter-spacing:.06em" style-hover="background:#FBB03B;color:#0F0F0F">Assignments</a></li>
+        <li><a href="#review" style="display:block;padding:9px 11px;color:#FFFFFF;text-decoration:none;font-weight:700;font-size:13.5px;text-transform:uppercase;letter-spacing:.06em" style-hover="background:#FBB03B;color:#0F0F0F">Photo Review</a></li>
+        <li><a href="#zine" style="display:block;padding:9px 11px;color:#FFFFFF;text-decoration:none;font-weight:700;font-size:13.5px;text-transform:uppercase;letter-spacing:.06em" style-hover="background:#FBB03B;color:#0F0F0F">Zine &amp; Exhibition</a></li>
+        <li><a href="#safety" style="display:block;padding:9px 11px;color:#FFFFFF;text-decoration:none;font-weight:700;font-size:13.5px;text-transform:uppercase;letter-spacing:.06em" style-hover="background:#FBB03B;color:#0F0F0F">Safety</a></li>
+        <li><a href="#glossary" style="display:block;padding:9px 11px;color:#FFFFFF;text-decoration:none;font-weight:700;font-size:13.5px;text-transform:uppercase;letter-spacing:.06em" style-hover="background:#FBB03B;color:#0F0F0F">Glossary</a></li>
+        <li><a href="#about" style="display:block;padding:9px 11px;color:#FFFFFF;text-decoration:none;font-weight:700;font-size:13.5px;text-transform:uppercase;letter-spacing:.06em" style-hover="background:#FBB03B;color:#0F0F0F">About</a></li>
+      </ul>
+    </nav>
+    <div style="flex:none;display:flex;align-items:center;gap:10px">
+      <div style="width:104px;height:14px;border:2px solid #FFFFFF;background:#333333;position:relative;overflow:hidden">
+        <div style="{{ progressBar }}"></div>
+      </div>
+      <span style="font-family:'Bobby Jones','Arial Rounded MT Bold',sans-serif;color:#FBB03B;font-size:17px;letter-spacing:.04em">{{ doneCount }}/24</span>
+    </div>
+  </div>
+</header>
+
+<section id="home" data-screen-label="Hero" style="background:#0F0F0F;color:#FFFFFF;padding:64px 20px 72px;border-bottom:4px solid #0F0F0F">
+  <div style="max-width:1200px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(330px,1fr));gap:56px;align-items:start">
+    <div>
+      <img src="assets/Logo-02.png" alt="THIS IS WHERE WE'RE FROM" style="width:min(420px,90%);height:auto;display:block;margin-bottom:30px">
+      <h1 style="position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%)">THIS IS WHERE WE’RE FROM — a six-month photography and storytelling journey</h1>
+      <p style="font-family:'Bobby Jones','Arial Rounded MT Bold','Trebuchet MS',sans-serif;font-size:clamp(26px,3.4vw,44px);line-height:1;margin:0 0 18px;color:#FBB03B;text-transform:uppercase">A six-month photography<br>and storytelling journey</p>
+      <p style="font-family:'TT Norms Pro Serif',Georgia,serif;font-size:19px;line-height:1.6;max-width:52ch;margin:0 0 32px;color:#FFFFFF">Young photographers documenting identity, home, community, creativity, and belonging from their own point of view.</p>
+      <div style="display:flex;flex-wrap:wrap;gap:14px">
+        <a href="#lessons" style="display:inline-flex;align-items:center;min-height:48px;background:#FBB03B;border:3px solid #0F0F0F;box-shadow:5px 5px 0 #FFFFFF;padding:14px 24px;font-weight:700;font-size:15px;text-transform:uppercase;letter-spacing:.06em;color:#0F0F0F;text-decoration:none" style-hover="box-shadow:2px 2px 0 #FFFFFF;background:#FBB03B">Start the journey</a>
+        <a href="#lab" style="display:inline-flex;align-items:center;min-height:48px;background:transparent;border:3px solid #FBB03B;padding:14px 24px;font-weight:700;font-size:15px;text-transform:uppercase;letter-spacing:.06em;color:#FBB03B;text-decoration:none" style-hover="background:#FBB03B;color:#0F0F0F">Open Exposure Lab</a>
+      </div>
+    </div>
+    <div>
+      <div style="display:flex;align-items:center;gap:10px;margin-bottom:14px">
+        <span style="display:inline-block;background:#FBB03B;border:3px solid #0F0F0F;padding:5px 11px;font-weight:700;font-size:12px;letter-spacing:.09em;text-transform:uppercase;color:#0F0F0F">Contact sheet</span>
+        <span style="font-size:13px;color:#FFFFFF;opacity:.7">Eight frames waiting for your photographs</span>
+      </div>
+      <div style="background:#FFFFFF;border:3px solid #FBB03B;padding:14px;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(72px,100%),1fr));gap:12px">
+        <div style="border:2px solid #0F0F0F;aspect-ratio:1;background:repeating-linear-gradient(135deg,#F4F4F4 0 7px,#FFFFFF 7px 14px);display:flex;align-items:flex-end;padding:7px"><span style="font-family:ui-monospace,Menlo,monospace;font-size:10.5px;color:#333333;text-transform:uppercase;letter-spacing:.06em">Home</span></div>
+        <div style="border:2px solid #0F0F0F;aspect-ratio:1;background:repeating-linear-gradient(135deg,#F4F4F4 0 7px,#FFFFFF 7px 14px);display:flex;align-items:flex-end;padding:7px"><span style="font-family:ui-monospace,Menlo,monospace;font-size:10.5px;color:#333333;text-transform:uppercase;letter-spacing:.06em">Friendship</span></div>
+        <div style="border:2px solid #0F0F0F;aspect-ratio:1;background:repeating-linear-gradient(135deg,#F4F4F4 0 7px,#FFFFFF 7px 14px);display:flex;align-items:flex-end;padding:7px"><span style="font-family:ui-monospace,Menlo,monospace;font-size:10.5px;color:#333333;text-transform:uppercase;letter-spacing:.06em">Light</span></div>
+        <div style="border:2px solid #0F0F0F;aspect-ratio:1;background:repeating-linear-gradient(135deg,#F4F4F4 0 7px,#FFFFFF 7px 14px);display:flex;align-items:flex-end;padding:7px"><span style="font-family:ui-monospace,Menlo,monospace;font-size:10.5px;color:#333333;text-transform:uppercase;letter-spacing:.06em">Work</span></div>
+        <div style="border:2px solid #0F0F0F;aspect-ratio:1;background:repeating-linear-gradient(135deg,#F4F4F4 0 7px,#FFFFFF 7px 14px);display:flex;align-items:flex-end;padding:7px"><span style="font-family:ui-monospace,Menlo,monospace;font-size:10.5px;color:#333333;text-transform:uppercase;letter-spacing:.06em">Play</span></div>
+        <div style="border:2px solid #0F0F0F;aspect-ratio:1;background:repeating-linear-gradient(135deg,#F4F4F4 0 7px,#FFFFFF 7px 14px);display:flex;align-items:flex-end;padding:7px"><span style="font-family:ui-monospace,Menlo,monospace;font-size:10.5px;color:#333333;text-transform:uppercase;letter-spacing:.06em">Pride</span></div>
+        <div style="border:2px solid #0F0F0F;aspect-ratio:1;background:repeating-linear-gradient(135deg,#F4F4F4 0 7px,#FFFFFF 7px 14px);display:flex;align-items:flex-end;padding:7px"><span style="font-family:ui-monospace,Menlo,monospace;font-size:10.5px;color:#333333;text-transform:uppercase;letter-spacing:.06em">Change</span></div>
+        <div style="border:2px solid #0F0F0F;aspect-ratio:1;background:repeating-linear-gradient(135deg,#F4F4F4 0 7px,#FFFFFF 7px 14px);display:flex;align-items:flex-end;padding:7px"><span style="font-family:ui-monospace,Menlo,monospace;font-size:10.5px;color:#333333;text-transform:uppercase;letter-spacing:.06em">Hope</span></div>
+      </div>
+      <div style="margin-top:26px">
+        <span style="display:block;font-weight:700;font-size:12px;letter-spacing:.09em;text-transform:uppercase;color:#FBB03B;margin-bottom:10px">Six months, 24 lessons</span>
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(96px,100%),1fr));gap:8px">
+          <a href="#month-1" style="text-decoration:none;border:2px solid #FFFFFF;padding:10px 6px;display:block" style-hover="background:#FBB03B;border-color:#FBB03B"><span style="display:block;font-family:'Bobby Jones','Arial Rounded MT Bold',sans-serif;font-size:22px;color:#FBB03B" style-hover="color:#0F0F0F">01</span><span style="display:block;font-size:10.5px;line-height:1.25;color:#FFFFFF;margin-top:4px" style-hover="color:#0F0F0F">Learning to See</span></a>
+          <a href="#month-2" style="text-decoration:none;border:2px solid #FFFFFF;padding:10px 6px;display:block" style-hover="background:#FBB03B;border-color:#FBB03B"><span style="display:block;font-family:'Bobby Jones','Arial Rounded MT Bold',sans-serif;font-size:22px;color:#FBB03B" style-hover="color:#0F0F0F">02</span><span style="display:block;font-size:10.5px;line-height:1.25;color:#FFFFFF;margin-top:4px" style-hover="color:#0F0F0F">Controlling Light</span></a>
+          <a href="#month-3" style="text-decoration:none;border:2px solid #FFFFFF;padding:10px 6px;display:block" style-hover="background:#FBB03B;border-color:#FBB03B"><span style="display:block;font-family:'Bobby Jones','Arial Rounded MT Bold',sans-serif;font-size:22px;color:#FBB03B" style-hover="color:#0F0F0F">03</span><span style="display:block;font-size:10.5px;line-height:1.25;color:#FFFFFF;margin-top:4px" style-hover="color:#0F0F0F">Visual Language</span></a>
+          <a href="#month-4" style="text-decoration:none;border:2px solid #FFFFFF;padding:10px 6px;display:block" style-hover="background:#FBB03B;border-color:#FBB03B"><span style="display:block;font-family:'Bobby Jones','Arial Rounded MT Bold',sans-serif;font-size:22px;color:#FBB03B" style-hover="color:#0F0F0F">04</span><span style="display:block;font-size:10.5px;line-height:1.25;color:#FFFFFF;margin-top:4px" style-hover="color:#0F0F0F">Community Stories</span></a>
+          <a href="#month-5" style="text-decoration:none;border:2px solid #FFFFFF;padding:10px 6px;display:block" style-hover="background:#FBB03B;border-color:#FBB03B"><span style="display:block;font-family:'Bobby Jones','Arial Rounded MT Bold',sans-serif;font-size:22px;color:#FBB03B" style-hover="color:#0F0F0F">05</span><span style="display:block;font-size:10.5px;line-height:1.25;color:#FFFFFF;margin-top:4px" style-hover="color:#0F0F0F">Editing &amp; Writing</span></a>
+          <a href="#month-6" style="text-decoration:none;border:2px solid #FFFFFF;padding:10px 6px;display:block" style-hover="background:#FBB03B;border-color:#FBB03B"><span style="display:block;font-family:'Bobby Jones','Arial Rounded MT Bold',sans-serif;font-size:22px;color:#FBB03B" style-hover="color:#0F0F0F">06</span><span style="display:block;font-size:10.5px;line-height:1.25;color:#FFFFFF;margin-top:4px" style-hover="color:#0F0F0F">Publishing</span></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section data-screen-label="Introduction" style="padding:72px 20px;max-width:1200px;margin:0 auto">
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:48px">
+    <div>
+      <span style="display:inline-block;background:#FBB03B;border:3px solid #0F0F0F;padding:5px 11px;font-weight:700;font-size:12px;letter-spacing:.09em;text-transform:uppercase;color:#0F0F0F;transform:rotate(-1.5deg)">The project</span>
+      <h2 style="font-family:'Bobby Jones','Arial Rounded MT Bold',sans-serif;font-size:clamp(30px,4.4vw,54px);line-height:.96;margin:20px 0 22px;text-transform:uppercase;color:#0F0F0F">Photography is more than pressing a button</h2>
+      <p style="font-family:'TT Norms Pro Serif',Georgia,serif;font-size:19px;line-height:1.65;max-width:56ch;margin:0 0 18px">It is a way to notice, question, remember, and share. In this project, young people photograph the places, people, objects, routines, and moments that shape their lives. Each image should come from curiosity, care, and personal connection.</p>
+      <p style="max-width:56ch;margin:0">THIS IS WHERE WE’RE FROM is a participatory youth photography and storytelling project in Kibera, Nairobi, led by photographer Brian Otieno. It builds on his long-term Kibera Stories work, which began in 2013. The project challenges narrow images of Kibera that focus only on poverty, crime, hardship, and neglect. Participants create work that shows everyday life with complexity, dignity, humour, pride, and personal meaning.</p>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:18px">
+      <div data-card style="background:#FFFFFF;border:3px solid #0F0F0F;box-shadow:6px 6px 0 #0F0F0F;padding:22px;display:flex;gap:18px;align-items:flex-start">
+        <span style="font-family:'Bobby Jones','Arial Rounded MT Bold',sans-serif;font-size:38px;line-height:.8;color:#FBB03B;flex:none">01</span>
+        <div><strong style="display:block;font-size:19px;color:#0F0F0F;margin-bottom:4px">From within</strong><span>We photograph from within the community, not from a distance.</span></div>
+      </div>
+      <div data-card style="background:#FFFFFF;border:3px solid #0F0F0F;box-shadow:6px 6px 0 #0F0F0F;padding:22px;display:flex;gap:18px;align-items:flex-start;transform:rotate(.5deg)">
+        <span style="font-family:'Bobby Jones','Arial Rounded MT Bold',sans-serif;font-size:38px;line-height:.8;color:#FBB03B;flex:none">02</span>
+        <div><strong style="display:block;font-size:19px;color:#0F0F0F;margin-bottom:4px">With consent</strong><span>We ask for consent and protect people’s dignity.</span></div>
+      </div>
+      <div data-card style="background:#FFFFFF;border:3px solid #0F0F0F;box-shadow:6px 6px 0 #0F0F0F;padding:22px;display:flex;gap:18px;align-items:flex-start">
+        <span style="font-family:'Bobby Jones','Arial Rounded MT Bold',sans-serif;font-size:38px;line-height:.8;color:#FBB03B;flex:none">03</span>
+        <div><strong style="display:block;font-size:19px;color:#0F0F0F;margin-bottom:4px">Specific and honest</strong><span>We tell stories that are specific, honest, and connected to lived experience.</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="roadmap" data-screen-label="Roadmap" style="background:#333333;color:#FFFFFF;padding:72px 20px;border-top:4px solid #0F0F0F;border-bottom:4px solid #0F0F0F">
+  <div style="max-width:1200px;margin:0 auto">
+    <span style="display:inline-block;background:#FBB03B;border:3px solid #0F0F0F;padding:5px 11px;font-weight:700;font-size:12px;letter-spacing:.09em;text-transform:uppercase;color:#0F0F0F">Six-month roadmap</span>
+    <h2 style="font-family:'Bobby Jones','Arial Rounded MT Bold',sans-serif;font-size:clamp(30px,4.4vw,54px);line-height:.96;margin:20px 0 10px;text-transform:uppercase;color:#FFFFFF">One lesson a week. Four a month. Every month goes outdoors.</h2>
+    <p style="max-width:60ch;margin:0 0 36px;color:#FFFFFF;opacity:.85">Open a month to see its four lessons. Outdoor practicals are marked, and every session runs about 2.5 to 3 hours — outdoor practicals 3 to 4 hours.</p>
+    <div style="display:flex;flex-direction:column;gap:20px">
+      <sc-for list="{{ months }}" as="m" hint-placeholder-count="6">
+        <div id="{{ m.anchor }}" data-card style="background:#FFFFFF;border:3px solid #0F0F0F;box-shadow:7px 7px 0 #FBB03B;scroll-margin-top:90px">
+          <button onClick="{{ m.toggle }}" aria-expanded="{{ m.open }}" style="width:100%;display:flex;align-items:center;gap:20px;text-align:left;background:#FFFFFF;border:0;border-bottom:3px solid #0F0F0F;padding:20px 22px;cursor:pointer;min-height:56px" style-hover="background:#FBB03B">
+            <span style="font-family:'Bobby Jones','Arial Rounded MT Bold',sans-serif;font-size:clamp(34px,5vw,52px);line-height:.8;color:#0F0F0F;flex:none">{{ m.num }}</span>
+            <span style="flex:1;min-width:0">
+              <span style="display:block;font-family:'Bobby Jones','Arial Rounded MT Bold',sans-serif;font-size:clamp(19px,2.4vw,27px);line-height:1;text-transform:uppercase;color:#0F0F0F">{{ m.name }}</span>
+              <span style="display:block;font-size:15px;color:#333333;margin-top:6px">{{ m.blurb }}</span>
+            </span>
+            <span style="flex:none;font-weight:700;font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:#0F0F0F;border:2px solid #0F0F0F;padding:6px 10px">{{ m.doneLabel }}</span>
+            <span style="flex:none;font-family:'Bobby Jones','Arial Rounded MT Bold',sans-serif;font-size:26px;color:#0F0F0F">{{ m.caret }}</span>
+          </button>
+          <sc-if value="{{ m.open }}" hint-placeholder-val="{{ true }}">
+            <div style="padding:22px;display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:16px">
+              <sc-for list="{{ m.lessons }}" as="ml" hint-placeholder-count="4">
+                <a href="#lesson-{{ ml.n }}" onClick="{{ ml.open }}" style="display:block;text-decoration:none;border:3px solid #0F0F0F;background:#FFFFFF;padding:16px" style-hover="background:#FBB03B">
+                  <span style="display:flex;justify-content:space-between;align-items:center;gap:8px;margin-bottom:10px">
+                    <span style="font-family:'Bobby Jones','Arial Rounded MT Bold',sans-serif;font-size:26px;line-height:1;color:#0F0F0F">{{ ml.pad }}</span>
+                    <span style="font-weight:700;font-size:10.5px;letter-spacing:.08em;text-transform:uppercase;color:#0F0F0F;background:#FBB03B;border:2px solid #0F0F0F;padding:3px 7px">{{ ml.tag }}</span>
+                  </span>
+                  <span style="display:block;font-weight:700;font-size:15.5px;line-height:1.25;color:#0F0F0F">{{ ml.title }}</span>
+                  <span style="display:block;font-size:12.5px;color:#333333;margin-top:8px">Week {{ ml.week }} · {{ ml.duration }}</span>
+                </a>
+              </sc-for>
+            </div>
+          </sc-if>
+        </div>
+      </sc-for>
+    </div>
+    <div style="margin-top:36px;background:#0F0F0F;border:3px solid #FBB03B;padding:24px">
+      <strong style="display:block;font-family:'Bobby Jones','Arial Rounded MT Bold',sans-serif;font-size:22px;text-transform:uppercase;color:#FBB03B;margin-bottom:14px">Session rhythm</strong>
+      <ol style="margin:0;padding-left:20px;columns:2;column-gap:36px;color:#FFFFFF;font-size:15px">
+        <li>Welcome and check-in — 10 min</li>
+        <li>Review of the previous assignment — 25 min</li>
+        <li>New concept and demonstration — 35 min</li>
+        <li>Short break — 10 min</li>
+        <li>Guided practice — 40 min</li>
+        <li>Group review — 30 min</li>
+        <li>Reflection and assignment — 20 min</li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<section id="lab" data-screen-label="Exposure Lab" data-noprint style="padding:72px 20px;max-width:1360px;margin:0 auto;scroll-margin-top:80px">
+  <span style="display:inline-block;background:#FBB03B;border:3px solid #0F0F0F;padding:5px 11px;font-weight:700;font-size:12px;letter-spacing:.09em;text-transform:uppercase;color:#0F0F0F">Exposure Lab</span>
+  <h2 style="font-family:'Bobby Jones','Arial Rounded MT Bold',sans-serif;font-size:clamp(30px,4.4vw,54px);line-height:.96;margin:20px 0 10px;text-transform:uppercase;color:#0F0F0F">Aperture, shutter, ISO — move one, pay it back with another</h2>
+  <p style="max-width:64ch;margin:0 0 32px">Choose a scene, move a control, and watch brightness, depth of field, movement, and noise change together. Used in Lesson 5, Lesson 6, Lesson 7, and the Month Two outdoor mission.</p>
+
+  <div data-card style="background:#FFFFFF;border:3px solid #0F0F0F;box-shadow:6px 6px 0 #FBB03B;padding:24px;margin-bottom:26px;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(280px,100%),1fr));gap:28px;align-items:center">
+    <div style="position:relative;min-height:270px">
+      <div style="position:absolute;left:50%;top:14px;width:min(320px,92%);height:230px;transform:translateX(-50%);clip-path:polygon(50% 0,100% 100%,0 100%);background:#FBB03B"></div>
+      <div style="position:absolute;left:50%;top:24px;width:min(320px,92%);height:210px;transform:translateX(-50%);clip-path:polygon(50% 0,100% 100%,0 100%);background:#FFFFFF"></div>
+      <div style="position:absolute;left:50%;top:0;transform:translateX(-50%);background:#0F0F0F;border:3px solid #0F0F0F;padding:7px 13px;text-align:center;min-width:112px">
+        <span style="display:block;font-weight:700;font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:#FBB03B">Aperture</span>
+        <span style="display:block;font-family:'Bobby Jones','Arial Rounded MT Bold',sans-serif;font-size:23px;line-height:1.1;color:#FFFFFF">{{ apLabel }}</span>
+      </div>
+      <div style="position:absolute;left:0;bottom:16px;background:#0F0F0F;border:3px solid #0F0F0F;padding:7px 13px;text-align:center;min-width:112px">
+        <span style="display:block;font-weight:700;font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:#FBB03B">Shutter</span>
+        <span style="display:block;font-family:'Bobby Jones','Arial Rounded MT Bold',sans-serif;font-size:23px;line-height:1.1;color:#FFFFFF">{{ shLabel }}</span>
+      </div>
+      <div style="position:absolute;right:0;bottom:16px;background:#0F0F0F;border:3px solid #0F0F0F;padding:7px 13px;text-align:center;min-width:112px">
+        <span style="display:block;font-weight:700;font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:#FBB03B">ISO</span>
+        <span style="display:block;font-family:'Bobby Jones','Arial Rounded MT Bold',sans-serif;font-size:23px;line-height:1.1;color:#FFFFFF">{{ isoLabel }}</span>
+      </div>
+      <div style="position:absolute;left:50%;top:112px;transform:translateX(-50%);text-align:center;width:150px">
+        <span style="display:block;font-family:'Bobby Jones','Arial Rounded MT Bold',sans-serif;font-size:26px;line-height:1;color:#0F0F0F">{{ evLabel }}</span>
+        <span style="display:block;font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#333333;margin-top:2px">{{ evWord }}</span>
+      </div>
+    </div>
+    <div>
+      <strong style="display:block;font-family:'Bobby Jones','Arial Rounded MT Bold',sans-serif;font-size:22px;text-transform:uppercase;color:#0F0F0F;margin-bottom:6px">The exposure triangle</strong>
+      <p style="font-size:15px;margin:0 0 16px;color:#333333">Three controls, one amount of light. Move one corner and the other two have to answer.</p>
+      <div style="display:flex;flex-direction:column;gap:10px">
+        <div style="border-left:6px solid #FBB03B;padding:2px 0 2px 12px">
+          <strong style="display:block;font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#0F0F0F">Aperture controls depth</strong>
+          <span style="font-size:15px">{{ dofText }}</span>
+        </div>
+        <div style="border-left:6px solid #FBB03B;padding:2px 0 2px 12px">
+          <strong style="display:block;font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#0F0F0F">Shutter controls movement</strong>
+          <span style="font-size:15px">{{ motionText }}</span>
+        </div>
+        <div style="border-left:6px solid #FBB03B;padding:2px 0 2px 12px">
+          <strong style="display:block;font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#0F0F0F">ISO controls sensitivity</strong>
+          <span style="font-size:15px">{{ noiseText }}</span>
+        </div>
+      </div>
+      <div style="margin-top:16px;display:flex;flex-wrap:wrap;gap:10px">
+        <button onClick="{{ balance }}" style="min-height:44px;background:#FBB03B;border:3px solid #0F0F0F;padding:11px 16px;font-weight:700;font-size:13px;text-transform:uppercase;letter-spacing:.06em;cursor:pointer">Balance the exposure</button>
+        <button onClick="{{ openStop }}" style="min-height:44px;background:#FFFFFF;border:3px solid #0F0F0F;padding:11px 16px;font-weight:700;font-size:13px;text-transform:uppercase;letter-spacing:.06em;cursor:pointer">Open one stop</button>
+        <button onClick="{{ closeStop }}" style="min-height:44px;background:#FFFFFF;border:3px solid #0F0F0F;padding:11px 16px;font-weight:700;font-size:13px;text-transform:uppercase;letter-spacing:.06em;cursor:pointer">Close one stop</button>
+      </div>
+    </div>
+  </div>
+
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(300px,100%),1fr));gap:22px;align-items:start">
+
+    <div data-card style="background:#FFFFFF;border:3px solid #0F0F0F;box-shadow:6px 6px 0 #0F0F0F;padding:20px">
+      <strong style="display:block;font-family:'Bobby Jones','Arial Rounded MT Bold',sans-serif;font-size:20px;text-transform:uppercase;color:#0F0F0F;margin-bottom:16px">Controls</strong>
+
+      <label for="lab-scene" style="display:block;font-weight:700;font-size:12px;letter-spacing:.08em;text-transform:uppercase;margin-bottom:6px">Scene preset</label>
+      <select id="lab-scene" value="{{ presetI }}" onChange="{{ setPreset }}" style="width:100%;border:3px solid #0F0F0F;background:#FFFFFF;padding:10px;min-height:44px;margin-bottom:8px">
+        <sc-for list="{{ presetOptions }}" as="p" hint-placeholder-count="10"><option value="{{ p.i }}">{{ p.name }}</option></sc-for>
+      </select>
+      <p style="font-size:13px;margin:0 0 18px;color:#333333">{{ presetNote }}</p>
+
+      <label for="lab-mode" style="display:block;font-weight:700;font-size:12px;letter-spacing:.08em;text-transform:uppercase;margin-bottom:6px">Mode</label>
+      <select id="lab-mode" value="{{ mode }}" onChange="{{ setMode }}" style="width:100%;border:3px solid #0F0F0F;background:#FFFFFF;padding:10px;min-height:44px;margin-bottom:20px">
+        <option value="manual">Manual</option>
+        <option value="ap">Aperture priority</option>
+        <option value="sp">Shutter priority</option>
+        <option value="iso">Auto ISO</option>
+      </select>
+
+      <div style="border-top:3px solid #0F0F0F;padding-top:16px;margin-bottom:16px">
+        <div style="display:flex;justify-content:space-between;align-items:baseline;gap:10px">
+          <label for="lab-ap" style="font-weight:700;font-size:12px;letter-spacing:.08em;text-transform:uppercase">Aperture</label>
+          <span style="font-family:'Bobby Jones','Arial Rounded MT Bold',sans-serif;font-size:23px;color:#0F0F0F">{{ apLabel }}</span>
+        </div>
+        <div style="display:flex;align-items:center;gap:14px;margin:8px 0">
+          <div style="flex:none;width:52px;height:52px;border:3px solid #0F0F0F;border-radius:50%;display:flex;align-items:center;justify-content:center;background:#0F0F0F">
+            <div style="{{ apIris }}"></div>
+          </div>
+          <input id="lab-ap" type="range" min="0" max="8" step="1" value="{{ apI }}" onChange="{{ setAp }}" onInput="{{ setAp }}" disabled="{{ apLocked }}" aria-describedby="lab-ap-help" style="flex:1;min-height:44px;accent-color:#FBB03B">
+        </div>
+        <p id="lab-ap-help" style="font-size:12.5px;margin:0;color:#333333">{{ apHelp }}</p>
+      </div>
+
+      <div style="border-top:3px solid #0F0F0F;padding-top:16px;margin-bottom:16px">
+        <div style="display:flex;justify-content:space-between;align-items:baseline;gap:10px">
+          <label for="lab-sh" style="font-weight:700;font-size:12px;letter-spacing:.08em;text-transform:uppercase">Shutter speed</label>
+          <span style="font-family:'Bobby Jones','Arial Rounded MT Bold',sans-serif;font-size:23px;color:#0F0F0F">{{ shLabel }}</span>
+        </div>
+        <input id="lab-sh" type="range" min="0" max="17" step="1" value="{{ shI }}" onChange="{{ setSh }}" onInput="{{ setSh }}" disabled="{{ shLocked }}" aria-describedby="lab-sh-help" style="width:100%;min-height:44px;margin:8px 0;accent-color:#FBB03B">
+        <p id="lab-sh-help" style="font-size:12.5px;margin:0;color:#333333">{{ shHelp }}</p>
+      </div>
+
+      <div style="border-top:3px solid #0F0F0F;padding-top:16px">
+        <div style="display:flex;justify-content:space-between;align-items:baseline;gap:10px">
+          <label for="lab-iso" style="font-weight:700;font-size:12px;letter-spacing:.08em;text-transform:uppercase">ISO</label>
+          <span style="font-family:'Bobby Jones','Arial Rounded MT Bold',sans-serif;font-size:23px;color:#0F0F0F">{{ isoLabel }}</span>
+        </div>
+        <input id="lab-iso" type="range" min="0" max="7" step="1" value="{{ isoI }}" onChange="{{ setIso }}" onInput="{{ setIso }}" disabled="{{ isoLocked }}" aria-describedby="lab-iso-help" style="width:100%;min-height:44px;margin:8px 0;accent-color:#FBB03B">
+        <p id="lab-iso-help" style="font-size:12.5px;margin:0;color:#333333">{{ isoHelp }}</p>
+      </div>
+    </div>
+
+    <div>
+      <div data-card style="background:#0F0F0F;border:3px solid #0F0F0F;box-shadow:6px 6px 0 #FBB03B;padding:14px">
+        <div role="img" aria-label="{{ sceneAria }}" style="position:relative;aspect-ratio:4/3;overflow:hidden;background:#8A8A8A;border:2px solid #0F0F0F">
+          <div style="{{ sceneStyle }}">
+            <div style="{{ skyStyle }}"></div>
+            <div style="{{ bgStyle }}">
+              <div style="position:absolute;left:4%;bottom:0;width:26%;height:46%;background:#5E5E5E;border-top:3px solid #3A3A3A"></div>
+              <div style="position:absolute;left:32%;bottom:0;width:20%;height:58%;background:#6E6E6E"></div>
+              <div style="position:absolute;left:36%;bottom:0;width:8%;height:30%;background:#1A1A1A"></div>
+              <div style="position:absolute;left:54%;bottom:0;width:30%;height:40%;background:#565656"></div>
+              <div style="position:absolute;left:58%;bottom:26%;width:16%;height:9%;background:#FBB03B;border:2px solid #0F0F0F"></div>
+              <div style="position:absolute;left:84%;bottom:0;width:16%;height:52%;background:#6A6A6A"></div>
+              <div style="position:absolute;left:0;bottom:0;width:100%;height:8%;background:#3F3F3F"></div>
+            </div>
+            <div style="{{ midStyle }}">
+              <div style="position:absolute;left:0;top:0;width:100%;height:100%;background:#141414;border-radius:44% 44% 8% 8%"></div>
+            </div>
+            <div style="position:absolute;left:0;bottom:0;width:100%;height:26%;background:repeating-linear-gradient(90deg,#4A4A4A 0 18px,#565656 18px 36px)"></div>
+            <div style="position:absolute;left:6%;bottom:0;width:22%;height:62%">
+              <div style="{{ personStyle }}"></div>
+            </div>
+            <div style="{{ shadowStyle }}"></div>
+          </div>
+          <div style="{{ grainStyle }}"></div>
+          <sc-if value="{{ shakeWarn }}" hint-placeholder-val="{{ false }}">
+            <div style="position:absolute;left:10px;top:10px;background:#FBB03B;border:2px solid #0F0F0F;padding:5px 9px;font-weight:700;font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:#0F0F0F">Camera shake risk</div>
+          </sc-if>
+          <sc-if value="{{ clipWarn }}" hint-placeholder-val="{{ false }}">
+            <div style="position:absolute;right:10px;top:10px;background:#FFFFFF;border:2px solid #0F0F0F;padding:5px 9px;font-weight:700;font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:#0F0F0F">{{ clipWarn }}</div>
+          </sc-if>
+        </div>
+        <div style="display:flex;flex-wrap:wrap;gap:8px;margin-top:12px;align-items:center">
+          <span style="font-family:ui-monospace,Menlo,monospace;font-size:12px;color:#FBB03B">{{ settingsLine }}</span>
+        </div>
+      </div>
+
+      <div data-card style="background:#FFFFFF;border:3px solid #0F0F0F;box-shadow:6px 6px 0 #0F0F0F;padding:18px;margin-top:22px">
+        <div style="display:flex;justify-content:space-between;align-items:baseline;margin-bottom:10px">
+          <strong style="font-weight:700;font-size:12px;letter-spacing:.08em;text-transform:uppercase">Exposure meter</strong>
+          <span style="font-family:'Bobby Jones','Arial Rounded MT Bold',sans-serif;font-size:21px;color:#0F0F0F">{{ evLabel }}</span>
+        </div>
+        <div style="position:relative;height:44px;border:3px solid #0F0F0F;background:#FFFFFF;display:flex">
+          <div style="flex:1;background:repeating-linear-gradient(45deg,#333333 0 5px,#FFFFFF 5px 10px)"></div>
+          <div style="flex:1;background:repeating-linear-gradient(45deg,#333333 0 3px,#FFFFFF 3px 12px)"></div>
+          <div style="flex:2;background:#FFFFFF;border-left:2px solid #0F0F0F;border-right:2px solid #0F0F0F"></div>
+          <div style="flex:1;background:repeating-linear-gradient(-45deg,#333333 0 3px,#FFFFFF 3px 12px)"></div>
+          <div style="flex:1;background:repeating-linear-gradient(-45deg,#333333 0 5px,#FFFFFF 5px 10px)"></div>
+          <div style="{{ meterMarker }}"></div>
+        </div>
+        <div style="display:flex;justify-content:space-between;font-family:ui-monospace,Menlo,monospace;font-size:11px;margin-top:6px;color:#333333">
+          <span>−3 very dark</span><span>0 balanced</span><span>+3 very bright</span>
+        </div>
+      </div>
+
+      <div data-card style="background:#FFFFFF;border:3px solid #0F0F0F;box-shadow:6px 6px 0 #0F0F0F;padding:18px;margin-top:22px">
+        <strong style="display:block;font-weight:700;font-size:12px;letter-spacing:.08em;text-transform:uppercase;margin-bottom:12px">Compare two settings</strong>
+        <div style="display:flex;flex-wrap:wrap;gap:10px;margin-bottom:14px">
+          <button onClick="{{ saveA }}" style="min-height:44px;background:#FBB03B;border:3px solid #0F0F0F;padding:10px 16px;font-weight:700;font-size:13px;text-transform:uppercase;letter-spacing:.06em;cursor:pointer">Save as A</button>
+          <button onClick="{{ saveB }}" style="min-height:44px;background:#FFFFFF;border:3px solid #0F0F0F;padding:10px 16px;font-weight:700;font-size:13px;text-transform:uppercase;letter-spacing:.06em;cursor:pointer">Save as B</button>
+        </div>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px;font-size:13.5px">
+          <div style="border:2px solid #0F0F0F;padding:12px">
+            <strong style="display:block;margin-bottom:6px">A</strong>
+            <span style="white-space:pre-line;font-family:ui-monospace,Menlo,monospace;font-size:12px">{{ compareA }}</span>
+          </div>
+          <div style="border:2px solid #0F0F0F;padding:12px">
+            <strong style="display:block;margin-bottom:6px">B</strong>
+            <span style="white-space:pre-line;font-family:ui-monospace,Menlo,monospace;font-size:12px">{{ compareB }}</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <div data-card style="background:#FBB03B;border:3px solid #0F0F0F;box-shadow:6px 6px 0 #0F0F0F;padding:20px">
+        <strong style="display:block;font-family:'Bobby Jones','Arial Rounded MT Bold',sans-serif;font-size:20px;text-transform:uppercase;color:#0F0F0F;margin-bottom:12px">What is happening</strong>
+        <ul style="margin:0;padding-left:20px;font-size:15px;color:#0F0F0F">
+          <sc-for list="{{ explain }}" as="e" hint-placeholder-count="4"><li>{{ e }}</li></sc-for>
+        </ul>
+      </div>
+
+      <div data-card style="background:#FFFFFF;border:3px solid #0F0F0F;box-shadow:6px 6px 0 #0F0F0F;padding:20px;margin-top:22px">
+        <strong style="display:block;font-family:'Bobby Jones','Arial Rounded MT Bold',sans-serif;font-size:20px;text-transform:uppercase;color:#0F0F0F;margin-bottom:6px">Challenge mode</strong>
+        <p style="font-size:13.5px;margin:0 0 12px;color:#333333">Twelve missions. Adjust the controls, then check your settings. Badges recognise learning, not ranking.</p>
+        <label for="lab-ch" style="display:block;font-weight:700;font-size:12px;letter-spacing:.08em;text-transform:uppercase;margin-bottom:6px">Choose a challenge</label>
+        <select id="lab-ch" value="{{ chId }}" onChange="{{ setChallenge }}" style="width:100%;border:3px solid #0F0F0F;background:#FFFFFF;padding:10px;min-height:44px;margin-bottom:12px">
+          <option value="">— none selected —</option>
+          <sc-for list="{{ challengeOptions }}" as="c" hint-placeholder-count="12"><option value="{{ c.id }}">{{ c.goal }}</option></sc-for>
+        </select>
+        <sc-if value="{{ chId }}" hint-placeholder-val="{{ false }}">
+          <div>
+            <div style="display:flex;gap:10px;flex-wrap:wrap;margin-bottom:12px">
+              <button onClick="{{ checkChallenge }}" style="min-height:44px;background:#FBB03B;border:3px solid #0F0F0F;padding:10px 16px;font-weight:700;font-size:13px;text-transform:uppercase;letter-spacing:.06em;cursor:pointer">Check settings</button>
+              <button onClick="{{ retryChallenge }}" style="min-height:44px;background:#FFFFFF;border:3px solid #0F0F0F;padding:10px 16px;font-weight:700;font-size:13px;text-transform:uppercase;letter-spacing:.06em;cursor:pointer">Retry</button>
+            </div>
+            <div aria-live="polite" style="border:3px solid #0F0F0F;padding:12px;font-size:14px;background:#FFFFFF">{{ chFeedback }}</div>
+          </div>
+        </sc-if>
+        <sc-if value="{{ hasBadges }}" hint-placeholder-val="{{ false }}">
+          <div style="margin-top:16px;border-top:3px solid #0F0F0F;padding-top:14px">
+            <strong style="display:block;font-weight:700;font-size:12px;letter-spacing:.08em;text-transform:uppercase;margin-bottom:8px">Badges earned</strong>
+            <div style="display:flex;flex-wrap:wrap;gap:8px">
+              <sc-for list="{{ earnedBadges }}" as="b" hint-placeholder-count="2"><span style="background:#FBB03B;border:2px solid #0F0F0F;padding:5px 9px;font-weight:700;font-size:11.5px;text-transform:uppercase;letter-spacing:.05em">{{ b }}</span></sc-for>
+            </div>
+          </div>
+        </sc-if>
+      </div>
+
+      <div data-card style="background:#0F0F0F;border:3px solid #0F0F0F;box-shadow:6px 6px 0 #FBB03B;padding:20px;margin-top:22px;color:#FFFFFF">
+        <strong style="display:block;font-family:'Bobby Jones','Arial Rounded MT Bold',sans-serif;font-size:18px;text-transform:uppercase;color:#FBB03B;margin-bottom:10px">Depth of field, side view</strong>
+        <div style="position:relative;height:120px;border:2px solid #FBB03B;background:#1A1A1A;overflow:hidden">
+          <div style="position:absolute;left:0;top:0;bottom:0;width:14%;background:#FBB03B;display:flex;align-items:center;justify-content:center;font-size:10px;font-weight:700;color:#0F0F0F;text-transform:uppercase">Camera</div>
+          <div style="{{ dofZone }}"></div>
+          <div style="position:absolute;left:44%;top:24px;bottom:24px;width:5px;background:#FFFFFF"></div>
+          <div style="position:absolute;left:44%;bottom:4px;font-size:10px;color:#FFFFFF;transform:translateX(-50%)">subject</div>
+          <div style="position:absolute;right:6%;top:18px;bottom:18px;width:5px;background:#8A8A8A"></div>
+          <div style="position:absolute;right:6%;bottom:4px;font-size:10px;color:#8A8A8A;transform:translateX(50%)">background</div>
+        </div>
+        <p style="font-size:13px;margin:10px 0 0;opacity:.85">The yellow band is the zone that appears acceptably sharp. It grows as the aperture closes.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="lessons" data-screen-label="Lesson library" style="padding:72px 20px;max-width:1200px;margin:0 auto;scroll-margin-top:80px">
+  <div data-noprint>
+    <span style="display:inline-block;background:#FBB03B;border:3px solid #0F0F0F;padding:5px 11px;font-weight:700;font-size:12px;letter-spacing:.09em;text-transform:uppercase;color:#0F0F0F">Lesson library</span>
+    <h2 style="font-family:'Bobby Jones','Arial Rounded MT Bold',sans-serif;font-size:clamp(30px,4.4vw,54px);line-height:.96;margin:20px 0 10px;text-transform:uppercase;color:#0F0F0F">All 24 lessons, in order</h2>
+    <p style="max-width:64ch;margin:0 0 26px">Open a lesson for the full teaching content, activities, reflection questions, assignment, and safety reminder. Tick it off when it is taught, keep participant and trainer notes, drop in images, and print the sheet for the session.</p>
+    <div style="display:flex;flex-wrap:wrap;gap:12px;align-items:flex-end;margin-bottom:8px">
+      <div>
+        <label for="f-month" style="display:block;font-weight:700;font-size:11.5px;letter-spacing:.08em;text-transform:uppercase;margin-bottom:5px">Month</label>
+        <select id="f-month" value="{{ fMonth }}" onChange="{{ setFMonth }}" style="border:3px solid #0F0F0F;background:#FFFFFF;padding:9px 12px;min-height:44px">
+          <option value="all">All months</option>
+          <option value="1">Month 1</option><option value="2">Month 2</option><option value="3">Month 3</option>
+          <option value="4">Month 4</option><option value="5">Month 5</option><option value="6">Month 6</option>
+        </select>
+      </div>
+      <div>
+        <label for="f-type" style="display:block;font-weight:700;font-size:11.5px;letter-spacing:.08em;text-transform:uppercase;margin-bottom:5px">Format</label>
+        <select id="f-type" value="{{ fType }}" onChange="{{ setFType }}" style="border:3px solid #0F0F0F;background:#FFFFFF;padding:9px 12px;min-height:44px">
+          <option value="all">Indoor and outdoor</option>
+          <option value="in">Indoor only</option>
+          <option value="out">Outdoor practicals</option>
+        </select>
+      </div>
+      <div>
+        <label for="f-state" style="display:block;font-weight:700;font-size:11.5px;letter-spacing:.08em;text-transform:uppercase;margin-bottom:5px">Progress</label>
+        <select id="f-state" value="{{ fState }}" onChange="{{ setFState }}" style="border:3px solid #0F0F0F;background:#FFFFFF;padding:9px 12px;min-height:44px">
+          <option value="all">Everything</option>
+          <option value="done">Completed</option>
+          <option value="todo">Not completed</option>
+        </select>
+      </div>
+      <div style="flex:1"></div>
+      <button onClick="{{ collapseAll }}" style="min-height:44px;background:#FFFFFF;border:3px solid #0F0F0F;padding:10px 16px;font-weight:700;font-size:13px;text-transform:uppercase;letter-spacing:.06em;cursor:pointer">Close all</button>
+      <button onClick="{{ resetProgress }}" style="min-height:44px;background:#FFFFFF;border:3px solid #0F0F0F;padding:10px 16px;font-weight:700;font-size:13px;text-transform:uppercase;letter-spacing:.06em;cursor:pointer">Reset local data</button>
+    </div>
+    <p style="font-size:13px;color:#333333;margin:0 0 26px">{{ filterSummary }}</p>
+  </div>
+
+  <div style="display:flex;flex-direction:column;gap:18px">
+    <sc-for list="{{ lessonCards }}" as="l" hint-placeholder-count="6">
+      <article id="lesson-{{ l.n }}" data-lesson data-open="{{ l.openFlag }}" data-card style="background:#FFFFFF;border:3px solid #0F0F0F;box-shadow:7px 7px 0 #0F0F0F;scroll-margin-top:90px">
+        <div style="display:flex;gap:0;align-items:stretch;border-bottom:3px solid #0F0F0F">
+          <div style="flex:none;width:88px;background:#FBB03B;border-right:3px solid #0F0F0F;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:12px 6px">
+            <span style="font-family:'Bobby Jones','Arial Rounded MT Bold',sans-serif;font-size:34px;line-height:.85;color:#0F0F0F">{{ l.pad }}</span>
+            <span style="font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:#0F0F0F;margin-top:4px">Lesson</span>
+          </div>
+          <button onClick="{{ l.toggle }}" aria-expanded="{{ l.open }}" style="flex:1;min-width:0;text-align:left;background:#FFFFFF;border:0;padding:16px 18px;cursor:pointer" style-hover="background:#FAFAFA">
+            <span style="display:flex;flex-wrap:wrap;gap:7px;margin-bottom:8px">
+              <span style="font-weight:700;font-size:10.5px;letter-spacing:.08em;text-transform:uppercase;border:2px solid #0F0F0F;padding:3px 7px;color:#0F0F0F">Month {{ l.month }} · Week {{ l.week }}</span>
+              <span style="{{ l.tagStyle }}">{{ l.tag }}</span>
+              <span style="font-weight:700;font-size:10.5px;letter-spacing:.08em;text-transform:uppercase;border:2px solid #333333;padding:3px 7px;color:#333333">{{ l.duration }}</span>
+              <span style="font-weight:700;font-size:10.5px;letter-spacing:.08em;text-transform:uppercase;border:2px solid #333333;padding:3px 7px;color:#333333">{{ l.skill }}</span>
+            </span>
+            <span style="display:block;font-family:'Bobby Jones','Arial Rounded MT Bold',sans-serif;font-size:clamp(19px,2.3vw,27px);line-height:1.04;text-transform:uppercase;color:#0F0F0F">{{ l.title }}</span>
+            <span style="display:block;font-family:'TT Norms Pro Serif',Georgia,serif;font-size:16px;font-style:italic;color:#333333;margin-top:7px">{{ l.question }}</span>
+          </button>
+          <div style="flex:none;display:flex;flex-direction:column;justify-content:center;gap:6px;padding:12px;border-left:3px solid #0F0F0F">
+            <label style="display:flex;align-items:center;gap:8px;font-weight:700;font-size:11px;text-transform:uppercase;letter-spacing:.06em;cursor:pointer;min-height:44px">
+              <input type="checkbox" checked="{{ l.done }}" onChange="{{ l.toggleDone }}" style="width:24px;height:24px;accent-color:#FBB03B">
+              <span>{{ l.doneLabel }}</span>
+            </label>
+            <span style="font-family:'Bobby Jones','Arial Rounded MT Bold',sans-serif;font-size:22px;color:#0F0F0F;text-align:center">{{ l.caret }}</span>
+          </div>
+        </div>
+
+        <sc-if value="{{ l.open }}" hint-placeholder-val="{{ false }}">
+          <div style="padding:26px 22px 30px">
+            <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:26px;margin-bottom:26px">
+              <div>
+                <strong style="display:block;font-weight:700;font-size:11.5px;letter-spacing:.09em;text-transform:uppercase;color:#0F0F0F;border-bottom:3px solid #FBB03B;padding-bottom:5px;margin-bottom:10px">Learning goals</strong>
+                <p style="font-size:14px;margin:0 0 8px;color:#333333">By the end of the lesson, participants should be able to:</p>
+                <ul style="font-size:15px"><sc-for list="{{ l.goals }}" as="g" hint-placeholder-count="5"><li>{{ g }}</li></sc-for></ul>
+              </div>
+              <div>
+                <strong style="display:block;font-weight:700;font-size:11.5px;letter-spacing:.09em;text-transform:uppercase;color:#0F0F0F;border-bottom:3px solid #FBB03B;padding-bottom:5px;margin-bottom:10px">Key vocabulary</strong>
+                <p style="font-size:15px;margin:0 0 20px">{{ l.vocab }}</p>
+                <sc-if value="{{ l.hasPrep }}" hint-placeholder-val="{{ false }}">
+                  <div>
+                    <strong style="display:block;font-weight:700;font-size:11.5px;letter-spacing:.09em;text-transform:uppercase;color:#0F0F0F;border-bottom:3px solid #FBB03B;padding-bottom:5px;margin-bottom:10px">Trainer preparation</strong>
+                    <ul style="font-size:15px"><sc-for list="{{ l.prep }}" as="p" hint-placeholder-count="4"><li>{{ p }}</li></sc-for></ul>
+                  </div>
+                </sc-if>
+                <div style="margin-top:20px;border:3px solid #0F0F0F;padding:14px;background:#FFFFFF">
+                  <strong style="display:block;font-weight:700;font-size:11.5px;letter-spacing:.09em;text-transform:uppercase;margin-bottom:6px">Format</strong>
+                  <span style="font-size:15px">{{ l.format }} · {{ l.duration }}</span>
+                </div>
+              </div>
+            </div>
+
+            <div style="border-top:3px solid #0F0F0F;padding-top:22px;margin-bottom:26px">
+              <strong style="display:inline-block;background:#FBB03B;border:3px solid #0F0F0F;padding:5px 11px;font-weight:700;font-size:12px;letter-spacing:.09em;text-transform:uppercase;color:#0F0F0F;margin-bottom:16px">Teaching content</strong>
+              <sc-for list="{{ l.teaching }}" as="sec" hint-placeholder-count="3">
+                <div style="margin-bottom:18px;max-width:78ch">
+                  <sc-if value="{{ sec.hasH }}" hint-placeholder-val="{{ true }}">
+                    <h4 style="font-family:'Bobby Jones','Arial Rounded MT Bold',sans-serif;font-size:19px;text-transform:uppercase;color:#0F0F0F;margin:0 0 8px">{{ sec.h }}</h4>
+                  </sc-if>
+                  <sc-for list="{{ sec.paras }}" as="para" hint-placeholder-count="1">
+                    <p style="margin:0 0 10px;font-size:16.5px;line-height:1.6">{{ para }}</p>
+                  </sc-for>
+                  <sc-if value="{{ sec.hasBullets }}" hint-placeholder-val="{{ true }}">
+                    <ul style="font-size:16px"><sc-for list="{{ sec.bullets }}" as="b" hint-placeholder-count="4"><li>{{ b }}</li></sc-for></ul>
+                  </sc-if>
+                  <sc-if value="{{ sec.hasAfter }}" hint-placeholder-val="{{ false }}">
+                    <p style="margin:10px 0 0;font-size:16.5px;line-height:1.6">{{ sec.after }}</p>
+                  </sc-if>
+                </div>
+              </sc-for>
+            </div>
+
+            <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:16px;margin-bottom:26px">
+              <sc-for list="{{ l.activities }}" as="a" hint-placeholder-count="4">
+                <div style="border:3px solid #0F0F0F;padding:16px;background:#FFFFFF">
+                  <strong style="display:block;font-weight:700;font-size:11.5px;letter-spacing:.09em;text-transform:uppercase;color:#0F0F0F;margin-bottom:8px">{{ a.label }}</strong>
+                  <sc-if value="{{ a.hasText }}" hint-placeholder-val="{{ true }}"><p style="margin:0 0 8px;font-size:15.5px">{{ a.text }}</p></sc-if>
+                  <sc-if value="{{ a.hasBullets }}" hint-placeholder-val="{{ false }}">
+                    <ul style="font-size:15px"><sc-for list="{{ a.bullets }}" as="ab" hint-placeholder-count="3"><li>{{ ab }}</li></sc-for></ul>
+                  </sc-if>
+                  <sc-if value="{{ a.hasAfter }}" hint-placeholder-val="{{ false }}"><p style="margin:8px 0 0;font-size:15.5px">{{ a.after }}</p></sc-if>
+                </div>
+              </sc-for>
+            </div>
+
+            <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px;margin-bottom:26px">
+              <div style="border:3px solid #0F0F0F;background:#333333;color:#FFFFFF;padding:18px">
+                <strong style="display:block;font-weight:700;font-size:11.5px;letter-spacing:.09em;text-transform:uppercase;color:#FBB03B;margin-bottom:10px">Reflection questions</strong>
+                <ul style="font-size:15.5px;font-family:'TT Norms Pro Serif',Georgia,serif"><sc-for list="{{ l.reflect }}" as="r" hint-placeholder-count="4"><li>{{ r }}</li></sc-for></ul>
+              </div>
+              <div style="border:3px solid #0F0F0F;background:#FBB03B;padding:18px">
+                <strong style="display:block;font-weight:700;font-size:11.5px;letter-spacing:.09em;text-transform:uppercase;color:#0F0F0F;margin-bottom:10px">Assignment for the week</strong>
+                <sc-if value="{{ l.assignment.hasText }}" hint-placeholder-val="{{ true }}"><p style="margin:0 0 8px;font-size:16px;color:#0F0F0F">{{ l.assignment.text }}</p></sc-if>
+                <sc-if value="{{ l.assignment.hasBullets }}" hint-placeholder-val="{{ false }}">
+                  <ul style="font-size:15.5px;color:#0F0F0F"><sc-for list="{{ l.assignment.bullets }}" as="ib" hint-placeholder-count="3"><li>{{ ib }}</li></sc-for></ul>
+                </sc-if>
+                <sc-if value="{{ l.assignment.hasAfter }}" hint-placeholder-val="{{ false }}"><p style="margin:8px 0 0;font-size:16px;color:#0F0F0F">{{ l.assignment.after }}</p></sc-if>
+              </div>
+            </div>
+
+            <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px;margin-bottom:26px">
+              <div style="border:3px solid #0F0F0F;padding:16px">
+                <strong style="display:block;font-weight:700;font-size:11.5px;letter-spacing:.09em;text-transform:uppercase;margin-bottom:8px">Materials</strong>
+                <p style="margin:0;font-size:15.5px">{{ l.materials }}</p>
+              </div>
+              <div style="border:3px solid #0F0F0F;padding:16px;background:#0F0F0F;color:#FFFFFF">
+                <strong style="display:block;font-weight:700;font-size:11.5px;letter-spacing:.09em;text-transform:uppercase;color:#FBB03B;margin-bottom:8px">Safety and ethics reminder</strong>
+                <p style="margin:0;font-size:15.5px">{{ l.ethics }}</p>
+              </div>
+            </div>
+
+            <div data-noprint style="border-top:3px solid #0F0F0F;padding-top:22px">
+              <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px">
+                <div>
+                  <label for="np-{{ l.n }}" style="display:block;font-weight:700;font-size:11.5px;letter-spacing:.09em;text-transform:uppercase;margin-bottom:6px">Participant notes</label>
+                  <textarea id="np-{{ l.n }}" value="{{ l.np }}" onChange="{{ l.onNp }}" rows="5" placeholder="What did you notice? What do you want to try next week?" style="width:100%;border:3px solid #0F0F0F;padding:12px;background:#FFFFFF"></textarea>
+                  <span style="display:block;font-size:11.5px;color:#333333;margin-top:4px">{{ l.npCount }} characters · saved on this device</span>
+                </div>
+                <sc-if value="{{ trainerView }}" hint-placeholder-val="{{ true }}">
+                  <div>
+                    <label for="nt-{{ l.n }}" style="display:block;font-weight:700;font-size:11.5px;letter-spacing:.09em;text-transform:uppercase;margin-bottom:6px">Trainer notes</label>
+                    <textarea id="nt-{{ l.n }}" value="{{ l.nt }}" onChange="{{ l.onNt }}" rows="5" placeholder="What worked, what to change, who needs support." style="width:100%;border:3px solid #0F0F0F;padding:12px;background:#FFFFFF"></textarea>
+                    <span style="display:block;font-size:11.5px;color:#333333;margin-top:4px">{{ l.ntCount }} characters · saved on this device</span>
+                  </div>
+                </sc-if>
+              </div>
+              <div style="margin-top:18px">
+                <strong style="display:block;font-weight:700;font-size:11.5px;letter-spacing:.09em;text-transform:uppercase;margin-bottom:8px">Images from this lesson</strong>
+                <div onDragOver="{{ l.onDragOver }}" onDrop="{{ l.onDrop }}" style="border:3px dashed #0F0F0F;padding:16px;background:#FAFAFA">
+                  <div style="display:flex;flex-wrap:wrap;gap:12px;align-items:center">
+                    <sc-for list="{{ l.images }}" as="im" hint-placeholder-count="0">
+                      <figure style="margin:0;width:132px">
+                        <img src="{{ im.url }}" alt="{{ im.name }}" loading="lazy" style="width:132px;height:132px;object-fit:cover;border:3px solid #0F0F0F;display:block">
+                        <figcaption style="font-size:10.5px;font-family:ui-monospace,Menlo,monospace;word-break:break-all;margin-top:4px">{{ im.name }}</figcaption>
+                        <button onClick="{{ im.remove }}" style="margin-top:4px;min-height:32px;background:#FFFFFF;border:2px solid #0F0F0F;padding:4px 8px;font-size:11px;font-weight:700;text-transform:uppercase;cursor:pointer">Remove</button>
+                      </figure>
+                    </sc-for>
+                    <label style="display:inline-flex;align-items:center;justify-content:center;width:132px;height:132px;border:3px solid #0F0F0F;background:#FBB03B;font-weight:700;font-size:12px;text-transform:uppercase;letter-spacing:.06em;cursor:pointer;text-align:center;padding:8px">
+                      <span>Add image</span>
+                      <input type="file" accept="image/*" multiple onChange="{{ l.onFiles }}" style="position:absolute;width:1px;height:1px;opacity:0">
+                    </label>
+                  </div>
+                  <p style="font-size:12.5px;color:#333333;margin:12px 0 0">Drag photographs here or use the button. Images stay in this browser and are never uploaded.</p>
+                </div>
+              </div>
+              <div style="display:flex;flex-wrap:wrap;gap:12px;margin-top:20px">
+                <button onClick="{{ l.print }}" style="min-height:44px;background:#0F0F0F;border:3px solid #0F0F0F;color:#FFFFFF;padding:12px 18px;font-weight:700;font-size:13px;text-transform:uppercase;letter-spacing:.06em;cursor:pointer">Print this lesson</button>
+                <button onClick="{{ l.exportNotes }}" style="min-height:44px;background:#FFFFFF;border:3px solid #0F0F0F;padding:12px 18px;font-weight:700;font-size:13px;text-transform:uppercase;letter-spacing:.06em;cursor:pointer">Export notes as text</button>
+              </div>
+            </div>
+          </div>
+        </sc-if>
+      </article>
+    </sc-for>
+  </div>
+</section>
+
+<section id="assignments" data-screen-label="Assignments" style="background:#FBB03B;border-top:4px solid #0F0F0F;border-bottom:4px solid #0F0F0F;padding:72px 20px;scroll-margin-top:80px">
+  <div style="max-width:1200px;margin:0 auto">
+    <span style="display:inline-block;background:#0F0F0F;border:3px solid #0F0F0F;padding:5px 11px;font-weight:700;font-size:12px;letter-spacing:.09em;text-transform:uppercase;color:#FBB03B">Assignments</span>
+    <h2 style="font-family:'Bobby Jones','Arial Rounded MT Bold',sans-serif;font-size:clamp(30px,4.4vw,54px);line-height:.96;margin:20px 0 10px;text-transform:uppercase;color:#0F0F0F">Every weekly assignment in one place</h2>
+    <p style="max-width:64ch;margin:0 0 26px;color:#0F0F0F">Filtered by the same month, format, and progress controls as the lesson library.</p>
+    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:16px">
+      <sc-for list="{{ assignmentCards }}" as="a" hint-placeholder-count="8">
+        <div data-card style="background:#FFFFFF;border:3px solid #0F0F0F;box-shadow:5px 5px 0 #0F0F0F;padding:18px;display:flex;flex-direction:column;gap:10px">
+          <div style="display:flex;justify-content:space-between;align-items:center;gap:8px">
+            <span style="font-family:'Bobby Jones','Arial Rounded MT Bold',sans-serif;font-size:26px;line-height:1;color:#0F0F0F">{{ a.pad }}</span>
+            <span style="{{ a.tagStyle }}">{{ a.tag }}</span>
+          </div>
+          <strong style="font-size:15.5px;line-height:1.3;color:#0F0F0F">{{ a.title }}</strong>
+          <sc-if value="{{ a.assignment.hasText }}" hint-placeholder-val="{{ true }}"><p style="margin:0;font-size:14.5px">{{ a.assignment.text }}</p></sc-if>
+          <sc-if value="{{ a.assignment.hasBullets }}" hint-placeholder-val="{{ false }}">
+            <ul style="font-size:14px;margin:0"><sc-for list="{{ a.assignment.bullets }}" as="b" hint-placeholder-count="3"><li>{{ b }}</li></sc-for></ul>
+          </sc-if>
+          <div style="margin-top:auto;display:flex;justify-content:space-between;align-items:center;gap:8px;border-top:2px solid #0F0F0F;padding-top:10px">
+            <span style="font-size:11.5px;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:#333333">M{{ a.month }} · W{{ a.week }} · {{ a.skill }}</span>
+            <a href="#lesson-{{ a.n }}" onClick="{{ a.open }}" style="font-size:11.5px;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:#0F0F0F">Lesson →</a>
+          </div>
+        </div>
+      </sc-for>
+    </div>
+  </div>
+</section>
+
+<section id="review" data-screen-label="Photo Review" data-noprint style="padding:72px 20px;max-width:1200px;margin:0 auto;scroll-margin-top:80px">
+  <span style="display:inline-block;background:#FBB03B;border:3px solid #0F0F0F;padding:5px 11px;font-weight:700;font-size:12px;letter-spacing:.09em;text-transform:uppercase;color:#0F0F0F">Photo review</span>
+  <h2 style="font-family:'Bobby Jones','Arial Rounded MT Bold',sans-serif;font-size:clamp(30px,4.4vw,54px);line-height:.96;margin:20px 0 10px;text-transform:uppercase;color:#0F0F0F">Keep. Maybe. Remove.</h2>
+  <p style="max-width:64ch;margin:0 0 26px">Build a contact sheet, mark each image, and say why. Rate focus, light, composition, moment, story, and ethics. Images stay in this browser session; your decisions are saved on this device.</p>
+
+  <div onDragOver="{{ onReviewDragOver }}" onDrop="{{ onReviewDrop }}" style="border:3px dashed #0F0F0F;padding:20px;background:#FAFAFA;margin-bottom:26px;display:flex;flex-wrap:wrap;gap:14px;align-items:center">
+    <label style="display:inline-flex;align-items:center;min-height:48px;background:#FBB03B;border:3px solid #0F0F0F;box-shadow:4px 4px 0 #0F0F0F;padding:13px 20px;font-weight:700;font-size:13.5px;text-transform:uppercase;letter-spacing:.06em;cursor:pointer;position:relative">
+      <span>Add photographs</span>
+      <input type="file" accept="image/*" multiple onChange="{{ onReviewFiles }}" style="position:absolute;width:1px;height:1px;opacity:0">
+    </label>
+    <span style="font-size:14px">or drag them into this panel. {{ reviewCount }}</span>
+    <div style="flex:1"></div>
+    <button onClick="{{ printReview }}" style="min-height:44px;background:#FFFFFF;border:3px solid #0F0F0F;padding:11px 16px;font-weight:700;font-size:13px;text-transform:uppercase;letter-spacing:.06em;cursor:pointer">Print review sheet</button>
+  </div>
+
+  <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:18px">
+    <sc-for list="{{ reviewItems }}" as="r" hint-placeholder-count="0">
+      <div data-card style="background:#FFFFFF;border:3px solid #0F0F0F;box-shadow:5px 5px 0 #0F0F0F;padding:14px">
+        <img src="{{ r.url }}" alt="{{ r.name }}" loading="lazy" style="width:100%;aspect-ratio:1;object-fit:cover;border:3px solid #0F0F0F;display:block">
+        <p style="font-family:ui-monospace,Menlo,monospace;font-size:11px;word-break:break-all;margin:8px 0 10px">{{ r.name }}</p>
+        <div style="display:flex;gap:6px;margin-bottom:10px">
+          <button onClick="{{ r.keep }}" style="{{ r.keepStyle }}">Keep</button>
+          <button onClick="{{ r.maybe }}" style="{{ r.maybeStyle }}">Maybe</button>
+          <button onClick="{{ r.remove }}" style="{{ r.removeStyle }}">Remove</button>
+        </div>
+        <label style="display:block;font-weight:700;font-size:11px;letter-spacing:.07em;text-transform:uppercase;margin-bottom:4px">Reason</label>
+        <input type="text" value="{{ r.reason }}" onChange="{{ r.onReason }}" placeholder="Why this decision?" style="width:100%;border:2px solid #0F0F0F;padding:9px;min-height:40px;margin-bottom:12px">
+        <sc-for list="{{ r.criteria }}" as="c" hint-placeholder-count="6">
+          <div style="display:flex;align-items:center;gap:10px;margin-bottom:6px">
+            <label for="{{ c.id }}" style="flex:none;width:96px;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.05em">{{ c.name }}</label>
+            <input id="{{ c.id }}" type="range" min="1" max="5" step="1" value="{{ c.value }}" onChange="{{ c.set }}" onInput="{{ c.set }}" style="flex:1;min-height:36px;accent-color:#FBB03B">
+            <span style="flex:none;width:16px;font-family:ui-monospace,Menlo,monospace;font-size:12px">{{ c.value }}</span>
+          </div>
+        </sc-for>
+        <label style="display:block;font-weight:700;font-size:11px;letter-spacing:.07em;text-transform:uppercase;margin:12px 0 4px">What I noticed</label>
+        <textarea value="{{ r.noticed }}" onChange="{{ r.onNoticed }}" rows="2" style="width:100%;border:2px solid #0F0F0F;padding:9px"></textarea>
+        <label style="display:block;font-weight:700;font-size:11px;letter-spacing:.07em;text-transform:uppercase;margin:10px 0 4px">What I would change</label>
+        <textarea value="{{ r.change }}" onChange="{{ r.onChange }}" rows="2" style="width:100%;border:2px solid #0F0F0F;padding:9px"></textarea>
+      </div>
+    </sc-for>
+  </div>
+
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:18px;margin-top:34px">
+    <div data-card style="background:#0F0F0F;color:#FFFFFF;border:3px solid #0F0F0F;box-shadow:6px 6px 0 #FBB03B;padding:20px">
+      <strong style="display:block;font-family:'Bobby Jones','Arial Rounded MT Bold',sans-serif;font-size:20px;text-transform:uppercase;color:#FBB03B;margin-bottom:10px">Critique language</strong>
+      <ul style="font-size:15px"><li>I notice…</li><li>My eye goes to…</li><li>The image becomes stronger when…</li><li>I need more information about…</li><li>I think this image adds…</li><li>I think this image repeats…</li><li>The photographer’s intention seems to be…</li></ul>
+      <p style="font-size:14px;margin:12px 0 0;opacity:.8">The photographer always makes the final decision.</p>
+    </div>
+    <div data-card style="background:#FFFFFF;border:3px solid #0F0F0F;box-shadow:6px 6px 0 #0F0F0F;padding:20px">
+      <strong style="display:block;font-family:'Bobby Jones','Arial Rounded MT Bold',sans-serif;font-size:20px;text-transform:uppercase;color:#0F0F0F;margin-bottom:10px">Photo prompt spinner</strong>
+      <p style="font-size:14px;margin:0 0 12px;color:#333333">Fifteen prompts drawn from the project themes.</p>
+      <div style="border:3px solid #0F0F0F;background:#FBB03B;padding:18px;min-height:88px;display:flex;align-items:center;font-family:'TT Norms Pro Serif',Georgia,serif;font-size:19px;color:#0F0F0F" aria-live="polite">{{ prompt }}</div>
+      <button onClick="{{ spin }}" style="margin-top:12px;min-height:44px;background:#0F0F0F;border:3px solid #0F0F0F;color:#FFFFFF;padding:12px 18px;font-weight:700;font-size:13px;text-transform:uppercase;letter-spacing:.06em;cursor:pointer">Give me a prompt</button>
+    </div>
+    <div data-card style="background:#FFFFFF;border:3px solid #0F0F0F;box-shadow:6px 6px 0 #0F0F0F;padding:20px">
+      <strong style="display:block;font-family:'Bobby Jones','Arial Rounded MT Bold',sans-serif;font-size:20px;text-transform:uppercase;color:#0F0F0F;margin-bottom:10px">Reflection journal</strong>
+      <label for="j-prompt" style="display:block;font-weight:700;font-size:11px;letter-spacing:.07em;text-transform:uppercase;margin-bottom:4px">Start with</label>
+      <select id="j-prompt" value="{{ jPrompt }}" onChange="{{ setJPrompt }}" style="width:100%;border:2px solid #0F0F0F;padding:9px;min-height:40px;margin-bottom:10px">
+        <sc-for list="{{ journalPrompts }}" as="jp" hint-placeholder-count="8"><option value="{{ jp }}">{{ jp }}</option></sc-for>
+      </select>
+      <textarea value="{{ jText }}" onChange="{{ setJText }}" rows="3" placeholder="Write your entry" style="width:100%;border:2px solid #0F0F0F;padding:9px"></textarea>
+      <button onClick="{{ addJournal }}" style="margin-top:10px;min-height:44px;background:#FBB03B;border:3px solid #0F0F0F;padding:11px 16px;font-weight:700;font-size:13px;text-transform:uppercase;letter-spacing:.06em;cursor:pointer">Save entry</button>
+      <div style="margin-top:14px;display:flex;flex-direction:column;gap:10px">
+        <sc-for list="{{ journal }}" as="je" hint-placeholder-count="0">
+          <div style="border-left:5px solid #FBB03B;padding:6px 0 6px 12px">
+            <span style="display:block;font-family:ui-monospace,Menlo,monospace;font-size:11px;color:#333333">{{ je.date }}</span>
+            <span style="display:block;font-family:'TT Norms Pro Serif',Georgia,serif;font-size:15.5px">{{ je.text }}</span>
+          </div>
+        </sc-for>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="zine" data-screen-label="Zine and Exhibition" style="background:#333333;color:#FFFFFF;border-top:4px solid #0F0F0F;padding:72px 20px;scroll-margin-top:80px">
+  <div style="max-width:1200px;margin:0 auto">
+    <span style="display:inline-block;background:#FBB03B;border:3px solid #0F0F0F;padding:5px 11px;font-weight:700;font-size:12px;letter-spacing:.09em;text-transform:uppercase;color:#0F0F0F">Zine and exhibition</span>
+    <h2 style="font-family:'Bobby Jones','Arial Rounded MT Bold',sans-serif;font-size:clamp(30px,4.4vw,54px);line-height:.96;margin:20px 0 10px;text-transform:uppercase;color:#FFFFFF">Sequence the pages. Plan the wall.</h2>
+    <p style="max-width:64ch;margin:0 0 30px;opacity:.85">Drag the page cards into order, name each spread, and write the caption, quote, or reflection that sits beside it. Then plan the print sizes and the visitor journey.</p>
+
+    <div data-noprint style="display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:16px;margin-bottom:20px">
+      <sc-for list="{{ zineSlots }}" as="z" hint-placeholder-count="7">
+        <div draggable="true" onDragStart="{{ z.onDragStart }}" onDragOver="{{ z.onDragOver }}" onDrop="{{ z.onDrop }}" style="background:#FFFFFF;border:3px solid #0F0F0F;box-shadow:5px 5px 0 #FBB03B;padding:12px;cursor:grab">
+          <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px">
+            <span style="font-weight:700;font-size:10.5px;letter-spacing:.08em;text-transform:uppercase;background:#FBB03B;border:2px solid #0F0F0F;padding:3px 7px;color:#0F0F0F">{{ z.slot }}</span>
+            <span style="font-family:'Bobby Jones','Arial Rounded MT Bold',sans-serif;font-size:20px;color:#0F0F0F">{{ z.pos }}</span>
+          </div>
+          <sc-if value="{{ z.hasImage }}" hint-placeholder-val="{{ false }}">
+            <div role="img" aria-label="Zine page {{ z.pos }}" style="{{ z.imgStyle }}"></div>
+          </sc-if>
+          <sc-if value="{{ z.noImage }}" hint-placeholder-val="{{ true }}">
+            <label style="display:flex;align-items:center;justify-content:center;width:100%;aspect-ratio:3/4;border:2px solid #0F0F0F;background:repeating-linear-gradient(135deg,#F4F4F4 0 8px,#FFFFFF 8px 16px);margin-bottom:8px;cursor:pointer;position:relative;text-align:center;padding:10px">
+              <span style="font-family:ui-monospace,Menlo,monospace;font-size:11px;color:#333333">drop image here</span>
+              <input type="file" accept="image/*" onChange="{{ z.onFile }}" style="position:absolute;width:1px;height:1px;opacity:0">
+            </label>
+          </sc-if>
+          <input type="text" value="{{ z.title }}" onChange="{{ z.onTitle }}" placeholder="Page title" style="width:100%;border:2px solid #0F0F0F;padding:8px;min-height:38px;margin-bottom:6px;color:#333333">
+          <textarea value="{{ z.caption }}" onChange="{{ z.onCaption }}" rows="2" placeholder="Caption, quote, or reflection" style="width:100%;border:2px solid #0F0F0F;padding:8px;color:#333333"></textarea>
+          <button onClick="{{ z.clear }}" style="margin-top:8px;min-height:36px;width:100%;background:#FFFFFF;border:2px solid #0F0F0F;padding:6px;font-size:11px;font-weight:700;text-transform:uppercase;cursor:pointer;color:#0F0F0F">Clear page</button>
+        </div>
+      </sc-for>
+    </div>
+
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:20px">
+      <div data-card style="background:#FFFFFF;color:#333333;border:3px solid #0F0F0F;box-shadow:6px 6px 0 #FBB03B;padding:20px">
+        <strong style="display:block;font-family:'Bobby Jones','Arial Rounded MT Bold',sans-serif;font-size:20px;text-transform:uppercase;color:#0F0F0F;margin-bottom:12px">Exhibition wall planner</strong>
+        <p style="font-size:13.5px;margin:0 0 12px">Click a frame to change its print size. Small for details, medium for most documentary images, large for the anchor image that meets the visitor first.</p>
+        <div style="border:3px solid #0F0F0F;background:#FAFAFA;padding:18px">
+          <div style="border-bottom:3px solid #0F0F0F;padding-bottom:8px;margin-bottom:16px;display:flex;justify-content:space-between;align-items:baseline">
+            <span style="font-family:'Bobby Jones','Arial Rounded MT Bold',sans-serif;font-size:17px;text-transform:uppercase;color:#0F0F0F">Title panel</span>
+            <span style="font-size:11px;font-family:ui-monospace,Menlo,monospace">visitor enters →</span>
+          </div>
+          <div style="display:flex;flex-wrap:wrap;gap:14px;align-items:flex-end">
+            <sc-for list="{{ wallFrames }}" as="w" hint-placeholder-count="7">
+              <button onClick="{{ w.cycle }}" style="{{ w.style }}">
+                <span style="font-family:ui-monospace,Menlo,monospace;font-size:10.5px;color:#333333">{{ w.label }}</span>
+              </button>
+            </sc-for>
+          </div>
+          <div style="margin-top:16px;border-top:2px dashed #0F0F0F;padding-top:10px;font-size:11.5px;font-family:ui-monospace,Menlo,monospace;color:#333333">eye line 145 cm · frame spacing 8–12 cm · seating and reading station at the far end</div>
+        </div>
+      </div>
+      <div data-card style="background:#0F0F0F;border:3px solid #0F0F0F;box-shadow:6px 6px 0 #FBB03B;padding:20px">
+        <strong style="display:block;font-family:'Bobby Jones','Arial Rounded MT Bold',sans-serif;font-size:20px;text-transform:uppercase;color:#FBB03B;margin-bottom:12px">Participant checklist</strong>
+        <div style="display:flex;flex-direction:column;gap:8px">
+          <sc-for list="{{ checklist }}" as="ck" hint-placeholder-count="8">
+            <label style="display:flex;gap:10px;align-items:flex-start;font-size:15px;color:#FFFFFF;cursor:pointer;min-height:32px">
+              <input type="checkbox" checked="{{ ck.done }}" onChange="{{ ck.toggle }}" style="width:22px;height:22px;flex:none;accent-color:#FBB03B;margin-top:2px">
+              <span>{{ ck.text }}</span>
+            </label>
+          </sc-for>
+        </div>
+        <div style="margin-top:18px;border-top:2px solid #FBB03B;padding-top:14px">
+          <strong style="display:block;font-weight:700;font-size:11.5px;letter-spacing:.08em;text-transform:uppercase;color:#FBB03B;margin-bottom:8px">Final curation</strong>
+          <p style="font-size:14px;color:#FFFFFF;margin:0 0 10px;opacity:.85">Every participant is represented. Mark the images the group agrees should carry a theme — no scores, no ranking.</p>
+          <span style="display:inline-block;background:#FBB03B;border:2px solid #0F0F0F;padding:5px 9px;font-weight:700;font-size:11.5px;text-transform:uppercase;color:#0F0F0F">{{ curationLine }}</span>
+        </div>
+      </div>
+      <div data-card style="background:#FFFFFF;color:#333333;border:3px solid #0F0F0F;box-shadow:6px 6px 0 #FBB03B;padding:20px">
+        <strong style="display:block;font-family:'Bobby Jones','Arial Rounded MT Bold',sans-serif;font-size:20px;text-transform:uppercase;color:#0F0F0F;margin-bottom:12px">Group statement</strong>
+        <p style="font-family:'TT Norms Pro Serif',Georgia,serif;font-size:16.5px;margin:0 0 12px">We are young photographers from Kibera. These photographs come from the places, people, routines, questions, and memories that shape our lives. We made them from our own point of view.</p>
+        <textarea value="{{ groupStatement }}" onChange="{{ setGroupStatement }}" rows="4" placeholder="Continue the statement in your own words" style="width:100%;border:3px solid #0F0F0F;padding:12px"></textarea>
+        <div style="margin-top:16px;border-top:3px solid #0F0F0F;padding-top:12px">
+          <strong style="display:block;font-weight:700;font-size:11.5px;letter-spacing:.08em;text-transform:uppercase;margin-bottom:8px">Badge wall</strong>
+          <div style="display:flex;flex-wrap:wrap;gap:7px">
+            <sc-for list="{{ badges }}" as="bd" hint-placeholder-count="12">
+              <span style="border:2px solid #0F0F0F;padding:4px 8px;font-weight:700;font-size:11px;text-transform:uppercase;letter-spacing:.05em;color:#0F0F0F">{{ bd }}</span>
+            </sc-for>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="safety" data-screen-label="Safety and Ethics" style="padding:72px 20px;max-width:1200px;margin:0 auto;scroll-margin-top:80px">
+  <span style="display:inline-block;background:#FBB03B;border:3px solid #0F0F0F;padding:5px 11px;font-weight:700;font-size:12px;letter-spacing:.09em;text-transform:uppercase;color:#0F0F0F">Safety, ethics, and participant care</span>
+  <h2 style="font-family:'Bobby Jones','Arial Rounded MT Bold',sans-serif;font-size:clamp(30px,4.4vw,54px);line-height:.96;margin:20px 0 10px;text-transform:uppercase;color:#0F0F0F">A photograph is never more important than a person</h2>
+  <p style="max-width:64ch;margin:0 0 32px">These principles apply in every lesson, every practical, and every publication decision.</p>
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:18px">
+    <div data-card style="background:#FFFFFF;border:3px solid #0F0F0F;box-shadow:6px 6px 0 #0F0F0F;padding:20px">
+      <strong style="display:block;font-family:'Bobby Jones','Arial Rounded MT Bold',sans-serif;font-size:21px;text-transform:uppercase;color:#0F0F0F;margin-bottom:10px">Consent</strong>
+      <ul style="font-size:15.5px"><li>Ask before making close portraits.</li><li>Explain who you are and what the project is.</li><li>Explain where the image may appear.</li><li>Accept no.</li><li>Allow people to change their mind where possible.</li><li>Use age-appropriate consent and facilitator guidance for children.</li><li>Do not assume that being in public removes all ethical responsibility.</li></ul>
+    </div>
+    <div data-card style="background:#0F0F0F;color:#FFFFFF;border:3px solid #0F0F0F;box-shadow:6px 6px 0 #FBB03B;padding:20px">
+      <strong style="display:block;font-family:'Bobby Jones','Arial Rounded MT Bold',sans-serif;font-size:21px;text-transform:uppercase;color:#FBB03B;margin-bottom:10px">Dignity</strong>
+      <ul style="font-size:15.5px"><li>Do not use humiliation, suffering, injury, grief, poverty, or private difficulty as visual decoration.</li><li>Do not ask people to repeat painful actions for the camera.</li><li>Do not create false scenes.</li><li>Do not reduce a person to one difficult moment.</li><li>Show people as individuals with context and agency.</li></ul>
+    </div>
+    <div data-card style="background:#FFFFFF;border:3px solid #0F0F0F;box-shadow:6px 6px 0 #0F0F0F;padding:20px">
+      <strong style="display:block;font-family:'Bobby Jones','Arial Rounded MT Bold',sans-serif;font-size:21px;text-transform:uppercase;color:#0F0F0F;margin-bottom:10px">Privacy</strong>
+      <ul style="font-size:15.5px"><li>Avoid unnecessary exact addresses, school details, phone numbers, documents, medical details, and private family information.</li><li>Remove sensitive metadata before public sharing where needed.</li><li>Do not publish a photograph that may expose someone to stigma, punishment, harassment, or danger.</li></ul>
+    </div>
+    <div data-card style="background:#FBB03B;border:3px solid #0F0F0F;box-shadow:6px 6px 0 #0F0F0F;padding:20px">
+      <strong style="display:block;font-family:'Bobby Jones','Arial Rounded MT Bold',sans-serif;font-size:21px;text-transform:uppercase;color:#0F0F0F;margin-bottom:10px">Physical safety</strong>
+      <ul style="font-size:15.5px;color:#0F0F0F"><li>Work in groups.</li><li>Follow agreed routes.</li><li>Keep emergency contacts.</li><li>Do not stand in roads, railway areas, open drains, unstable buildings, roofs, restricted areas, or unsafe crowds.</li><li>Stop walking before looking through the camera.</li><li>Keep equipment discreet where required.</li><li>Follow facilitator instructions.</li></ul>
+    </div>
+    <div data-card style="background:#FFFFFF;border:3px solid #0F0F0F;box-shadow:6px 6px 0 #0F0F0F;padding:20px">
+      <strong style="display:block;font-family:'Bobby Jones','Arial Rounded MT Bold',sans-serif;font-size:21px;text-transform:uppercase;color:#0F0F0F;margin-bottom:10px">Emotional care</strong>
+      <ul style="font-size:15.5px"><li>Participants may photograph subjects connected to difficult memories.</li><li>Allow anyone to pause, skip, or change an assignment.</li><li>Do not force personal disclosure.</li><li>Use private check-ins when needed.</li><li>Avoid public critique that embarrasses a participant.</li><li>Focus feedback on photographs and choices, not personal worth.</li></ul>
+    </div>
+    <div data-card style="background:#333333;color:#FFFFFF;border:3px solid #0F0F0F;box-shadow:6px 6px 0 #FBB03B;padding:20px">
+      <strong style="display:block;font-family:'Bobby Jones','Arial Rounded MT Bold',sans-serif;font-size:21px;text-transform:uppercase;color:#FBB03B;margin-bottom:10px">Digital safety</strong>
+      <ul style="font-size:15.5px"><li>Do not upload participant images automatically.</li><li>Keep local drafts private.</li><li>Explain what export and sharing buttons do.</li><li>Confirm consent before posting.</li><li>Do not expose hidden file paths or metadata.</li><li>Use the Reset Local Data control in the lesson library to clear everything from this device.</li></ul>
+    </div>
+  </div>
+</section>
+
+<section id="glossary" data-screen-label="Glossary" style="background:#FAFAFA;border-top:4px solid #0F0F0F;border-bottom:4px solid #0F0F0F;padding:72px 20px;scroll-margin-top:80px">
+  <div style="max-width:1200px;margin:0 auto">
+    <span style="display:inline-block;background:#FBB03B;border:3px solid #0F0F0F;padding:5px 11px;font-weight:700;font-size:12px;letter-spacing:.09em;text-transform:uppercase;color:#0F0F0F">Glossary</span>
+    <h2 style="font-family:'Bobby Jones','Arial Rounded MT Bold',sans-serif;font-size:clamp(30px,4.4vw,54px);line-height:.96;margin:20px 0 30px;text-transform:uppercase;color:#0F0F0F">Words we use</h2>
+    <dl style="margin:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:0">
+      <sc-for list="{{ glossary }}" as="g" hint-placeholder-count="12">
+        <div style="border-top:3px solid #0F0F0F;padding:14px 16px 16px 0">
+          <dt style="font-weight:700;font-size:16px;color:#0F0F0F;margin-bottom:4px">{{ g.term }}</dt>
+          <dd style="margin:0;font-size:15px">{{ g.def }}</dd>
+        </div>
+      </sc-for>
+    </dl>
+  </div>
+</section>
+
+<section id="about" data-screen-label="About" style="padding:72px 20px;max-width:1200px;margin:0 auto;scroll-margin-top:80px">
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:44px;align-items:start">
+    <div>
+      <span style="display:inline-block;background:#FBB03B;border:3px solid #0F0F0F;padding:5px 11px;font-weight:700;font-size:12px;letter-spacing:.09em;text-transform:uppercase;color:#0F0F0F">About</span>
+      <h2 style="font-family:'Bobby Jones','Arial Rounded MT Bold',sans-serif;font-size:clamp(30px,4.4vw,54px);line-height:.96;margin:20px 0 20px;text-transform:uppercase;color:#0F0F0F">Led by Brian Otieno, made by the participants</h2>
+      <p style="font-family:'TT Norms Pro Serif',Georgia,serif;font-size:18px;line-height:1.65;max-width:58ch;margin:0 0 16px">THIS IS WHERE WE’RE FROM works with 10 to 12 young people aged 12 to 19 in Kibera, Nairobi. One lesson a week for six months, four lessons a month, with an outdoor practical every month. The young people are not subjects being spoken about. They are photographers and authors telling stories from their own lives.</p>
+      <p style="max-width:58ch;margin:0">The project builds photography, writing, editing, sequencing, and presentation skills, and it builds on Brian Otieno’s long-term Kibera Stories work, which began in 2013.</p>
+    </div>
+    <div data-card style="background:#FFFFFF;border:3px solid #0F0F0F;box-shadow:7px 7px 0 #FBB03B;padding:24px">
+      <strong style="display:block;font-family:'Bobby Jones','Arial Rounded MT Bold',sans-serif;font-size:22px;text-transform:uppercase;color:#0F0F0F;margin-bottom:14px">Where the six months lead</strong>
+      <ul style="font-size:16px">
+        <li>A strong personal photography portfolio for every participant</li>
+        <li>A collaborative digital and printed photo-zine</li>
+        <li>A community photography exhibition</li>
+        <li>A set of personal reflections, captions, quotes, and short stories</li>
+        <li>A final public presentation led by the participants</li>
+        <li>Greater confidence in using photography to represent home and community</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<footer style="background:#0F0F0F;color:#FFFFFF;border-top:4px solid #FBB03B;padding:56px 20px 40px">
+  <div style="max-width:1200px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:36px;align-items:start">
+    <div>
+      <img src="assets/Logo-02.png" alt="THIS IS WHERE WE'RE FROM" style="width:min(300px,80%);height:auto;display:block;margin-bottom:18px">
+      <p style="font-size:14px;margin:0;opacity:.8">A participatory youth photography and storytelling project in Kibera, Nairobi.</p>
+    </div>
+    <div>
+      <strong style="display:block;font-weight:700;font-size:11.5px;letter-spacing:.09em;text-transform:uppercase;color:#FBB03B;margin-bottom:12px">Find the project</strong>
+      <ul style="list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:9px;font-size:16px">
+        <li><a href="https://www.instagram.com/thisiswherewearefrom/" target="_blank" rel="noopener noreferrer" style="color:#FFFFFF">Instagram: @thisiswherewearefrom</a></li>
+        <li><a href="https://thisiswherewearefrom.com" target="_blank" rel="noopener noreferrer" style="color:#FFFFFF">thisiswherewearefrom.com</a></li>
+        <li><a href="https://storitellah.com" target="_blank" rel="noopener noreferrer" style="color:#FFFFFF">storitellah.com</a></li>
+        <li><a href="mailto:brian@storitellah.com" style="color:#FFFFFF">brian@storitellah.com</a></li>
+      </ul>
+    </div>
+    <div>
+      <strong style="display:block;font-weight:700;font-size:11.5px;letter-spacing:.09em;text-transform:uppercase;color:#FBB03B;margin-bottom:12px">On this site</strong>
+      <ul style="list-style:none;margin:0;padding:0;display:grid;grid-template-columns:1fr 1fr;gap:8px;font-size:15px">
+        <li><a href="#roadmap" style="color:#FFFFFF">Roadmap</a></li>
+        <li><a href="#lab" style="color:#FFFFFF">Exposure Lab</a></li>
+        <li><a href="#lessons" style="color:#FFFFFF">Lessons</a></li>
+        <li><a href="#assignments" style="color:#FFFFFF">Assignments</a></li>
+        <li><a href="#review" style="color:#FFFFFF">Photo Review</a></li>
+        <li><a href="#zine" style="color:#FFFFFF">Zine</a></li>
+        <li><a href="#safety" style="color:#FFFFFF">Safety</a></li>
+        <li><a href="#glossary" style="color:#FFFFFF">Glossary</a></li>
+      </ul>
+    </div>
+  </div>
+  <div style="max-width:1200px;margin:36px auto 0;border-top:2px solid #333333;padding-top:20px;display:flex;flex-wrap:wrap;gap:14px;justify-content:space-between;align-items:center">
+    <span style="font-size:14px;opacity:.85">©️ Brian Otieno. All learning content is copyrighted. All rights reserved.</span>
+    <img src="assets/Logo-04.png" alt="" style="width:40px;height:40px;display:block">
+  </div>
+</footer>
+
+</div>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;$preview&quot;:{&quot;width&quot;:1440},&quot;audience&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;options&quot;:[&quot;Trainer&quot;,&quot;Participant&quot;],&quot;default&quot;:&quot;Trainer&quot;,&quot;tsType&quot;:&quot;\&quot;Trainer\&quot; | \&quot;Participant\&quot;&quot;,&quot;section&quot;:&quot;Learning hub&quot;},&quot;openMonth&quot;:{&quot;editor&quot;:&quot;int&quot;,&quot;min&quot;:1,&quot;max&quot;:6,&quot;step&quot;:1,&quot;default&quot;:1,&quot;tsType&quot;:&quot;number&quot;,&quot;section&quot;:&quot;Learning hub&quot;}}">
+const KEY = "twwf.hub.v1";
+const APERTURES = [1.4, 2, 2.8, 4, 5.6, 8, 11, 16, 22];
+const SHUTTERS = [
+  { label: "30s", s: 30 }, { label: "15s", s: 15 }, { label: "8s", s: 8 }, { label: "4s", s: 4 },
+  { label: "2s", s: 2 }, { label: "1s", s: 1 }, { label: "1/2", s: 0.5 }, { label: "1/4", s: 0.25 },
+  { label: "1/8", s: 0.125 }, { label: "1/15", s: 1 / 15 }, { label: "1/30", s: 1 / 30 }, { label: "1/60", s: 1 / 60 },
+  { label: "1/125", s: 1 / 125 }, { label: "1/250", s: 1 / 250 }, { label: "1/500", s: 1 / 500 },
+  { label: "1/1000", s: 1 / 1000 }, { label: "1/2000", s: 1 / 2000 }, { label: "1/4000", s: 1 / 4000 }
+];
+const ISOS = [100, 200, 400, 800, 1600, 3200, 6400, 12800];
+const ZINE_SLOTS = ["Cover", "Opening", "Middle", "Middle", "Middle", "Closing", "Back cover"];
+const CHECKLIST = [
+  "Seven-image personal story selected and sequenced",
+  "Captions checked for names, places, and facts",
+  "One verified quote in the person’s own words",
+  "Artist statement of 120 to 200 words",
+  "Final reflection written",
+  "Consent confirmed for every image and quote",
+  "Files backed up with clear filenames",
+  "Print sizes chosen and test prints checked",
+  "Spoken introduction rehearsed"
+];
+const WALL_SIZES = [
+  { k: "S", w: 74, h: 92, label: "A4 · small" },
+  { k: "M", w: 116, h: 142, label: "A3 · medium" },
+  { k: "L", w: 168, h: 200, label: "A2 · large" }
+];
+
+class Component extends DCLogic {
+  state = {
+    lessons: [], glossary: [], prompts: [], journalPrompts: [], badges: [], presets: [], challenges: [],
+    done: {}, np: {}, nt: {}, images: {}, open: {}, openMonths: { 1: true },
+    fMonth: "all", fType: "all", fState: "all", months: [],
+    apI: 4, shI: 15, isoI: 0, mode: "manual", presetI: 0,
+    chId: "", chFeedback: "Choose a challenge, set the controls, then check your settings.", earned: {},
+    savedA: null, savedB: null,
+    review: [], reviewMeta: {},
+    zine: ZINE_SLOTS.map((s, i) => ({ slot: s, title: "", caption: "", url: "" })),
+    dragFrom: null,
+    wall: [1, 2, 1, 0, 1, 0, 1],
+    checklist: {}, groupStatement: "",
+    journal: [], jPrompt: "Today I noticed...", jText: "",
+    prompt: "Press the button for a prompt from the project themes."
+  };
+
+  componentDidMount() {
+    Promise.all([
+      import("./data/lessons-1.js"),
+      import("./data/lessons-2.js"),
+      import("./data/reference.js")
+    ]).then(([a, b, ref]) => {
+      const lessons = a.LESSONS_A.concat(b.LESSONS_B).map(l => this.normalise(l));
+      this.setState({
+        lessons,
+        glossary: ref.GLOSSARY.map(g => ({ term: g[0], def: g[1] })),
+        prompts: ref.PROMPTS, journalPrompts: ref.JOURNAL_PROMPTS, badges: ref.BADGES,
+        presets: ref.PRESETS, challenges: ref.CHALLENGES,
+        months: ref.MONTHS
+      });
+    }).catch(e => console.error("Curriculum failed to load", e));
+
+    try {
+      const saved = JSON.parse(localStorage.getItem(KEY) || "{}");
+      const pick = {};
+      ["done", "np", "nt", "earned", "reviewMeta", "checklist", "journal", "groupStatement", "wall"].forEach(k => {
+        if (saved[k] !== undefined) pick[k] = saved[k];
+      });
+      if (saved.zineText) pick.zine = this.state.zine.map((z, i) => Object.assign({}, z, saved.zineText[i] || {}));
+      if (Object.keys(pick).length) this.setState(pick);
+    } catch (e) { /* storage unavailable */ }
+  }
+
+  save(extra) {
+    const s = Object.assign({}, this.state, extra || {});
+    try {
+      localStorage.setItem(KEY, JSON.stringify({
+        done: s.done, np: s.np, nt: s.nt, earned: s.earned, reviewMeta: s.reviewMeta,
+        checklist: s.checklist, journal: s.journal, groupStatement: s.groupStatement, wall: s.wall,
+        zineText: s.zine.map(z => ({ title: z.title, caption: z.caption }))
+      }));
+    } catch (e) { /* storage unavailable */ }
+  }
+
+  set(patch) { this.setState(patch, () => this.save()); }
+
+  // ---------- data shaping ----------
+  block(v) {
+    if (!v) return { hasText: false, text: "", bullets: [], hasBullets: false, after: "", hasAfter: false };
+    if (typeof v === "string") return { hasText: true, text: v, bullets: [], hasBullets: false, after: "", hasAfter: false };
+    const bullets = v.bullets || [];
+    const text = (v.paras || []).join(" ");
+    return { hasText: !!text, text, bullets, hasBullets: bullets.length > 0, after: v.after || "", hasAfter: !!v.after };
+  }
+
+  normalise(l) {
+    const teaching = (l.teaching || []).map(sec => ({
+      h: sec.h || "", hasH: !!sec.h,
+      paras: sec.paras || [],
+      bullets: sec.bullets || [], hasBullets: (sec.bullets || []).length > 0,
+      after: sec.after || "", hasAfter: !!sec.after
+    }));
+    return Object.assign({}, l, { teaching, _assignment: this.block(l.assignment) });
+  }
+
+  // ---------- exposure maths ----------
+  lab() {
+    const preset = this.state.presets[this.state.presetI] || { ev: 15, note: "" };
+    let apI = this.state.apI, shI = this.state.shI, isoI = this.state.isoI;
+    const err = (a, sh, iso) => (preset.ev + Math.log2(ISOS[iso] / 100)) - Math.log2((APERTURES[a] * APERTURES[a]) / SHUTTERS[sh].s);
+    const best = (n, fn) => {
+      let bi = 0, bv = Infinity;
+      for (let i = 0; i < n; i++) { const v = Math.abs(fn(i)); if (v < bv) { bv = v; bi = i; } }
+      return bi;
+    };
+    if (this.state.mode === "ap") shI = best(SHUTTERS.length, i => err(apI, i, isoI));
+    if (this.state.mode === "sp") apI = best(APERTURES.length, i => err(i, shI, isoI));
+    if (this.state.mode === "iso") isoI = best(ISOS.length, i => err(apI, shI, i));
+    const ap = APERTURES[apI], sh = SHUTTERS[shI], iso = ISOS[isoI];
+    return { preset, apI, shI, isoI, ap, sh, iso, ev: err(apI, shI, isoI) };
+  }
+
+  clamp(v, a, b) { return Math.min(b, Math.max(a, v)); }
+
+  // ---------- files ----------
+  filesToItems(files) {
+    return Array.from(files).filter(f => f.type.indexOf("image/") === 0).map(f => ({
+      id: f.name + "-" + f.size + "-" + Math.random().toString(36).slice(2, 7),
+      name: f.name, url: URL.createObjectURL(f)
+    }));
+  }
+
+  download(name, text) {
+    const a = document.createElement("a");
+    a.href = URL.createObjectURL(new Blob([text], { type: "text/plain" }));
+    a.download = name;
+    a.click();
+  }
+
+  renderVals() {
+    const st = this.state;
+    const trainerView = (this.props.audience ?? "Trainer") === "Trainer";
+    const lessons = st.lessons;
+    const doneCount = lessons.filter(l => st.done[l.n]).length;
+    const months = (st.months || []).map(m => {
+      const ml = lessons.filter(l => l.month === m.n);
+      const d = ml.filter(l => st.done[l.n]).length;
+      const mOpen = st.openMonths[m.n] === undefined ? m.n === (this.props.openMonth ?? 1) : !!st.openMonths[m.n];
+      return {
+        anchor: "month-" + m.n, num: String(m.n).padStart(2, "0"), name: "Month " + m.n + ": " + m.name,
+        blurb: m.blurb, open: mOpen, caret: mOpen ? "–" : "+",
+        doneLabel: d + " of 4 done",
+        toggle: () => this.setState(s => ({ openMonths: Object.assign({}, s.openMonths, { [m.n]: !mOpen }) })),
+        lessons: ml.map(l => ({
+          n: l.n, pad: String(l.n).padStart(2, "0"), title: l.title, week: l.week, duration: l.duration,
+          tag: l.outdoor ? "Outdoor practical" : "Indoor",
+          open: () => this.setState(s => ({ open: Object.assign({}, s.open, { [l.n]: true }) }))
+        }))
+      };
+    });
+
+    const visible = lessons.filter(l =>
+      (st.fMonth === "all" || String(l.month) === st.fMonth) &&
+      (st.fType === "all" || (st.fType === "out" ? l.outdoor : !l.outdoor)) &&
+      (st.fState === "all" || (st.fState === "done" ? !!st.done[l.n] : !st.done[l.n]))
+    );
+
+    const tagStyle = outdoor => "font-weight:700;font-size:10.5px;letter-spacing:.08em;text-transform:uppercase;padding:3px 7px;border:2px solid #0F0F0F;" +
+      (outdoor ? "background:#0F0F0F;color:#FBB03B" : "background:#FBB03B;color:#0F0F0F");
+
+    const lessonCards = visible.map(l => {
+      const isOpen = !!st.open[l.n];
+      const imgs = st.images[l.n] || [];
+      const activities = [
+        { label: "Demonstration", v: l.demo },
+        { label: "Individual activity", v: l.individual },
+        { label: "Group activity", v: l.groupWork },
+        { label: "Practical challenge", v: l.challenge }
+      ].filter(a => a.v).map(a => Object.assign({ label: a.label }, this.block(a.v)));
+      return {
+        n: l.n, pad: String(l.n).padStart(2, "0"), title: l.title, question: l.question,
+        month: l.month, week: l.week, duration: l.duration, format: l.format, skill: l.skill,
+        tag: l.outdoor ? "Outdoor practical" : "Indoor", tagStyle: tagStyle(l.outdoor),
+        goals: l.goals, vocab: l.vocab, prep: l.prep || [], hasPrep: trainerView && !!(l.prep && l.prep.length),
+        teaching: l.teaching, activities, reflect: l.reflect, assignment: l._assignment,
+        materials: l.materials, ethics: l.ethics,
+        open: isOpen, openFlag: isOpen ? "1" : "0", caret: isOpen ? "–" : "+",
+        done: !!st.done[l.n], doneLabel: st.done[l.n] ? "Done" : "Mark done",
+        np: st.np[l.n] || "", nt: st.nt[l.n] || "",
+        npCount: (st.np[l.n] || "").length, ntCount: (st.nt[l.n] || "").length,
+        toggle: () => this.setState(s => ({ open: Object.assign({}, s.open, { [l.n]: !s.open[l.n] }) })),
+        toggleDone: () => this.set({ done: Object.assign({}, st.done, { [l.n]: !st.done[l.n] }) }),
+        onNp: e => this.set({ np: Object.assign({}, st.np, { [l.n]: e.target.value }) }),
+        onNt: e => this.set({ nt: Object.assign({}, st.nt, { [l.n]: e.target.value }) }),
+        images: imgs.map((im, i) => ({
+          url: im.url, name: im.name,
+          remove: () => this.setState(s => ({ images: Object.assign({}, s.images, { [l.n]: (s.images[l.n] || []).filter((_, j) => j !== i) }) }))
+        })),
+        onFiles: e => {
+          const items = this.filesToItems(e.target.files);
+          this.setState(s => ({ images: Object.assign({}, s.images, { [l.n]: (s.images[l.n] || []).concat(items) }) }));
+        },
+        onDragOver: e => e.preventDefault(),
+        onDrop: e => {
+          e.preventDefault();
+          const items = this.filesToItems(e.dataTransfer.files);
+          this.setState(s => ({ images: Object.assign({}, s.images, { [l.n]: (s.images[l.n] || []).concat(items) }) }));
+        },
+        print: () => {
+          this.setState(s => ({ open: { [l.n]: true } }), () => setTimeout(() => window.print(), 120));
+        },
+        exportNotes: () => this.download(
+          "lesson-" + String(l.n).padStart(2, "0") + "-notes.txt",
+          "THIS IS WHERE WE'RE FROM\nLesson " + l.n + ": " + l.title + "\nMonth " + l.month + ", week " + l.week +
+          "\n\nPARTICIPANT NOTES\n" + (st.np[l.n] || "(empty)") + "\n\nTRAINER NOTES\n" + (st.nt[l.n] || "(empty)") + "\n"
+        )
+      };
+    });
+
+    const assignmentCards = visible.map(l => ({
+      n: l.n, pad: String(l.n).padStart(2, "0"), title: l.title, month: l.month, week: l.week, skill: l.skill,
+      tag: l.outdoor ? "Outdoor" : "Indoor", tagStyle: tagStyle(l.outdoor), assignment: l._assignment,
+      open: () => this.setState(s => ({ open: Object.assign({}, s.open, { [l.n]: true }) }))
+    }));
+
+    // ---- exposure lab ----
+    const L = this.lab();
+    const ev = L.ev;
+    const brightness = this.clamp(Math.pow(2, ev / 2.1), 0.16, 2.6);
+    const bgBlur = L.ap <= 5.6 ? (5.6 - L.ap) * 2.6 + 1 : Math.max(0, (8 - L.ap) * 0.3);
+    const smear = this.clamp(L.sh.s * 900, 2, 190);
+    const shakeWarn = L.sh.s >= 1 / 30;
+    const shake = shakeWarn ? this.clamp(L.sh.s * 30, 0.6, 4) : 0;
+    const grain = this.clamp(Math.log2(L.iso / 100) / 7, 0, 1) * 0.5;
+    const stops = Math.abs(ev) < 0.35 ? "balanced" : Math.abs(ev).toFixed(1) + " stop" + (Math.abs(ev) >= 1.95 ? "s" : "");
+
+    const explain = [];
+    if (Math.abs(ev) < 0.35) explain.push("The image is close to balanced.");
+    else if (ev > 0) explain.push("The image is " + stops + " overexposed. Bright areas are losing detail.");
+    else explain.push("The image is " + stops + " underexposed. Shadow detail is disappearing.");
+    if (L.ap <= 2.8) explain.push("The background is soft because the aperture is wide at f/" + L.ap + ".");
+    else if (L.ap >= 8) explain.push("More of the scene is in focus at f/" + L.ap + ".");
+    else explain.push("Depth of field is moderate at f/" + L.ap + ".");
+    if (L.sh.s <= 1 / 500) explain.push("Movement is frozen because the shutter is fast at " + L.sh.label + ".");
+    else if (L.sh.s >= 1 / 30) explain.push("Movement records as blur at " + L.sh.label + ". A tripod, wall, or knee may help.");
+    else explain.push("At " + L.sh.label + " a walking subject stays readable, a running subject will blur.");
+    if (L.iso >= 3200) explain.push("Visible noise is increasing because ISO is high at " + L.iso + ".");
+    else if (L.iso <= 200) explain.push("ISO " + L.iso + " keeps the image clean and detailed.");
+    if (this.state.mode !== "manual") explain.push("The camera is holding the exposure near zero by moving one setting for you.");
+
+    const summary = l => l ? "f/" + l.ap + "\n" + l.sh.label + "\nISO " + l.iso + "\n" + (Math.abs(l.ev) < 0.35 ? "balanced" : (l.ev > 0 ? "+" : "") + l.ev.toFixed(1) + " EV") : "not saved yet";
+    const dofNear = 30 + this.clamp((5.6 - L.ap) * 2.4, -12, 10);
+    const dofWidth = this.clamp(8 + L.ap * 2.6, 8, 62);
+
+    const challenge = st.challenges.find(c => c.id === st.chId);
+
+    // ---- photo review ----
+    const criteria = ["Focus", "Light", "Composition", "Moment", "Story", "Ethics"];
+    const meta = id => st.reviewMeta[id] || { verdict: "", reason: "", noticed: "", change: "", ratings: {} };
+    const setMeta = (id, patch) => this.set({ reviewMeta: Object.assign({}, st.reviewMeta, { [id]: Object.assign({}, meta(id), patch) }) });
+    const vBtn = (on, dark) => "flex:1;min-height:40px;border:3px solid #0F0F0F;padding:8px 4px;font-weight:700;font-size:11.5px;text-transform:uppercase;letter-spacing:.05em;cursor:pointer;" +
+      (on ? (dark ? "background:#0F0F0F;color:#FBB03B" : "background:#FBB03B;color:#0F0F0F") : "background:#FFFFFF;color:#333333");
+
+    const reviewItems = st.review.map(r => {
+      const m = meta(r.id);
+      return {
+        url: r.url, name: r.name, reason: m.reason, noticed: m.noticed, change: m.change,
+        keepStyle: vBtn(m.verdict === "Keep", false), maybeStyle: vBtn(m.verdict === "Maybe", false), removeStyle: vBtn(m.verdict === "Remove", true),
+        keep: () => setMeta(r.id, { verdict: "Keep" }),
+        maybe: () => setMeta(r.id, { verdict: "Maybe" }),
+        remove: () => setMeta(r.id, { verdict: "Remove" }),
+        onReason: e => setMeta(r.id, { reason: e.target.value }),
+        onNoticed: e => setMeta(r.id, { noticed: e.target.value }),
+        onChange: e => setMeta(r.id, { change: e.target.value }),
+        criteria: criteria.map(c => ({
+          id: "rt-" + r.id + "-" + c, name: c, value: m.ratings[c] || 3,
+          set: e => setMeta(r.id, { ratings: Object.assign({}, m.ratings, { [c]: Number(e.target.value) }) })
+        }))
+      };
+    });
+    const keeps = st.review.filter(r => meta(r.id).verdict === "Keep").length;
+
+    // ---- zine ----
+    const zineSlots = st.zine.map((z, i) => ({
+      slot: z.slot, pos: String(i + 1).padStart(2, "0"), title: z.title, caption: z.caption,
+      hasImage: !!z.url, noImage: !z.url,
+      imgStyle: "width:100%;aspect-ratio:3/4;border:2px solid #0F0F0F;margin-bottom:8px;background-color:#EDEDED;background-repeat:no-repeat;background-position:center;background-size:cover;background-image:url(" + JSON.stringify(z.url || "") + ")",
+      onTitle: e => { const n = st.zine.slice(); n[i] = Object.assign({}, n[i], { title: e.target.value }); this.set({ zine: n }); },
+      onCaption: e => { const n = st.zine.slice(); n[i] = Object.assign({}, n[i], { caption: e.target.value }); this.set({ zine: n }); },
+      onFile: e => {
+        const items = this.filesToItems(e.target.files);
+        if (!items.length) return;
+        const n = st.zine.slice(); n[i] = Object.assign({}, n[i], { url: items[0].url }); this.setState({ zine: n });
+      },
+      clear: () => { const n = st.zine.slice(); n[i] = { slot: n[i].slot, title: "", caption: "", url: "" }; this.set({ zine: n }); },
+      onDragStart: () => this.setState({ dragFrom: i }),
+      onDragOver: e => e.preventDefault(),
+      onDrop: e => {
+        e.preventDefault();
+        const from = st.dragFrom;
+        if (from === null || from === i) return;
+        const n = st.zine.slice();
+        const moved = n.splice(from, 1)[0];
+        n.splice(i, 0, moved);
+        this.set({ zine: n.map((z2, j) => Object.assign({}, z2, { slot: ZINE_SLOTS[j] })), dragFrom: null });
+      }
+    }));
+
+    const wallFrames = st.wall.map((sz, i) => {
+      const w = WALL_SIZES[sz];
+      return {
+        label: w.label,
+        style: "flex:none;width:" + w.w + "px;height:" + w.h + "px;border:3px solid #0F0F0F;background:repeating-linear-gradient(135deg,#F0F0F0 0 8px,#FFFFFF 8px 16px);display:flex;align-items:flex-end;justify-content:center;padding:6px;cursor:pointer",
+        cycle: () => { const n = st.wall.slice(); n[i] = (n[i] + 1) % 3; this.set({ wall: n }); }
+      };
+    });
+
+    return {
+      trainerView, doneCount,
+      progressBar: "position:absolute;left:0;top:0;bottom:0;width:" + (doneCount / 24 * 100) + "%;background:#FBB03B",
+      months, lessonCards, assignmentCards,
+      glossary: st.glossary, badges: st.badges, journalPrompts: st.journalPrompts,
+      filterSummary: visible.length + " of 24 lessons shown · " + doneCount + " completed · progress and notes are saved on this device only",
+      fMonth: st.fMonth, fType: st.fType, fState: st.fState,
+      setFMonth: e => this.setState({ fMonth: e.target.value }),
+      setFType: e => this.setState({ fType: e.target.value }),
+      setFState: e => this.setState({ fState: e.target.value }),
+      collapseAll: () => this.setState({ open: {} }),
+      resetProgress: () => {
+        if (!window.confirm("Clear all lesson ticks, notes, reviews, journal entries, and zine text from this device?")) return;
+        try { localStorage.removeItem(KEY); } catch (e) { }
+        this.setState({ done: {}, np: {}, nt: {}, earned: {}, reviewMeta: {}, checklist: {}, journal: [], groupStatement: "", wall: [1, 2, 1, 0, 1, 0, 1], zine: ZINE_SLOTS.map(s => ({ slot: s, title: "", caption: "", url: "" })) });
+      },
+
+      // lab
+      presetI: String(st.presetI), presetNote: L.preset.note,
+      presetOptions: st.presets.map((p, i) => ({ i: String(i), name: p.name })),
+      setPreset: e => this.setState({ presetI: Number(e.target.value), chFeedback: "Scene changed. Set the controls, then check your settings." }),
+      mode: st.mode, setMode: e => this.setState({ mode: e.target.value }),
+      apI: L.apI, shI: L.shI, isoI: L.isoI,
+      apLabel: "f/" + L.ap, shLabel: L.sh.label, isoLabel: String(L.iso),
+      apLocked: st.mode === "sp", shLocked: st.mode === "ap", isoLocked: st.mode === "iso",
+      setAp: e => this.setState({ apI: Number(e.target.value) }),
+      setSh: e => this.setState({ shI: Number(e.target.value) }),
+      setIso: e => this.setState({ isoI: Number(e.target.value) }),
+      apHelp: L.ap <= 2.8 ? "Wide opening: more light, shallow depth of field." : (L.ap >= 11 ? "Small opening: less light, deep depth of field." : "Middle opening: balanced light and depth."),
+      shHelp: L.sh.s <= 1 / 500 ? "Fast: less light, movement frozen." : (L.sh.s >= 1 / 15 ? "Slow: more light, movement and shake recorded." : "Moderate: usable handheld for walking speed."),
+      isoHelp: L.iso <= 200 ? "Low sensitivity: cleanest image, needs more light." : (L.iso >= 3200 ? "High sensitivity: brighter in low light, more visible noise." : "Middle sensitivity: a practical compromise."),
+      apIris: "width:" + this.clamp(40 - (L.ap * 1.5), 6, 36) + "px;height:" + this.clamp(40 - (L.ap * 1.5), 6, 36) + "px;border-radius:50%;background:#FBB03B",
+      sceneStyle: "position:absolute;inset:0;filter:brightness(" + brightness.toFixed(3) + ") blur(" + shake.toFixed(2) + "px)",
+      skyStyle: "position:absolute;left:0;top:0;width:100%;height:46%;background:#E9E9E9",
+      bgStyle: "position:absolute;inset:0;filter:blur(" + bgBlur.toFixed(2) + "px)",
+      midStyle: "position:absolute;left:42%;bottom:20%;width:" + (11 + smear / 14).toFixed(1) + "%;height:26%;filter:blur(" + (smear / 12).toFixed(2) + "px);opacity:" + (smear > 60 ? 0.68 : 0.95),
+      personStyle: "position:absolute;inset:0;background:#0F0F0F;border-radius:38% 38% 4% 4%",
+      shadowStyle: "position:absolute;left:30%;bottom:0;width:26%;height:14%;background:#0F0F0F;opacity:.45;transform:skewX(-28deg)",
+      grainStyle: "position:absolute;inset:0;pointer-events:none;opacity:" + grain.toFixed(3) + ";background-image:radial-gradient(#FFFFFF 0.6px,transparent 0.7px),radial-gradient(#000000 0.6px,transparent 0.7px);background-size:3px 3px,4px 4px;background-position:0 0,1px 2px",
+      settingsLine: "f/" + L.ap + "  ·  " + L.sh.label + "  ·  ISO " + L.iso + "  ·  " + L.preset.name,
+      sceneAria: "Simulated street scene. " + explain.join(" "),
+      shakeWarn, clipWarn: ev > 1.2 ? "Highlights clipping" : (ev < -1.2 ? "Shadows blocked" : ""),
+      evLabel: (Math.abs(ev) < 0.35 ? "0.0 EV" : (ev > 0 ? "+" : "") + ev.toFixed(1) + " EV"),
+      evWord: Math.abs(ev) < 0.35 ? "Balanced" : (ev > 0 ? "Too bright" : "Too dark"),
+      dofText: L.ap <= 2.8 ? "f/" + L.ap + " is wide: the background goes soft and attention lands on the subject." : (L.ap >= 11 ? "f/" + L.ap + " is small: layers stay readable from foreground to background." : "f/" + L.ap + " keeps the subject sharp with some separation behind."),
+      motionText: L.sh.s <= 1 / 500 ? L.sh.label + " freezes a gesture, a jump, or a run." : (L.sh.s >= 1 / 15 ? L.sh.label + " records movement as trails. Support the camera." : L.sh.label + " holds a walking subject; a running subject will blur."),
+      noiseText: L.iso >= 3200 ? "ISO " + L.iso + " buys light in a dark room and pays with visible noise." : (L.iso <= 200 ? "ISO " + L.iso + " is clean, but it needs light to spend." : "ISO " + L.iso + " is a practical middle for indoor and shade."),
+      balance: () => {
+        const err = (a, sh, iso) => (L.preset.ev + Math.log2(ISOS[iso] / 100)) - Math.log2((APERTURES[a] * APERTURES[a]) / SHUTTERS[sh].s);
+        let bi = st.shI, bv = Infinity;
+        for (let i = 0; i < SHUTTERS.length; i++) { const v = Math.abs(err(st.apI, i, st.isoI)); if (v < bv) { bv = v; bi = i; } }
+        if (bv > 0.6) {
+          let ji = st.isoI, jv = Infinity;
+          for (let i = 0; i < ISOS.length; i++) { const v = Math.abs(err(st.apI, bi, i)); if (v < jv) { jv = v; ji = i; } }
+          this.setState({ shI: bi, isoI: ji });
+        } else this.setState({ shI: bi });
+      },
+      openStop: () => this.setState({ apI: Math.max(0, st.apI - 1) }),
+      closeStop: () => this.setState({ apI: Math.min(APERTURES.length - 1, st.apI + 1) }),
+      meterMarker: "position:absolute;top:-6px;bottom:-6px;width:8px;background:#FBB03B;border:3px solid #0F0F0F;left:calc(" + ((this.clamp(ev, -3, 3) + 3) / 6 * 100) + "% - 4px)",
+      explain,
+      dofZone: "position:absolute;top:0;bottom:0;left:" + dofNear + "%;width:" + dofWidth + "%;background:#FBB03B;opacity:.32;border-left:3px solid #FBB03B;border-right:3px solid #FBB03B",
+      compareA: summary(st.savedA), compareB: summary(st.savedB),
+      saveA: () => this.setState({ savedA: L }), saveB: () => this.setState({ savedB: L }),
+      chId: st.chId,
+      challengeOptions: st.challenges.map(c => ({ id: c.id, goal: c.goal })),
+      setChallenge: e => {
+        const c = st.challenges.find(x => x.id === e.target.value);
+        this.setState({ chId: e.target.value, presetI: c ? c.preset : st.presetI, chFeedback: c ? c.goal + " Adjust the controls, then check." : "Choose a challenge, set the controls, then check your settings." });
+      },
+      retryChallenge: () => this.setState({ chFeedback: challenge ? challenge.goal + " Try again." : "" }),
+      checkChallenge: () => {
+        if (!challenge) return;
+        const pass = challenge.check({ aperture: L.ap, shutter: L.sh.s, iso: L.iso, ev: L.ev });
+        if (pass) {
+          this.set({ chFeedback: "That works. " + challenge.goal + " Badge earned: " + challenge.badge + ".", earned: Object.assign({}, st.earned, { [challenge.badge]: true }) });
+        } else {
+          this.setState({ chFeedback: "Not there yet. Hint: " + challenge.hint });
+        }
+      },
+      chFeedback: st.chFeedback,
+      earnedBadges: Object.keys(st.earned), hasBadges: Object.keys(st.earned).length > 0,
+
+      // review
+      reviewItems, reviewCount: st.review.length ? st.review.length + " in the sheet · " + keeps + " marked Keep" : "Nothing in the contact sheet yet.",
+      onReviewFiles: e => { const items = this.filesToItems(e.target.files); this.setState(s => ({ review: s.review.concat(items) })); },
+      onReviewDragOver: e => e.preventDefault(),
+      onReviewDrop: e => { e.preventDefault(); const items = this.filesToItems(e.dataTransfer.files); this.setState(s => ({ review: s.review.concat(items) })); },
+      printReview: () => window.print(),
+      prompt: st.prompt,
+      spin: () => this.setState({ prompt: st.prompts[Math.floor(Math.random() * st.prompts.length)] || st.prompt }),
+      jPrompt: st.jPrompt, jText: st.jText,
+      setJPrompt: e => this.setState({ jPrompt: e.target.value }),
+      setJText: e => this.setState({ jText: e.target.value }),
+      addJournal: () => {
+        if (!st.jText.trim()) return;
+        const entry = { date: new Date().toLocaleDateString("en-GB", { day: "numeric", month: "long", year: "numeric" }), text: st.jPrompt + " " + st.jText.trim() };
+        this.set({ journal: [entry].concat(st.journal), jText: "" });
+      },
+      journal: st.journal,
+
+      // zine and exhibition
+      zineSlots, wallFrames,
+      checklist: CHECKLIST.map((t, i) => ({
+        text: t, done: !!st.checklist[i],
+        toggle: () => this.set({ checklist: Object.assign({}, st.checklist, { [i]: !st.checklist[i] }) })
+      })),
+      curationLine: Object.keys(st.checklist).filter(k => st.checklist[k]).length + " of " + CHECKLIST.length + " checklist items agreed",
+      groupStatement: st.groupStatement,
+      setGroupStatement: e => this.set({ groupStatement: e.target.value })
+    };
+  }
+}
+
+</script>
+</body>
+</html>
