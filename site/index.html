@@ -1,12 +1,14 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="A six-month photography and storytelling learning hub for young photographers in Kibera, Nairobi. 24 lessons, an exposure triangle simulator, photo review, zine and exhibition planning.">
+<meta name="description" content="A six-month photography and storytelling course for young people, developed by Brian Otieno, founder of Kibera Stories. 24 lessons, an exposure triangle simulator, printable worksheets, photo review, zine and exhibition planning.">
 <meta name="theme-color" content="#0F0F0F">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <meta property="og:title" content="THIS IS WHERE WE'RE FROM">
-<meta property="og:description" content="Young photographers documenting identity, home, community, creativity, and belonging from their own point of view.">
+<meta property="og:description" content="Young people documenting identity, home, community, creativity, and belonging from their own point of view.">
 <meta property="og:type" content="website">
 <meta property="og:image" content="/assets/Logo-02.png">
 <link rel="manifest" href="/manifest.webmanifest">
@@ -27,18 +29,25 @@
 @font-face{font-family:"TT Norms";src:url("fonts/TTNorms-Bold.otf") format("opentype");font-weight:700;font-style:normal;font-display:swap}
 @font-face{font-family:"TT Norms";src:url("fonts/TTNorms-Black.otf") format("opentype");font-weight:900;font-style:normal;font-display:swap}
 *{box-sizing:border-box}
-html{scroll-behavior:smooth}
-body{margin:0;background:#FFFFFF;color:#333333;font-family:"TT Norms",Inter,Arial,sans-serif;font-size:17px;line-height:1.55;-webkit-font-smoothing:antialiased;text-wrap:pretty}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%;text-size-adjust:100%}
+img{max-width:100%}
+button,label,a,summary{-webkit-tap-highlight-color:rgba(251,176,59,.35)}
+body{margin:0;overflow-x:hidden;background:#FFFFFF;color:#333333;font-family:"TT Norms",Inter,Arial,sans-serif;font-size:17px;line-height:1.55;-webkit-font-smoothing:antialiased;text-wrap:pretty}
 a{color:#0F0F0F;text-decoration-thickness:2px;text-underline-offset:3px}
 a:hover{color:#0F0F0F;background:#FBB03B}
 :focus-visible{outline:4px solid #FBB03B;outline-offset:2px}
-input,textarea,select,button{font-family:inherit;font-size:inherit;color:inherit}
+input,textarea,select,button{font-family:inherit;font-size:max(16px,1em);color:inherit;max-width:100%}
+select,input[type=text]{background-image:none}
 textarea{resize:vertical}
 ul{margin:0;padding-left:22px}
 li{margin:5px 0}
 summary::-webkit-details-marker{display:none}
+@media (max-width:640px){
+  body{font-size:16px}
+  [data-card]{box-shadow:4px 4px 0 #0F0F0F!important}
+}
 @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
-@media (max-width:1140px){
+@media (max-width:1300px){
   [data-nav-btn]{display:inline-flex!important}
   [data-nav-list]{position:absolute;left:0;right:0;top:100%;display:none;background:#0F0F0F;border-bottom:4px solid #FBB03B;padding:10px 16px 18px;max-height:70vh;overflow-y:auto}
   [data-nav-toggle]:checked ~ [data-nav-list]{display:block}
@@ -72,11 +81,15 @@ summary::-webkit-details-marker{display:none}
       <ul style="display:flex;flex-wrap:wrap;gap:2px;list-style:none;margin:0;padding:0">
         <li><a href="#home" style="display:block;padding:9px 11px;color:#FFFFFF;text-decoration:none;font-weight:700;font-size:13.5px;text-transform:uppercase;letter-spacing:.06em" style-hover="background:#FBB03B;color:#0F0F0F">Home</a></li>
         <li><a href="#roadmap" style="display:block;padding:9px 11px;color:#FFFFFF;text-decoration:none;font-weight:700;font-size:13.5px;text-transform:uppercase;letter-spacing:.06em" style-hover="background:#FBB03B;color:#0F0F0F">Roadmap</a></li>
+        <li><a href="#students" style="display:block;padding:9px 11px;color:#FFFFFF;text-decoration:none;font-weight:700;font-size:13.5px;text-transform:uppercase;letter-spacing:.06em" style-hover="background:#FBB03B;color:#0F0F0F">Students</a></li>
+        <li><a href="#teachers" style="display:block;padding:9px 11px;color:#FFFFFF;text-decoration:none;font-weight:700;font-size:13.5px;text-transform:uppercase;letter-spacing:.06em" style-hover="background:#FBB03B;color:#0F0F0F">Teachers</a></li>
         <li><a href="#lab" style="display:block;padding:9px 11px;color:#FFFFFF;text-decoration:none;font-weight:700;font-size:13.5px;text-transform:uppercase;letter-spacing:.06em" style-hover="background:#FBB03B;color:#0F0F0F">Exposure Lab</a></li>
         <li><a href="#lessons" style="display:block;padding:9px 11px;color:#FFFFFF;text-decoration:none;font-weight:700;font-size:13.5px;text-transform:uppercase;letter-spacing:.06em" style-hover="background:#FBB03B;color:#0F0F0F">Lessons</a></li>
         <li><a href="#assignments" style="display:block;padding:9px 11px;color:#FFFFFF;text-decoration:none;font-weight:700;font-size:13.5px;text-transform:uppercase;letter-spacing:.06em" style-hover="background:#FBB03B;color:#0F0F0F">Assignments</a></li>
+        <li><a href="#worksheets" style="display:block;padding:9px 11px;color:#FFFFFF;text-decoration:none;font-weight:700;font-size:13.5px;text-transform:uppercase;letter-spacing:.06em" style-hover="background:#FBB03B;color:#0F0F0F">Worksheets</a></li>
         <li><a href="#review" style="display:block;padding:9px 11px;color:#FFFFFF;text-decoration:none;font-weight:700;font-size:13.5px;text-transform:uppercase;letter-spacing:.06em" style-hover="background:#FBB03B;color:#0F0F0F">Photo Review</a></li>
         <li><a href="#zine" style="display:block;padding:9px 11px;color:#FFFFFF;text-decoration:none;font-weight:700;font-size:13.5px;text-transform:uppercase;letter-spacing:.06em" style-hover="background:#FBB03B;color:#0F0F0F">Zine &amp; Exhibition</a></li>
+        <li><a href="#casestudy" style="display:block;padding:9px 11px;color:#FFFFFF;text-decoration:none;font-weight:700;font-size:13.5px;text-transform:uppercase;letter-spacing:.06em" style-hover="background:#FBB03B;color:#0F0F0F">Case Study</a></li>
         <li><a href="#safety" style="display:block;padding:9px 11px;color:#FFFFFF;text-decoration:none;font-weight:700;font-size:13.5px;text-transform:uppercase;letter-spacing:.06em" style-hover="background:#FBB03B;color:#0F0F0F">Safety</a></li>
         <li><a href="#glossary" style="display:block;padding:9px 11px;color:#FFFFFF;text-decoration:none;font-weight:700;font-size:13.5px;text-transform:uppercase;letter-spacing:.06em" style-hover="background:#FBB03B;color:#0F0F0F">Glossary</a></li>
         <li><a href="#about" style="display:block;padding:9px 11px;color:#FFFFFF;text-decoration:none;font-weight:700;font-size:13.5px;text-transform:uppercase;letter-spacing:.06em" style-hover="background:#FBB03B;color:#0F0F0F">About</a></li>
@@ -92,7 +105,7 @@ summary::-webkit-details-marker{display:none}
 </header>
 
 <section id="home" data-screen-label="Hero" style="background:#0F0F0F;color:#FFFFFF;padding:64px 20px 72px;border-bottom:4px solid #0F0F0F">
-  <div style="max-width:1200px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(330px,1fr));gap:56px;align-items:start">
+  <div style="max-width:1200px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(330px,100%),1fr));gap:56px;align-items:start">
     <div>
       <img src="assets/Logo-02.png" alt="THIS IS WHERE WE'RE FROM" style="width:min(420px,90%);height:auto;display:block;margin-bottom:30px">
       <h1 style="position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%)">THIS IS WHERE WE’RE FROM — a six-month photography and storytelling journey</h1>
@@ -133,8 +146,28 @@ summary::-webkit-details-marker{display:none}
   </div>
 </section>
 
+<section data-screen-label="Start here" data-noprint style="background:#FBB03B;border-bottom:4px solid #0F0F0F;padding:40px 20px">
+  <div style="max-width:1200px;margin:0 auto">
+    <strong style="display:block;font-family:'Bobby Jones','Arial Rounded MT Bold',sans-serif;font-size:clamp(22px,3vw,32px);text-transform:uppercase;color:#0F0F0F;margin-bottom:18px">Start here</strong>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(260px,100%),1fr));gap:16px">
+      <a href="#students" style="display:block;text-decoration:none;background:#FFFFFF;border:3px solid #0F0F0F;box-shadow:5px 5px 0 #0F0F0F;padding:20px" style-hover="box-shadow:2px 2px 0 #0F0F0F;background:#FFFFFF">
+        <span style="display:block;font-family:'Bobby Jones','Arial Rounded MT Bold',sans-serif;font-size:24px;text-transform:uppercase;color:#0F0F0F;margin-bottom:6px">I am a student</span>
+        <span style="display:block;font-size:15.5px;color:#333333">What to do each week, what to bring, and where to put your photographs.</span>
+      </a>
+      <a href="#teachers" style="display:block;text-decoration:none;background:#0F0F0F;border:3px solid #0F0F0F;box-shadow:5px 5px 0 #FFFFFF;padding:20px" style-hover="box-shadow:2px 2px 0 #FFFFFF;background:#0F0F0F">
+        <span style="display:block;font-family:'Bobby Jones','Arial Rounded MT Bold',sans-serif;font-size:24px;text-transform:uppercase;color:#FBB03B;margin-bottom:6px">I am a teacher</span>
+        <span style="display:block;font-size:15.5px;color:#FFFFFF">Preparation, facilitation, worksheets, and trainer notes. Opens with a four-digit code.</span>
+      </a>
+      <a href="#lessons" style="display:block;text-decoration:none;background:#FFFFFF;border:3px solid #0F0F0F;box-shadow:5px 5px 0 #0F0F0F;padding:20px" style-hover="box-shadow:2px 2px 0 #0F0F0F;background:#FFFFFF">
+        <span style="display:block;font-family:'Bobby Jones','Arial Rounded MT Bold',sans-serif;font-size:24px;text-transform:uppercase;color:#0F0F0F;margin-bottom:6px">Take me to the lessons</span>
+        <span style="display:block;font-size:15.5px;color:#333333">All 24 lessons in order, with everything needed to run or follow a session.</span>
+      </a>
+    </div>
+  </div>
+</section>
+
 <section data-screen-label="Introduction" style="padding:72px 20px;max-width:1200px;margin:0 auto">
-  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:48px">
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(300px,100%),1fr));gap:48px">
     <div>
       <span style="display:inline-block;background:#FBB03B;border:3px solid #0F0F0F;padding:5px 11px;font-weight:700;font-size:12px;letter-spacing:.09em;text-transform:uppercase;color:#0F0F0F;transform:rotate(-1.5deg)">The project</span>
       <h2 style="font-family:'Bobby Jones','Arial Rounded MT Bold',sans-serif;font-size:clamp(30px,4.4vw,54px);line-height:.96;margin:20px 0 22px;text-transform:uppercase;color:#0F0F0F">Photography is more than pressing a button</h2>
@@ -176,7 +209,7 @@ summary::-webkit-details-marker{display:none}
             <span style="flex:none;font-family:'Bobby Jones','Arial Rounded MT Bold',sans-serif;font-size:26px;color:#0F0F0F">{{ m.caret }}</span>
           </button>
           <sc-if value="{{ m.open }}" hint-placeholder-val="{{ true }}">
-            <div style="padding:22px;display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:16px">
+            <div style="padding:22px;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(230px,100%),1fr));gap:16px">
               <sc-for list="{{ m.lessons }}" as="ml" hint-placeholder-count="4">
                 <a href="#lesson-{{ ml.n }}" onClick="{{ ml.open }}" style="display:block;text-decoration:none;border:3px solid #0F0F0F;background:#FFFFFF;padding:16px" style-hover="background:#FBB03B">
                   <span style="display:flex;justify-content:space-between;align-items:center;gap:8px;margin-bottom:10px">
@@ -204,6 +237,161 @@ summary::-webkit-details-marker{display:none}
         <li>Reflection and assignment — 20 min</li>
       </ol>
     </div>
+  </div>
+</section>
+
+<section id="students" data-screen-label="For students" style="padding:72px 20px;max-width:1200px;margin:0 auto;scroll-margin-top:80px">
+  <span style="display:inline-block;background:#FBB03B;border:3px solid #0F0F0F;padding:5px 11px;font-weight:700;font-size:12px;letter-spacing:.09em;text-transform:uppercase;color:#0F0F0F">For students</span>
+  <h2 style="font-family:'Bobby Jones','Arial Rounded MT Bold',sans-serif;font-size:clamp(30px,4.4vw,54px);line-height:.96;margin:20px 0 10px;text-transform:uppercase;color:#0F0F0F">You are the photographer here</h2>
+  <p style="max-width:60ch;margin:0 0 34px;font-size:18px">Nobody is asking you to explain your whole community. You choose what to notice, what to say, and what to keep private. This page tells you what to do each week.</p>
+
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(280px,100%),1fr));gap:18px;margin-bottom:26px">
+    <div data-card style="background:#FFFFFF;border:3px solid #0F0F0F;box-shadow:6px 6px 0 #0F0F0F;padding:22px">
+      <strong style="display:block;font-family:'Bobby Jones','Arial Rounded MT Bold',sans-serif;font-size:21px;text-transform:uppercase;color:#0F0F0F;margin-bottom:14px">Your week, in five steps</strong>
+      <ol style="margin:0;padding-left:22px;font-size:16px;display:flex;flex-direction:column;gap:9px">
+        <li>Open this week’s lesson and read the question at the top.</li>
+        <li>In the session, try the practice with your camera or phone.</li>
+        <li>Take the assignment home and make the photographs.</li>
+        <li>Write one or two sentences under each photograph.</li>
+        <li>Bring them back and talk about what you noticed.</li>
+      </ol>
+    </div>
+    <div data-card style="background:#FFFFFF;border:3px solid #0F0F0F;box-shadow:6px 6px 0 #0F0F0F;padding:22px">
+      <strong style="display:block;font-family:'Bobby Jones','Arial Rounded MT Bold',sans-serif;font-size:21px;text-transform:uppercase;color:#0F0F0F;margin-bottom:14px">What to bring</strong>
+      <ul style="font-size:16px;display:flex;flex-direction:column;gap:8px;padding-left:22px">
+        <li>A camera or a phone</li>
+        <li>A charged battery and space on the memory card</li>
+        <li>A notebook and a pen</li>
+        <li>Water, if the session goes outdoors</li>
+        <li>Your questions</li>
+      </ul>
+      <p style="font-size:15px;margin:14px 0 0;color:#333333">No camera today? Work in a pair. Both names go on the work.</p>
+    </div>
+    <div data-card style="background:#0F0F0F;color:#FFFFFF;border:3px solid #0F0F0F;box-shadow:6px 6px 0 #FBB03B;padding:22px">
+      <strong style="display:block;font-family:'Bobby Jones','Arial Rounded MT Bold',sans-serif;font-size:21px;text-transform:uppercase;color:#FBB03B;margin-bottom:14px">Four rules that never change</strong>
+      <ul style="font-size:16px;display:flex;flex-direction:column;gap:8px;padding-left:22px">
+        <li>Ask before you photograph a person.</li>
+        <li>If they say no, that is the whole answer.</li>
+        <li>Never put yourself or anyone else in danger for a photograph.</li>
+        <li>You decide what stays private. So do they.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div data-card style="background:#FFFFFF;border:3px solid #0F0F0F;box-shadow:6px 6px 0 #FBB03B;padding:22px;margin-bottom:26px">
+    <strong style="display:block;font-family:'Bobby Jones','Arial Rounded MT Bold',sans-serif;font-size:21px;text-transform:uppercase;color:#0F0F0F;margin-bottom:6px">Your training album</strong>
+    <p style="font-size:15px;margin:0 0 16px;color:#333333">Empty frames for the photographs you make during the training. Tap a frame to add one. They stay on this device and are never uploaded.</p>
+    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(min(150px,100%),1fr));gap:14px">
+      <sc-for list="{{ albumSlots }}" as="a" hint-placeholder-count="8">
+        <div>
+          <sc-if value="{{ a.filled }}" hint-placeholder-val="{{ false }}">
+            <div role="img" aria-label="{{ a.label }}" style="{{ a.imgStyle }}"></div>
+          </sc-if>
+          <sc-if value="{{ a.empty }}" hint-placeholder-val="{{ true }}">
+            <label style="position:relative;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;width:100%;aspect-ratio:1;border:3px dashed #0F0F0F;background:repeating-linear-gradient(135deg,#F4F4F4 0 8px,#FFFFFF 8px 16px);cursor:pointer;text-align:center;padding:10px">
+              <span style="font-family:'Bobby Jones','Arial Rounded MT Bold',sans-serif;font-size:26px;color:#FBB03B;line-height:1">+</span>
+              <span style="font-size:11.5px;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:#333333">{{ a.label }}</span>
+              <input type="file" accept="image/*" onChange="{{ a.onFile }}" style="position:absolute;inset:0;width:100%;height:100%;opacity:0;cursor:pointer">
+            </label>
+          </sc-if>
+          <sc-if value="{{ a.filled }}" hint-placeholder-val="{{ false }}">
+            <button onClick="{{ a.clear }}" style="margin-top:6px;width:100%;min-height:36px;background:#FFFFFF;border:2px solid #0F0F0F;padding:6px;font-size:11px;font-weight:700;text-transform:uppercase;cursor:pointer">Remove</button>
+          </sc-if>
+        </div>
+      </sc-for>
+    </div>
+  </div>
+
+  <div style="display:flex;flex-wrap:wrap;gap:14px">
+    <a href="#lessons" style="display:inline-flex;align-items:center;min-height:48px;background:#FBB03B;border:3px solid #0F0F0F;box-shadow:5px 5px 0 #0F0F0F;padding:14px 22px;font-weight:700;font-size:14px;text-transform:uppercase;letter-spacing:.06em;color:#0F0F0F;text-decoration:none" style-hover="box-shadow:2px 2px 0 #0F0F0F">This week’s lesson</a>
+    <a href="#lab" style="display:inline-flex;align-items:center;min-height:48px;background:#FFFFFF;border:3px solid #0F0F0F;padding:14px 22px;font-weight:700;font-size:14px;text-transform:uppercase;letter-spacing:.06em;color:#0F0F0F;text-decoration:none" style-hover="background:#FBB03B">Practise exposure</a>
+    <a href="#review" style="display:inline-flex;align-items:center;min-height:48px;background:#FFFFFF;border:3px solid #0F0F0F;padding:14px 22px;font-weight:700;font-size:14px;text-transform:uppercase;letter-spacing:.06em;color:#0F0F0F;text-decoration:none" style-hover="background:#FBB03B">Get a photo prompt</a>
+  </div>
+</section>
+
+<section id="teachers" data-screen-label="For teachers" style="background:#0F0F0F;color:#FFFFFF;border-top:4px solid #0F0F0F;border-bottom:4px solid #FBB03B;padding:72px 20px;scroll-margin-top:80px">
+  <div style="max-width:1200px;margin:0 auto">
+    <span style="display:inline-block;background:#FBB03B;border:3px solid #0F0F0F;padding:5px 11px;font-weight:700;font-size:12px;letter-spacing:.09em;text-transform:uppercase;color:#0F0F0F">For teachers</span>
+    <h2 style="font-family:'Bobby Jones','Arial Rounded MT Bold',sans-serif;font-size:clamp(30px,4.4vw,54px);line-height:.96;margin:20px 0 10px;text-transform:uppercase;color:#FFFFFF">Facilitator area</h2>
+
+    <sc-if value="{{ locked }}" hint-placeholder-val="{{ true }}">
+      <div data-noprint style="max-width:440px;margin-top:24px;background:#FFFFFF;border:3px solid #FBB03B;box-shadow:7px 7px 0 #FBB03B;padding:24px;color:#333333">
+        <img src="assets/Logo-03.png" alt="" style="width:44px;height:44px;display:block;margin-bottom:14px">
+        <strong style="display:block;font-family:'Bobby Jones','Arial Rounded MT Bold',sans-serif;font-size:22px;text-transform:uppercase;color:#0F0F0F;margin-bottom:6px">Enter the four-digit code</strong>
+        <p style="font-size:15px;margin:0 0 16px">Preparation notes, facilitation guidance, and the trainer notes inside each lesson open with the code. Ask the project lead if you do not have it.</p>
+        <label for="pin" style="display:block;font-weight:700;font-size:11.5px;letter-spacing:.08em;text-transform:uppercase;margin-bottom:6px">Code</label>
+        <div style="display:flex;flex-wrap:wrap;gap:10px">
+          <input id="pin" type="password" inputMode="numeric" autoComplete="off" maxLength="4" value="{{ pin }}" onChange="{{ setPin }}" onKeyDown="{{ onPinKey }}" placeholder="••••" style="flex:1;min-width:120px;border:3px solid #0F0F0F;padding:12px;min-height:48px;letter-spacing:.4em;font-size:20px;text-align:center">
+          <button onClick="{{ unlock }}" style="min-height:48px;background:#FBB03B;border:3px solid #0F0F0F;padding:12px 20px;font-weight:700;font-size:14px;text-transform:uppercase;letter-spacing:.06em;cursor:pointer">Unlock</button>
+        </div>
+        <p aria-live="polite" style="font-size:14px;margin:12px 0 0;font-weight:700;color:#0F0F0F">{{ pinMessage }}</p>
+      </div>
+    </sc-if>
+
+    <sc-if value="{{ unlocked }}" hint-placeholder-val="{{ false }}">
+      <div>
+        <div style="display:flex;flex-wrap:wrap;gap:12px;align-items:center;margin:14px 0 28px">
+          <span style="background:#FBB03B;border:3px solid #FBB03B;padding:7px 12px;font-weight:700;font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:#0F0F0F">Unlocked</span>
+          <span style="font-size:15px;opacity:.85">Trainer preparation and trainer notes are now visible inside every lesson.</span>
+          <div style="flex:1"></div>
+          <button data-noprint onClick="{{ lock }}" style="min-height:44px;background:transparent;border:3px solid #FBB03B;color:#FBB03B;padding:11px 16px;font-weight:700;font-size:13px;text-transform:uppercase;letter-spacing:.06em;cursor:pointer">Lock again</button>
+        </div>
+
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(290px,100%),1fr));gap:18px">
+          <div data-card style="background:#FFFFFF;color:#333333;border:3px solid #FBB03B;box-shadow:6px 6px 0 #FBB03B;padding:22px">
+            <strong style="display:block;font-family:'Bobby Jones','Arial Rounded MT Bold',sans-serif;font-size:21px;text-transform:uppercase;color:#0F0F0F;margin-bottom:14px">Before the session</strong>
+            <ul style="font-size:15.5px;display:flex;flex-direction:column;gap:7px;padding-left:22px">
+              <li>Read the lesson and decide which parts your group needs most.</li>
+              <li>Charge batteries, clear memory cards, and check every camera or phone.</li>
+              <li>Print the worksheets for the lesson.</li>
+              <li>Check the route, the timings, and the emergency contacts for outdoor practicals.</li>
+              <li>Confirm consent arrangements for anyone the group plans to photograph.</li>
+              <li>Set out the equipment so the session starts with photography, not admin.</li>
+            </ul>
+          </div>
+          <div data-card style="background:#FFFFFF;color:#333333;border:3px solid #FBB03B;box-shadow:6px 6px 0 #FBB03B;padding:22px">
+            <strong style="display:block;font-family:'Bobby Jones','Arial Rounded MT Bold',sans-serif;font-size:21px;text-transform:uppercase;color:#0F0F0F;margin-bottom:14px">Running the session</strong>
+            <ol style="font-size:15.5px;display:flex;flex-direction:column;gap:7px;padding-left:22px">
+              <li>Welcome and check-in</li>
+              <li>Review last week’s assignment</li>
+              <li>New concept and demonstration</li>
+              <li>Short break</li>
+              <li>Guided practice</li>
+              <li>Group review</li>
+              <li>Reflection and the new assignment</li>
+            </ol>
+            <p style="font-size:14.5px;margin:12px 0 0">Keep the review longer than the lecture. Participants learn most from looking at each other’s work.</p>
+          </div>
+          <div data-card style="background:#FFFFFF;color:#333333;border:3px solid #FBB03B;box-shadow:6px 6px 0 #FBB03B;padding:22px">
+            <strong style="display:block;font-family:'Bobby Jones','Arial Rounded MT Bold',sans-serif;font-size:21px;text-transform:uppercase;color:#0F0F0F;margin-bottom:14px">Adapting the course</strong>
+            <ul style="font-size:15.5px;display:flex;flex-direction:column;gap:7px;padding-left:22px">
+              <li>Run it with any group size. Pair up when equipment is short.</li>
+              <li>Adjust the language and the writing tasks to the ages in the room.</li>
+              <li>Younger groups: shorten the teaching, lengthen the practice.</li>
+              <li>Older groups: push the editing, sequencing, and writing further.</li>
+              <li>Any lesson may be split across two sessions.</li>
+              <li>Allow anyone to pause, skip, or change an assignment without explaining why.</li>
+            </ul>
+          </div>
+          <div data-card style="background:#FFFFFF;color:#333333;border:3px solid #FBB03B;box-shadow:6px 6px 0 #FBB03B;padding:22px">
+            <strong style="display:block;font-family:'Bobby Jones','Arial Rounded MT Bold',sans-serif;font-size:21px;text-transform:uppercase;color:#0F0F0F;margin-bottom:14px">In the group review</strong>
+            <ul style="font-size:15.5px;display:flex;flex-direction:column;gap:7px;padding-left:22px">
+              <li>Describe before interpreting. What is visible comes first.</li>
+              <li>Ask the photographer what they intended before offering an opinion.</li>
+              <li>Use “I notice…” and “my eye goes to…” rather than good or bad.</li>
+              <li>Never make an example of a participant’s weakest image.</li>
+              <li>The photographer always makes the final decision.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div style="display:flex;flex-wrap:wrap;gap:14px;margin-top:26px">
+          <a href="#worksheets" style="display:inline-flex;align-items:center;min-height:48px;background:#FBB03B;border:3px solid #0F0F0F;padding:14px 22px;font-weight:700;font-size:14px;text-transform:uppercase;letter-spacing:.06em;color:#0F0F0F;text-decoration:none">Printable worksheets</a>
+          <a href="#safety" style="display:inline-flex;align-items:center;min-height:48px;background:transparent;border:3px solid #FBB03B;padding:14px 22px;font-weight:700;font-size:14px;text-transform:uppercase;letter-spacing:.06em;color:#FBB03B;text-decoration:none">Safety and ethics</a>
+          <a href="#casestudy" style="display:inline-flex;align-items:center;min-height:48px;background:transparent;border:3px solid #FBB03B;padding:14px 22px;font-weight:700;font-size:14px;text-transform:uppercase;letter-spacing:.06em;color:#FBB03B;text-decoration:none">Case study</a>
+        </div>
+      </div>
+    </sc-if>
   </div>
 </section>
 
@@ -500,7 +688,7 @@ summary::-webkit-details-marker{display:none}
 
         <sc-if value="{{ l.open }}" hint-placeholder-val="{{ false }}">
           <div style="padding:26px 22px 30px">
-            <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:26px;margin-bottom:26px">
+            <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(260px,100%),1fr));gap:26px;margin-bottom:26px">
               <div>
                 <strong style="display:block;font-weight:700;font-size:11.5px;letter-spacing:.09em;text-transform:uppercase;color:#0F0F0F;border-bottom:3px solid #FBB03B;padding-bottom:5px;margin-bottom:10px">Learning goals</strong>
                 <p style="font-size:14px;margin:0 0 8px;color:#333333">By the end of the lesson, participants should be able to:</p>
@@ -542,7 +730,7 @@ summary::-webkit-details-marker{display:none}
               </sc-for>
             </div>
 
-            <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:16px;margin-bottom:26px">
+            <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(250px,100%),1fr));gap:16px;margin-bottom:26px">
               <sc-for list="{{ l.activities }}" as="a" hint-placeholder-count="4">
                 <div style="border:3px solid #0F0F0F;padding:16px;background:#FFFFFF">
                   <strong style="display:block;font-weight:700;font-size:11.5px;letter-spacing:.09em;text-transform:uppercase;color:#0F0F0F;margin-bottom:8px">{{ a.label }}</strong>
@@ -555,7 +743,7 @@ summary::-webkit-details-marker{display:none}
               </sc-for>
             </div>
 
-            <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px;margin-bottom:26px">
+            <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(260px,100%),1fr));gap:16px;margin-bottom:26px">
               <div style="border:3px solid #0F0F0F;background:#333333;color:#FFFFFF;padding:18px">
                 <strong style="display:block;font-weight:700;font-size:11.5px;letter-spacing:.09em;text-transform:uppercase;color:#FBB03B;margin-bottom:10px">Reflection questions</strong>
                 <ul style="font-size:15.5px;font-family:'TT Norms Pro Serif',Georgia,serif"><sc-for list="{{ l.reflect }}" as="r" hint-placeholder-count="4"><li>{{ r }}</li></sc-for></ul>
@@ -570,7 +758,7 @@ summary::-webkit-details-marker{display:none}
               </div>
             </div>
 
-            <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px;margin-bottom:26px">
+            <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(260px,100%),1fr));gap:16px;margin-bottom:26px">
               <div style="border:3px solid #0F0F0F;padding:16px">
                 <strong style="display:block;font-weight:700;font-size:11.5px;letter-spacing:.09em;text-transform:uppercase;margin-bottom:8px">Materials</strong>
                 <p style="margin:0;font-size:15.5px">{{ l.materials }}</p>
@@ -582,13 +770,13 @@ summary::-webkit-details-marker{display:none}
             </div>
 
             <div data-noprint style="border-top:3px solid #0F0F0F;padding-top:22px">
-              <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px">
+              <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(260px,100%),1fr));gap:18px">
                 <div>
                   <label for="np-{{ l.n }}" style="display:block;font-weight:700;font-size:11.5px;letter-spacing:.09em;text-transform:uppercase;margin-bottom:6px">Participant notes</label>
                   <textarea id="np-{{ l.n }}" value="{{ l.np }}" onChange="{{ l.onNp }}" rows="5" placeholder="What did you notice? What do you want to try next week?" style="width:100%;border:3px solid #0F0F0F;padding:12px;background:#FFFFFF"></textarea>
                   <span style="display:block;font-size:11.5px;color:#333333;margin-top:4px">{{ l.npCount }} characters · saved on this device</span>
                 </div>
-                <sc-if value="{{ trainerView }}" hint-placeholder-val="{{ true }}">
+                <sc-if value="{{ trainerView }}" hint-placeholder-val="{{ false }}">
                   <div>
                     <label for="nt-{{ l.n }}" style="display:block;font-weight:700;font-size:11.5px;letter-spacing:.09em;text-transform:uppercase;margin-bottom:6px">Trainer notes</label>
                     <textarea id="nt-{{ l.n }}" value="{{ l.nt }}" onChange="{{ l.onNt }}" rows="5" placeholder="What worked, what to change, who needs support." style="width:100%;border:3px solid #0F0F0F;padding:12px;background:#FFFFFF"></textarea>
@@ -607,7 +795,13 @@ summary::-webkit-details-marker{display:none}
                         <button onClick="{{ im.remove }}" style="margin-top:4px;min-height:32px;background:#FFFFFF;border:2px solid #0F0F0F;padding:4px 8px;font-size:11px;font-weight:700;text-transform:uppercase;cursor:pointer">Remove</button>
                       </figure>
                     </sc-for>
-                    <label style="display:inline-flex;align-items:center;justify-content:center;width:132px;height:132px;border:3px solid #0F0F0F;background:#FBB03B;font-weight:700;font-size:12px;text-transform:uppercase;letter-spacing:.06em;cursor:pointer;text-align:center;padding:8px">
+                    <sc-for list="{{ l.placeholders }}" as="ph" hint-placeholder-count="0">
+                      <div style="display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;width:132px;height:132px;border:3px dashed #0F0F0F;background:repeating-linear-gradient(135deg,#F4F4F4 0 8px,#FFFFFF 8px 16px);text-align:center;padding:8px">
+                        <span style="font-family:'Bobby Jones','Arial Rounded MT Bold',sans-serif;font-size:22px;color:#FBB03B;line-height:1">+</span>
+                        <span style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.05em;color:#333333">{{ ph }}</span>
+                      </div>
+                    </sc-for>
+                    <label style="position:relative;display:inline-flex;align-items:center;justify-content:center;width:132px;height:132px;border:3px solid #0F0F0F;background:#FBB03B;font-weight:700;font-size:12px;text-transform:uppercase;letter-spacing:.06em;cursor:pointer;text-align:center;padding:8px">
                       <span>Add image</span>
                       <input type="file" accept="image/*" multiple onChange="{{ l.onFiles }}" style="position:absolute;width:1px;height:1px;opacity:0">
                     </label>
@@ -632,7 +826,7 @@ summary::-webkit-details-marker{display:none}
     <span style="display:inline-block;background:#0F0F0F;border:3px solid #0F0F0F;padding:5px 11px;font-weight:700;font-size:12px;letter-spacing:.09em;text-transform:uppercase;color:#FBB03B">Assignments</span>
     <h2 style="font-family:'Bobby Jones','Arial Rounded MT Bold',sans-serif;font-size:clamp(30px,4.4vw,54px);line-height:.96;margin:20px 0 10px;text-transform:uppercase;color:#0F0F0F">Every weekly assignment in one place</h2>
     <p style="max-width:64ch;margin:0 0 26px;color:#0F0F0F">Filtered by the same month, format, and progress controls as the lesson library.</p>
-    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:16px">
+    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(min(280px,100%),1fr));gap:16px">
       <sc-for list="{{ assignmentCards }}" as="a" hint-placeholder-count="8">
         <div data-card style="background:#FFFFFF;border:3px solid #0F0F0F;box-shadow:5px 5px 0 #0F0F0F;padding:18px;display:flex;flex-direction:column;gap:10px">
           <div style="display:flex;justify-content:space-between;align-items:center;gap:8px">
@@ -654,6 +848,40 @@ summary::-webkit-details-marker{display:none}
   </div>
 </section>
 
+<section id="worksheets" data-screen-label="Worksheets" data-noprint style="padding:72px 20px;max-width:1200px;margin:0 auto;scroll-margin-top:80px">
+  <span style="display:inline-block;background:#FBB03B;border:3px solid #0F0F0F;padding:5px 11px;font-weight:700;font-size:12px;letter-spacing:.09em;text-transform:uppercase;color:#0F0F0F">Worksheets</span>
+  <h2 style="font-family:'Bobby Jones','Arial Rounded MT Bold',sans-serif;font-size:clamp(30px,4.4vw,54px);line-height:.96;margin:20px 0 10px;text-transform:uppercase;color:#0F0F0F">Printable sheets for the session</h2>
+  <p style="max-width:64ch;margin:0 0 26px">Nine worksheets, each branded and ready for A4 paper. Print what the lesson needs and hand them out. Every sheet has space for writing and empty boxes for pasting or sketching photographs.</p>
+  <div style="display:flex;flex-wrap:wrap;gap:12px;margin-bottom:26px">
+    <button onClick="{{ printAllWorksheets }}" style="min-height:48px;background:#0F0F0F;border:3px solid #0F0F0F;color:#FFFFFF;padding:13px 20px;font-weight:700;font-size:14px;text-transform:uppercase;letter-spacing:.06em;cursor:pointer">Print the whole pack</button>
+    <span style="display:inline-flex;align-items:center;font-size:14px;color:#333333">Sheets open in a print window. Nothing is uploaded.</span>
+  </div>
+  <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(min(300px,100%),1fr));gap:18px">
+    <sc-for list="{{ worksheets }}" as="w" hint-placeholder-count="9">
+      <div data-card style="background:#FFFFFF;border:3px solid #0F0F0F;box-shadow:6px 6px 0 #0F0F0F;padding:0;display:flex;flex-direction:column">
+        <div style="display:flex;gap:12px;align-items:center;border-bottom:3px solid #0F0F0F;background:#FBB03B;padding:12px 16px">
+          <img src="assets/Logo-07.png" alt="" style="width:34px;height:34px;display:block;flex:none">
+          <span style="font-weight:700;font-size:10px;letter-spacing:.11em;text-transform:uppercase;color:#0F0F0F;line-height:1.3">This is where<br>we’re from</span>
+          <span style="flex:1"></span>
+          <span style="font-family:'Bobby Jones','Arial Rounded MT Bold',sans-serif;font-size:20px;color:#0F0F0F">{{ w.num }}</span>
+        </div>
+        <div style="padding:18px;display:flex;flex-direction:column;gap:10px;flex:1">
+          <strong style="font-family:'Bobby Jones','Arial Rounded MT Bold',sans-serif;font-size:20px;line-height:1.05;text-transform:uppercase;color:#0F0F0F">{{ w.title }}</strong>
+          <span style="font-weight:700;font-size:10.5px;letter-spacing:.08em;text-transform:uppercase;border:2px solid #0F0F0F;padding:3px 7px;align-self:flex-start;color:#0F0F0F">{{ w.use }}</span>
+          <p style="margin:0;font-size:15px;color:#333333">{{ w.purpose }}</p>
+          <ul style="font-size:14.5px;margin:0;padding-left:20px;display:flex;flex-direction:column;gap:4px">
+            <sc-for list="{{ w.preview }}" as="p" hint-placeholder-count="4"><li>{{ p }}</li></sc-for>
+          </ul>
+          <span style="font-family:ui-monospace,Menlo,monospace;font-size:11.5px;color:#333333">{{ w.slotNote }}</span>
+          <div style="margin-top:auto;padding-top:12px">
+            <button onClick="{{ w.print }}" style="width:100%;min-height:44px;background:#FBB03B;border:3px solid #0F0F0F;padding:11px 14px;font-weight:700;font-size:13px;text-transform:uppercase;letter-spacing:.06em;cursor:pointer">Print this sheet</button>
+          </div>
+        </div>
+      </div>
+    </sc-for>
+  </div>
+</section>
+
 <section id="review" data-screen-label="Photo Review" data-noprint style="padding:72px 20px;max-width:1200px;margin:0 auto;scroll-margin-top:80px">
   <span style="display:inline-block;background:#FBB03B;border:3px solid #0F0F0F;padding:5px 11px;font-weight:700;font-size:12px;letter-spacing:.09em;text-transform:uppercase;color:#0F0F0F">Photo review</span>
   <h2 style="font-family:'Bobby Jones','Arial Rounded MT Bold',sans-serif;font-size:clamp(30px,4.4vw,54px);line-height:.96;margin:20px 0 10px;text-transform:uppercase;color:#0F0F0F">Keep. Maybe. Remove.</h2>
@@ -669,7 +897,7 @@ summary::-webkit-details-marker{display:none}
     <button onClick="{{ printReview }}" style="min-height:44px;background:#FFFFFF;border:3px solid #0F0F0F;padding:11px 16px;font-weight:700;font-size:13px;text-transform:uppercase;letter-spacing:.06em;cursor:pointer">Print review sheet</button>
   </div>
 
-  <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:18px">
+  <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(min(300px,100%),1fr));gap:18px">
     <sc-for list="{{ reviewItems }}" as="r" hint-placeholder-count="0">
       <div data-card style="background:#FFFFFF;border:3px solid #0F0F0F;box-shadow:5px 5px 0 #0F0F0F;padding:14px">
         <img src="{{ r.url }}" alt="{{ r.name }}" loading="lazy" style="width:100%;aspect-ratio:1;object-fit:cover;border:3px solid #0F0F0F;display:block">
@@ -696,7 +924,7 @@ summary::-webkit-details-marker{display:none}
     </sc-for>
   </div>
 
-  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:18px;margin-top:34px">
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(280px,100%),1fr));gap:18px;margin-top:34px">
     <div data-card style="background:#0F0F0F;color:#FFFFFF;border:3px solid #0F0F0F;box-shadow:6px 6px 0 #FBB03B;padding:20px">
       <strong style="display:block;font-family:'Bobby Jones','Arial Rounded MT Bold',sans-serif;font-size:20px;text-transform:uppercase;color:#FBB03B;margin-bottom:10px">Critique language</strong>
       <ul style="font-size:15px"><li>I notice…</li><li>My eye goes to…</li><li>The image becomes stronger when…</li><li>I need more information about…</li><li>I think this image adds…</li><li>I think this image repeats…</li><li>The photographer’s intention seems to be…</li></ul>
@@ -732,9 +960,30 @@ summary::-webkit-details-marker{display:none}
   <div style="max-width:1200px;margin:0 auto">
     <span style="display:inline-block;background:#FBB03B;border:3px solid #0F0F0F;padding:5px 11px;font-weight:700;font-size:12px;letter-spacing:.09em;text-transform:uppercase;color:#0F0F0F">Zine and exhibition</span>
     <h2 style="font-family:'Bobby Jones','Arial Rounded MT Bold',sans-serif;font-size:clamp(30px,4.4vw,54px);line-height:.96;margin:20px 0 10px;text-transform:uppercase;color:#FFFFFF">Sequence the pages. Plan the wall.</h2>
-    <p style="max-width:64ch;margin:0 0 30px;opacity:.85">Drag the page cards into order, name each spread, and write the caption, quote, or reflection that sits beside it. Then plan the print sizes and the visitor journey.</p>
+    <p style="max-width:64ch;margin:0 0 26px;opacity:.85">Plan the sequence here first, then build the finished zine on <a href="https://zineit.app" target="_blank" rel="noopener noreferrer" style="color:#FBB03B">zineit.app</a>. Drag the page cards into order, name each spread, and write the caption, quote, or reflection that sits beside it.</p>
 
-    <div data-noprint style="display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:16px;margin-bottom:20px">
+    <div data-card style="background:#FBB03B;border:3px solid #0F0F0F;box-shadow:7px 7px 0 #FFFFFF;padding:24px;margin-bottom:28px;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(290px,100%),1fr));gap:24px;align-items:start">
+      <div>
+        <span style="display:inline-block;background:#0F0F0F;border:3px solid #0F0F0F;padding:5px 11px;font-weight:700;font-size:11px;letter-spacing:.09em;text-transform:uppercase;color:#FBB03B;margin-bottom:12px">Make the zine</span>
+        <strong style="display:block;font-family:'Bobby Jones','Arial Rounded MT Bold',sans-serif;font-size:clamp(24px,3vw,34px);line-height:1;text-transform:uppercase;color:#0F0F0F;margin-bottom:10px">Build it on zineit.app</strong>
+        <p style="font-size:16px;color:#0F0F0F;margin:0 0 18px;max-width:46ch">Use the board below to agree the order as a group. Then open zineit.app to lay out the pages, drop in the photographs, and export a zine you can print and fold.</p>
+        <a href="https://zineit.app" target="_blank" rel="noopener noreferrer" style="display:inline-flex;align-items:center;min-height:48px;background:#0F0F0F;border:3px solid #0F0F0F;box-shadow:5px 5px 0 #FFFFFF;padding:14px 22px;font-weight:700;font-size:14px;text-transform:uppercase;letter-spacing:.06em;color:#FBB03B;text-decoration:none" style-hover="box-shadow:2px 2px 0 #FFFFFF;color:#FBB03B">Open zineit.app</a>
+      </div>
+      <div style="background:#FFFFFF;border:3px solid #0F0F0F;padding:20px;color:#333333">
+        <strong style="display:block;font-weight:700;font-size:11.5px;letter-spacing:.09em;text-transform:uppercase;color:#0F0F0F;margin-bottom:12px">How to use it in the session</strong>
+        <ol style="font-size:15.5px;margin:0;padding-left:22px;display:flex;flex-direction:column;gap:8px">
+          <li>Agree the running order on the board below. Print the thumbnails if it helps.</li>
+          <li>Export each chosen photograph at full quality with a clear filename.</li>
+          <li>Open <a href="https://zineit.app" target="_blank" rel="noopener noreferrer" style="color:#0F0F0F">zineit.app</a> and start a new zine.</li>
+          <li>Place the cover first, then the spreads in the agreed order.</li>
+          <li>Add the captions and the quote exactly as they were checked.</li>
+          <li>Print one proof, fold it, read it, and list the corrections.</li>
+          <li>Recheck consent for every image and quote before the final export.</li>
+        </ol>
+      </div>
+    </div>
+
+    <div data-noprint style="display:grid;grid-template-columns:repeat(auto-fill,minmax(min(210px,100%),1fr));gap:16px;margin-bottom:20px">
       <sc-for list="{{ zineSlots }}" as="z" hint-placeholder-count="7">
         <div draggable="true" onDragStart="{{ z.onDragStart }}" onDragOver="{{ z.onDragOver }}" onDrop="{{ z.onDrop }}" style="background:#FFFFFF;border:3px solid #0F0F0F;box-shadow:5px 5px 0 #FBB03B;padding:12px;cursor:grab">
           <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px">
@@ -757,7 +1006,7 @@ summary::-webkit-details-marker{display:none}
       </sc-for>
     </div>
 
-    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:20px">
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(300px,100%),1fr));gap:20px">
       <div data-card style="background:#FFFFFF;color:#333333;border:3px solid #0F0F0F;box-shadow:6px 6px 0 #FBB03B;padding:20px">
         <strong style="display:block;font-family:'Bobby Jones','Arial Rounded MT Bold',sans-serif;font-size:20px;text-transform:uppercase;color:#0F0F0F;margin-bottom:12px">Exhibition wall planner</strong>
         <p style="font-size:13.5px;margin:0 0 12px">Click a frame to change its print size. Small for details, medium for most documentary images, large for the anchor image that meets the visitor first.</p>
@@ -809,11 +1058,83 @@ summary::-webkit-details-marker{display:none}
   </div>
 </section>
 
+<section id="casestudy" data-screen-label="Case study" style="padding:72px 20px;max-width:1200px;margin:0 auto;scroll-margin-top:80px">
+  <span style="display:inline-block;background:#FBB03B;border:3px solid #0F0F0F;padding:5px 11px;font-weight:700;font-size:12px;letter-spacing:.09em;text-transform:uppercase;color:#0F0F0F">Case study</span>
+  <h2 style="font-family:'Bobby Jones','Arial Rounded MT Bold',sans-serif;font-size:clamp(30px,4.4vw,54px);line-height:.96;margin:20px 0 10px;text-transform:uppercase;color:#0F0F0F">Kibera Stories, by Brian Otieno</h2>
+  <p style="max-width:64ch;margin:0 0 30px;font-size:18px">One long-term project, studied the way we want our own work studied. Use this in any lesson about storytelling, portraits, editing, or publishing.</p>
+
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(300px,100%),1fr));gap:22px;margin-bottom:28px">
+    <div>
+      <p style="font-family:'TT Norms Pro Serif',Georgia,serif;font-size:18px;line-height:1.65;margin:0 0 16px">Kibera Stories is Brian Otieno’s long-term documentary work about Kibera, made from inside the community he comes from. It began in 2013 and it is still going. Instead of arriving for one dramatic picture and leaving, it follows everyday life over years: work, music, football, faith, food, family, friendship, and change.</p>
+      <p style="max-width:58ch;margin:0 0 20px">That is the difference this course asks you to notice. A photographer who stays becomes part of the story. A photographer who visits takes a picture of the surface.</p>
+      <a href="https://instagram.com/kiberastories" target="_blank" rel="noopener noreferrer" style="display:inline-flex;align-items:center;min-height:48px;background:#FBB03B;border:3px solid #0F0F0F;box-shadow:5px 5px 0 #0F0F0F;padding:14px 22px;font-weight:700;font-size:14px;text-transform:uppercase;letter-spacing:.06em;color:#0F0F0F;text-decoration:none" style-hover="box-shadow:2px 2px 0 #0F0F0F;background:#FBB03B">Look at @KiberaStories</a>
+    </div>
+    <div data-card style="background:#0F0F0F;color:#FFFFFF;border:3px solid #0F0F0F;box-shadow:6px 6px 0 #FBB03B;padding:22px">
+      <strong style="display:block;font-family:'Bobby Jones','Arial Rounded MT Bold',sans-serif;font-size:21px;text-transform:uppercase;color:#FBB03B;margin-bottom:14px">What to look for</strong>
+      <ul style="font-size:15.5px;display:flex;flex-direction:column;gap:8px;padding-left:22px">
+        <li>How close the photographer stands, and what that closeness tells you.</li>
+        <li>Where the light comes from, and what time of day the picture was made.</li>
+        <li>Which pictures show a person, and which show a place.</li>
+        <li>What the captions add that the picture cannot say.</li>
+        <li>What the photographer chose to leave out.</li>
+        <li>How the same subject changes across several years.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div data-card style="background:#FFFFFF;border:3px solid #0F0F0F;box-shadow:6px 6px 0 #FBB03B;padding:22px;margin-bottom:28px">
+    <strong style="display:block;font-family:'Bobby Jones','Arial Rounded MT Bold',sans-serif;font-size:21px;text-transform:uppercase;color:#0F0F0F;margin-bottom:6px">Study wall</strong>
+    <p style="font-size:15px;margin:0 0 16px;color:#333333">Empty frames for the reference images you bring to the session — printed pages, screenshots on a laptop, or photographs the group makes in reply. Add them here so the wall belongs to your group.</p>
+    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(min(200px,100%),1fr));gap:14px">
+      <sc-for list="{{ caseSlots }}" as="c" hint-placeholder-count="4">
+        <figure style="margin:0">
+          <sc-if value="{{ c.filled }}" hint-placeholder-val="{{ false }}">
+            <div role="img" aria-label="{{ c.label }}" style="{{ c.imgStyle }}"></div>
+          </sc-if>
+          <sc-if value="{{ c.empty }}" hint-placeholder-val="{{ true }}">
+            <label style="position:relative;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;width:100%;aspect-ratio:4/3;border:3px dashed #0F0F0F;background:repeating-linear-gradient(135deg,#F4F4F4 0 8px,#FFFFFF 8px 16px);cursor:pointer;text-align:center;padding:14px">
+              <span style="font-family:'Bobby Jones','Arial Rounded MT Bold',sans-serif;font-size:28px;color:#FBB03B;line-height:1">+</span>
+              <span style="font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:#333333">{{ c.label }}</span>
+              <input type="file" accept="image/*" onChange="{{ c.onFile }}" style="position:absolute;inset:0;width:100%;height:100%;opacity:0;cursor:pointer">
+            </label>
+          </sc-if>
+          <figcaption style="font-size:12px;margin-top:6px;color:#333333">{{ c.caption }}</figcaption>
+          <sc-if value="{{ c.filled }}" hint-placeholder-val="{{ false }}">
+            <button onClick="{{ c.clear }}" style="margin-top:6px;width:100%;min-height:36px;background:#FFFFFF;border:2px solid #0F0F0F;padding:6px;font-size:11px;font-weight:700;text-transform:uppercase;cursor:pointer">Remove</button>
+          </sc-if>
+        </figure>
+      </sc-for>
+    </div>
+  </div>
+
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(280px,100%),1fr));gap:18px">
+    <div data-card style="background:#FBB03B;border:3px solid #0F0F0F;box-shadow:6px 6px 0 #0F0F0F;padding:22px">
+      <strong style="display:block;font-family:'Bobby Jones','Arial Rounded MT Bold',sans-serif;font-size:21px;text-transform:uppercase;color:#0F0F0F;margin-bottom:14px">Talk about it</strong>
+      <ul style="font-size:15.5px;color:#0F0F0F;display:flex;flex-direction:column;gap:8px;padding-left:22px">
+        <li>Which picture would you have made differently, and why?</li>
+        <li>What does an outsider miss that you would notice here?</li>
+        <li>Which photograph would you want made about your own street?</li>
+        <li>What would you refuse to photograph, even if you were asked?</li>
+      </ul>
+    </div>
+    <div data-card style="background:#FFFFFF;border:3px solid #0F0F0F;box-shadow:6px 6px 0 #0F0F0F;padding:22px">
+      <strong style="display:block;font-family:'Bobby Jones','Arial Rounded MT Bold',sans-serif;font-size:21px;text-transform:uppercase;color:#0F0F0F;margin-bottom:14px">Try it yourself</strong>
+      <ol style="font-size:15.5px;display:flex;flex-direction:column;gap:8px;padding-left:22px">
+        <li>Choose one subject you can return to every week.</li>
+        <li>Photograph it four times, in four kinds of light.</li>
+        <li>Write one sentence each time about what changed.</li>
+        <li>At the end of the month, sequence the four pictures.</li>
+      </ol>
+      <p style="font-size:14.5px;margin:14px 0 0;color:#333333">This is how a long-term project starts: not with a plan, with a return.</p>
+    </div>
+  </div>
+</section>
+
 <section id="safety" data-screen-label="Safety and Ethics" style="padding:72px 20px;max-width:1200px;margin:0 auto;scroll-margin-top:80px">
   <span style="display:inline-block;background:#FBB03B;border:3px solid #0F0F0F;padding:5px 11px;font-weight:700;font-size:12px;letter-spacing:.09em;text-transform:uppercase;color:#0F0F0F">Safety, ethics, and participant care</span>
   <h2 style="font-family:'Bobby Jones','Arial Rounded MT Bold',sans-serif;font-size:clamp(30px,4.4vw,54px);line-height:.96;margin:20px 0 10px;text-transform:uppercase;color:#0F0F0F">A photograph is never more important than a person</h2>
   <p style="max-width:64ch;margin:0 0 32px">These principles apply in every lesson, every practical, and every publication decision.</p>
-  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:18px">
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(290px,100%),1fr));gap:18px">
     <div data-card style="background:#FFFFFF;border:3px solid #0F0F0F;box-shadow:6px 6px 0 #0F0F0F;padding:20px">
       <strong style="display:block;font-family:'Bobby Jones','Arial Rounded MT Bold',sans-serif;font-size:21px;text-transform:uppercase;color:#0F0F0F;margin-bottom:10px">Consent</strong>
       <ul style="font-size:15.5px"><li>Ask before making close portraits.</li><li>Explain who you are and what the project is.</li><li>Explain where the image may appear.</li><li>Accept no.</li><li>Allow people to change their mind where possible.</li><li>Use age-appropriate consent and facilitator guidance for children.</li><li>Do not assume that being in public removes all ethical responsibility.</li></ul>
@@ -845,7 +1166,7 @@ summary::-webkit-details-marker{display:none}
   <div style="max-width:1200px;margin:0 auto">
     <span style="display:inline-block;background:#FBB03B;border:3px solid #0F0F0F;padding:5px 11px;font-weight:700;font-size:12px;letter-spacing:.09em;text-transform:uppercase;color:#0F0F0F">Glossary</span>
     <h2 style="font-family:'Bobby Jones','Arial Rounded MT Bold',sans-serif;font-size:clamp(30px,4.4vw,54px);line-height:.96;margin:20px 0 30px;text-transform:uppercase;color:#0F0F0F">Words we use</h2>
-    <dl style="margin:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:0">
+    <dl style="margin:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(min(280px,100%),1fr));gap:0">
       <sc-for list="{{ glossary }}" as="g" hint-placeholder-count="12">
         <div style="border-top:3px solid #0F0F0F;padding:14px 16px 16px 0">
           <dt style="font-weight:700;font-size:16px;color:#0F0F0F;margin-bottom:4px">{{ g.term }}</dt>
@@ -857,12 +1178,16 @@ summary::-webkit-details-marker{display:none}
 </section>
 
 <section id="about" data-screen-label="About" style="padding:72px 20px;max-width:1200px;margin:0 auto;scroll-margin-top:80px">
-  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:44px;align-items:start">
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(300px,100%),1fr));gap:44px;align-items:start">
     <div>
       <span style="display:inline-block;background:#FBB03B;border:3px solid #0F0F0F;padding:5px 11px;font-weight:700;font-size:12px;letter-spacing:.09em;text-transform:uppercase;color:#0F0F0F">About</span>
       <h2 style="font-family:'Bobby Jones','Arial Rounded MT Bold',sans-serif;font-size:clamp(30px,4.4vw,54px);line-height:.96;margin:20px 0 20px;text-transform:uppercase;color:#0F0F0F">Led by Brian Otieno, made by the participants</h2>
-      <p style="font-family:'TT Norms Pro Serif',Georgia,serif;font-size:18px;line-height:1.65;max-width:58ch;margin:0 0 16px">THIS IS WHERE WE’RE FROM works with 10 to 12 young people aged 12 to 19 in Kibera, Nairobi. One lesson a week for six months, four lessons a month, with an outdoor practical every month. The young people are not subjects being spoken about. They are photographers and authors telling stories from their own lives.</p>
-      <p style="max-width:58ch;margin:0">The project builds photography, writing, editing, sequencing, and presentation skills, and it builds on Brian Otieno’s long-term Kibera Stories work, which began in 2013.</p>
+      <p style="font-family:'TT Norms Pro Serif',Georgia,serif;font-size:18px;line-height:1.65;max-width:58ch;margin:0 0 16px">THIS IS WHERE WE’RE FROM works with young people in Kibera, Nairobi. One lesson a week for six months, four lessons a month, with an outdoor practical every month. The young people are not subjects being spoken about. They are photographers and authors telling stories from their own lives. The course runs with any group, of any age, at any size — teachers adapt the language and the assignments to the room in front of them.</p>
+      <p style="max-width:58ch;margin:0 0 18px">This course was developed by Brian Otieno, photographer and founder of Kibera Stories, and it grows out of that long-term work, which began in 2013. It builds photography, writing, editing, sequencing, and presentation skills.</p>
+      <div style="display:flex;flex-wrap:wrap;gap:12px">
+        <a href="https://instagram.com/kiberastories" target="_blank" rel="noopener noreferrer" style="display:inline-flex;align-items:center;min-height:48px;background:#0F0F0F;border:3px solid #0F0F0F;padding:13px 20px;font-weight:700;font-size:13.5px;text-transform:uppercase;letter-spacing:.06em;color:#FBB03B;text-decoration:none" style-hover="background:#FBB03B;color:#0F0F0F">@KiberaStories</a>
+        <a href="#casestudy" style="display:inline-flex;align-items:center;min-height:48px;background:#FFFFFF;border:3px solid #0F0F0F;padding:13px 20px;font-weight:700;font-size:13.5px;text-transform:uppercase;letter-spacing:.06em;color:#0F0F0F;text-decoration:none" style-hover="background:#FBB03B">Read the case study</a>
+      </div>
     </div>
     <div data-card style="background:#FFFFFF;border:3px solid #0F0F0F;box-shadow:7px 7px 0 #FBB03B;padding:24px">
       <strong style="display:block;font-family:'Bobby Jones','Arial Rounded MT Bold',sans-serif;font-size:22px;text-transform:uppercase;color:#0F0F0F;margin-bottom:14px">Where the six months lead</strong>
@@ -879,7 +1204,7 @@ summary::-webkit-details-marker{display:none}
 </section>
 
 <footer style="background:#0F0F0F;color:#FFFFFF;border-top:4px solid #FBB03B;padding:56px 20px 40px">
-  <div style="max-width:1200px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:36px;align-items:start">
+  <div style="max-width:1200px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(260px,100%),1fr));gap:36px;align-items:start">
     <div>
       <img src="assets/Logo-02.png" alt="THIS IS WHERE WE'RE FROM" style="width:min(300px,80%);height:auto;display:block;margin-bottom:18px">
       <p style="font-size:14px;margin:0;opacity:.8">A participatory youth photography and storytelling project in Kibera, Nairobi.</p>
@@ -908,7 +1233,7 @@ summary::-webkit-details-marker{display:none}
     </div>
   </div>
   <div style="max-width:1200px;margin:36px auto 0;border-top:2px solid #333333;padding-top:20px;display:flex;flex-wrap:wrap;gap:14px;justify-content:space-between;align-items:center">
-    <span style="font-size:14px;opacity:.85">©️ Brian Otieno. All learning content is copyrighted. All rights reserved.</span>
+    <span style="font-size:14px;opacity:.85">Developed by Brian Otieno, founder of <a href="https://instagram.com/kiberastories" target="_blank" rel="noopener noreferrer" style="color:#FBB03B">@KiberaStories</a>. ©️ Brian Otieno. All learning content is copyrighted. All rights reserved.</span>
     <img src="assets/Logo-04.png" alt="" style="width:40px;height:40px;display:block">
   </div>
 </footer>
@@ -916,7 +1241,7 @@ summary::-webkit-details-marker{display:none}
 </div>
 
 </x-dc>
-<script type="text/x-dc" data-dc-script data-props="{&quot;$preview&quot;:{&quot;width&quot;:1440},&quot;audience&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;options&quot;:[&quot;Trainer&quot;,&quot;Participant&quot;],&quot;default&quot;:&quot;Trainer&quot;,&quot;tsType&quot;:&quot;\&quot;Trainer\&quot; | \&quot;Participant\&quot;&quot;,&quot;section&quot;:&quot;Learning hub&quot;},&quot;openMonth&quot;:{&quot;editor&quot;:&quot;int&quot;,&quot;min&quot;:1,&quot;max&quot;:6,&quot;step&quot;:1,&quot;default&quot;:1,&quot;tsType&quot;:&quot;number&quot;,&quot;section&quot;:&quot;Learning hub&quot;}}">
+<script type="text/x-dc" data-dc-script data-props="{&quot;$preview&quot;:{&quot;width&quot;:1440},&quot;teacherPin&quot;:{&quot;editor&quot;:&quot;text&quot;,&quot;default&quot;:&quot;2013&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Learning hub&quot;},&quot;openMonth&quot;:{&quot;editor&quot;:&quot;int&quot;,&quot;min&quot;:1,&quot;max&quot;:6,&quot;step&quot;:1,&quot;default&quot;:1,&quot;tsType&quot;:&quot;number&quot;,&quot;section&quot;:&quot;Learning hub&quot;}}">
 const KEY = "twwf.hub.v1";
 const APERTURES = [1.4, 2, 2.8, 4, 5.6, 8, 11, 16, 22];
 const SHUTTERS = [
@@ -939,6 +1264,51 @@ const CHECKLIST = [
   "Print sizes chosen and test prints checked",
   "Spoken introduction rehearsed"
 ];
+const ALBUM_SLOTS = ["Demonstration", "My practice", "Group review", "Outdoor walk", "A portrait", "A detail", "My favourite frame", "Exhibition day"];
+const CASE_SLOTS = [
+  { label: "Reference: a portrait", caption: "How close does the photographer stand, and what does that closeness say?" },
+  { label: "Reference: a place", caption: "Where is the light coming from, and what time of day is it?" },
+  { label: "Reference: a detail", caption: "What does this small thing add to the bigger story?" },
+  { label: "Our reply", caption: "A photograph our group made in answer to the ones above." }
+];
+const WORKSHEETS = [
+  { id: "consent", title: "Consent script card", use: "Lessons 11 and 12",
+    purpose: "Carry this when you photograph a person. Work through it out loud, in order, before you lift the camera.",
+    rows: [["My name, and how I described this project", 2], ["Where I explained the photograph may appear", 2], ["Their answer", 1], ["Anything they asked me not to photograph", 2], ["How they want their name written", 1], ["The place, object, or pose they chose", 2], ["What they said about themselves, in their own words", 3]],
+    photos: 0 },
+  { id: "walk", title: "Photo walk checklist", use: "Lessons 4 and 8",
+    purpose: "Tick each prompt on the route. Stop walking before you compose.",
+    rows: [["A doorway that suggests a story", 1], ["A hand at work", 1], ["A repeated pattern", 1], ["A strong shadow", 1], ["A sign or a handwritten message", 1], ["A quiet moment", 1], ["Something people usually ignore", 1], ["One photograph titled This Is Where We\u2019re From", 2]],
+    photos: 2 },
+  { id: "exposure", title: "Exposure log", use: "Lessons 5, 7 and 8",
+    purpose: "One row for every photograph you keep. Write the settings while you are still standing in the light you used.",
+    rows: [["Frame 1 \u2014 aperture, shutter, ISO, light", 2], ["What I wanted from it", 1], ["Frame 2 \u2014 aperture, shutter, ISO, light", 2], ["What I wanted from it", 1], ["Frame 3 \u2014 aperture, shutter, ISO, light", 2], ["What I wanted from it", 1], ["What worked, and what I would change next time", 3]],
+    photos: 0 },
+  { id: "composition", title: "Composition study sheet", use: "Lessons 3 and 9",
+    purpose: "Sketch the frame before you photograph it. Boxes are for thumbnails, lines are for what you noticed.",
+    rows: [["Where does the eye go first?", 2], ["What can be removed?", 2], ["What is happening at the edges?", 2]],
+    photos: 4 },
+  { id: "review", title: "Contact sheet review", use: "Lesson 17",
+    purpose: "Mark Keep, Maybe, or Remove, then say why in your own words. The photographer makes the final decision.",
+    rows: [["Image and decision: keep, maybe, or remove", 2], ["Why", 2], ["Image and decision", 2], ["Why", 2], ["Which image was hardest to remove, and why", 3], ["What is still missing from the set", 2]],
+    photos: 6 },
+  { id: "words", title: "Caption, quote and reflection", use: "Lessons 15 and 19",
+    purpose: "Words add what the picture cannot show. Check every name and fact before you write it down.",
+    rows: [["Factual caption: who, what, where, when, why it matters", 3], ["Quote, in their own words", 2], ["Has the quote been checked with them?", 1], ["My reflection: what I noticed, felt, or questioned", 4], ["Working title", 1]],
+    photos: 1 },
+  { id: "sequence", title: "Story sequence planner", use: "Lessons 14 and 16",
+    purpose: "Seven boxes, seven jobs. Sketch each frame and name what it adds that the others do not.",
+    rows: [["What is this story about, in one sentence?", 2], ["What is still missing?", 2]],
+    photos: 7 },
+  { id: "zine", title: "Zine page plan", use: "Lesson 21",
+    purpose: "Agree the order on paper first, then build the finished zine on zineit.app.",
+    rows: [["Cover image and title", 2], ["Opening spread", 1], ["Middle pages, in order", 3], ["Closing image", 1], ["Back cover and credits", 2], ["Corrections after the first proof", 3]],
+    photos: 4 },
+  { id: "exhibition", title: "Exhibition and portfolio plan", use: "Lessons 22 and 24",
+    purpose: "What goes on the wall, at what size, and what you will say when a visitor asks about it.",
+    rows: [["Anchor image, and its print size", 2], ["Supporting images", 2], ["Wall label text", 3], ["My sixty-second introduction", 4], ["Consent confirmed for every image and quote", 1]],
+    photos: 3 }
+];
 const WALL_SIZES = [
   { k: "S", w: 74, h: 92, label: "A4 · small" },
   { k: "M", w: 116, h: 142, label: "A3 · medium" },
@@ -956,6 +1326,7 @@ class Component extends DCLogic {
     review: [], reviewMeta: {},
     zine: ZINE_SLOTS.map((s, i) => ({ slot: s, title: "", caption: "", url: "" })),
     dragFrom: null,
+    pin: "", unlocked: false, pinMessage: "", album: {}, caseImages: {},
     wall: [1, 2, 1, 0, 1, 0, 1],
     checklist: {}, groupStatement: "",
     journal: [], jPrompt: "Today I noticed...", jText: "",
@@ -987,6 +1358,10 @@ class Component extends DCLogic {
       if (saved.zineText) pick.zine = this.state.zine.map((z, i) => Object.assign({}, z, saved.zineText[i] || {}));
       if (Object.keys(pick).length) this.setState(pick);
     } catch (e) { /* storage unavailable */ }
+
+    try {
+      if (sessionStorage.getItem(KEY + ".teacher") === "1") this.setState({ unlocked: true });
+    } catch (e) { /* storage unavailable */ }
   }
 
   save(extra) {
@@ -1001,6 +1376,17 @@ class Component extends DCLogic {
   }
 
   set(patch) { this.setState(patch, () => this.save()); }
+
+  tryUnlock(code) {
+    const entered = (this.state.pin || "").trim();
+    if (entered.length < 4) { this.setState({ pinMessage: "Enter all four digits." }); return; }
+    if (entered === code) {
+      try { sessionStorage.setItem(KEY + ".teacher", "1"); } catch (e) { }
+      this.setState({ unlocked: true, pin: "", pinMessage: "" });
+    } else {
+      this.setState({ pin: "", pinMessage: "That code is not right. Ask the project lead." });
+    }
+  }
 
   // ---------- data shaping ----------
   block(v) {
@@ -1041,6 +1427,70 @@ class Component extends DCLogic {
   clamp(v, a, b) { return Math.min(b, Math.max(a, v)); }
 
   // ---------- files ----------
+  printDoc(html) {
+    const f = document.createElement("iframe");
+    f.setAttribute("aria-hidden", "true");
+    f.setAttribute("title", "Worksheet print view");
+    f.style.cssText = "position:fixed;right:0;bottom:0;width:1px;height:1px;opacity:0;border:0";
+    document.body.appendChild(f);
+    const d = f.contentWindow.document;
+    d.open(); d.write(html); d.close();
+    const go = () => {
+      try { f.contentWindow.focus(); f.contentWindow.print(); } catch (e) { console.warn("Print blocked", e); }
+      setTimeout(() => { if (f.parentNode) f.parentNode.removeChild(f); }, 45000);
+    };
+    setTimeout(go, 500);
+  }
+
+  worksheetHtml(list) {
+    const base = location.href.replace(/[^/]*$/, "");
+    const lines = n => {
+      let out = "";
+      for (let i = 0; i < n; i++) out += '<div class="rule"></div>';
+      return out;
+    };
+    const boxes = n => {
+      if (!n) return "";
+      let out = '<div class="boxes">';
+      for (let i = 0; i < n; i++) out += '<div class="box"><span>Photograph ' + (i + 1) + '</span></div>';
+      return out + "</div>";
+    };
+    const sheets = list.map((w, i) => '<section class="sheet">' +
+      '<header><img src="' + base + 'assets/Logo-07.png" alt=""><div class="brand">This is where<br>we\u2019re from</div>' +
+      '<div class="meta"><span>Worksheet ' + String(WORKSHEETS.findIndex(x => x.id === w.id) + 1).padStart(2, "0") + '</span><span>' + w.use + '</span></div></header>' +
+      '<h1>' + w.title + '</h1><p class="purpose">' + w.purpose + '</p>' +
+      '<div class="who"><div><span>Name</span><div class="rule"></div></div><div><span>Date</span><div class="rule"></div></div></div>' +
+      w.rows.map(r => '<div class="row"><span class="label">' + r[0] + '</span>' + lines(r[1]) + "</div>").join("") +
+      boxes(w.photos) +
+      '<footer>Developed by Brian Otieno, founder of @KiberaStories \u00b7 instagram.com/kiberastories \u00b7 \u00a9 Brian Otieno</footer>' +
+      "</section>").join("");
+    return '<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><title>Worksheets \u2014 THIS IS WHERE WE\u2019RE FROM</title><style>' +
+      '@page{size:A4;margin:13mm}' +
+      '@font-face{font-family:"Bobby Jones";src:url("' + base + 'fonts/BobbyJonesSoft.otf") format("opentype")}' +
+      '@font-face{font-family:"TT Norms";src:url("' + base + 'fonts/TTNorms-Regular.otf") format("opentype")}' +
+      '@font-face{font-family:"TT Norms";src:url("' + base + 'fonts/TTNorms-Bold.otf") format("opentype");font-weight:700}' +
+      '*{box-sizing:border-box}' +
+      'body{margin:0;font-family:"TT Norms",Arial,Helvetica,sans-serif;color:#333333;font-size:10.5pt;line-height:1.4}' +
+      '.sheet{padding:0 0 6mm;page-break-after:always;break-after:page}.sheet:last-child{page-break-after:auto;break-after:auto}' +
+      'header{display:flex;align-items:center;gap:4mm;border:2.5pt solid #0F0F0F;background:#FBB03B;padding:3mm 4mm;margin-bottom:5mm}' +
+      'header img{width:11mm;height:11mm;display:block}' +
+      '.brand{font-weight:700;font-size:8pt;letter-spacing:.12em;text-transform:uppercase;color:#0F0F0F;line-height:1.3}' +
+      '.meta{margin-left:auto;text-align:right;display:flex;flex-direction:column;gap:1mm}' +
+      '.meta span{font-weight:700;font-size:8pt;letter-spacing:.1em;text-transform:uppercase;color:#0F0F0F}' +
+      'h1{font-family:"Bobby Jones","Arial Rounded MT Bold",Arial,sans-serif;font-size:22pt;line-height:1;text-transform:uppercase;color:#0F0F0F;margin:0 0 3mm}' +
+      '.purpose{margin:0 0 5mm;font-size:10.5pt;max-width:150mm}' +
+      '.who{display:flex;gap:8mm;margin-bottom:6mm}.who>div{flex:1}' +
+      '.who span{display:block;font-weight:700;font-size:7.5pt;letter-spacing:.1em;text-transform:uppercase;color:#0F0F0F;margin-bottom:1mm}' +
+      '.row{margin-bottom:4.5mm;break-inside:avoid}' +
+      '.label{display:block;font-weight:700;font-size:8.5pt;letter-spacing:.06em;text-transform:uppercase;color:#0F0F0F;margin-bottom:2mm}' +
+      '.rule{border-bottom:.8pt solid #999999;height:8mm}' +
+      '.boxes{display:grid;grid-template-columns:1fr 1fr;gap:4mm;margin-top:4mm}' +
+      '.box{border:1.5pt dashed #0F0F0F;aspect-ratio:4/3;display:flex;align-items:flex-end;padding:2mm}' +
+      '.box span{font-size:7.5pt;letter-spacing:.08em;text-transform:uppercase;color:#777777}' +
+      'footer{margin-top:6mm;border-top:1.5pt solid #0F0F0F;padding-top:2mm;font-size:7.5pt;letter-spacing:.04em;color:#333333}' +
+      '</style></head><body>' + sheets + "</body></html>";
+  }
+
   filesToItems(files) {
     return Array.from(files).filter(f => f.type.indexOf("image/") === 0).map(f => ({
       id: f.name + "-" + f.size + "-" + Math.random().toString(36).slice(2, 7),
@@ -1057,7 +1507,8 @@ class Component extends DCLogic {
 
   renderVals() {
     const st = this.state;
-    const trainerView = (this.props.audience ?? "Trainer") === "Trainer";
+    const trainerView = st.unlocked;
+    const teacherPin = String(this.props.teacherPin ?? "2013");
     const lessons = st.lessons;
     const doneCount = lessons.filter(l => st.done[l.n]).length;
     const months = (st.months || []).map(m => {
@@ -1110,6 +1561,7 @@ class Component extends DCLogic {
         toggleDone: () => this.set({ done: Object.assign({}, st.done, { [l.n]: !st.done[l.n] }) }),
         onNp: e => this.set({ np: Object.assign({}, st.np, { [l.n]: e.target.value }) }),
         onNt: e => this.set({ nt: Object.assign({}, st.nt, { [l.n]: e.target.value }) }),
+        placeholders: imgs.length ? [] : (l.outdoor ? ["On the route", "A moment", "Group review"] : ["Demonstration", "My practice", "Group review"]),
         images: imgs.map((im, i) => ({
           url: im.url, name: im.name,
           remove: () => this.setState(s => ({ images: Object.assign({}, s.images, { [l.n]: (s.images[l.n] || []).filter((_, j) => j !== i) }) }))
@@ -1237,6 +1689,39 @@ class Component extends DCLogic {
       trainerView, doneCount,
       progressBar: "position:absolute;left:0;top:0;bottom:0;width:" + (doneCount / 24 * 100) + "%;background:#FBB03B",
       months, lessonCards, assignmentCards,
+      locked: !st.unlocked, unlocked: st.unlocked, pin: st.pin, pinMessage: st.pinMessage,
+      setPin: e => this.setState({ pin: e.target.value.replace(/[^0-9]/g, "").slice(0, 4), pinMessage: "" }),
+      onPinKey: e => { if (e.key === "Enter") { e.preventDefault(); this.tryUnlock(teacherPin); } },
+      unlock: () => this.tryUnlock(teacherPin),
+      lock: () => {
+        try { sessionStorage.removeItem(KEY + ".teacher"); } catch (e) { }
+        this.setState({ unlocked: false, pin: "", pinMessage: "" });
+      },
+      worksheets: WORKSHEETS.map((w, i) => ({
+        num: String(i + 1).padStart(2, "0"), title: w.title, use: "Use in " + w.use, purpose: w.purpose,
+        preview: w.rows.slice(0, 4).map(r => r[0]),
+        slotNote: w.photos ? w.photos + " photo boxes + writing space" : "Writing space only",
+        print: () => this.printDoc(this.worksheetHtml([w]))
+      })),
+      printAllWorksheets: () => this.printDoc(this.worksheetHtml(WORKSHEETS)),
+      albumSlots: ALBUM_SLOTS.map((label, i) => ({
+        label, filled: !!st.album[i], empty: !st.album[i],
+        imgStyle: "width:100%;aspect-ratio:1;border:3px solid #0F0F0F;background-color:#EDEDED;background-repeat:no-repeat;background-position:center;background-size:cover;background-image:url(" + JSON.stringify(st.album[i] || "") + ")",
+        onFile: e => {
+          const items = this.filesToItems(e.target.files);
+          if (items.length) this.setState(s => ({ album: Object.assign({}, s.album, { [i]: items[0].url }) }));
+        },
+        clear: () => this.setState(s => { const n = Object.assign({}, s.album); delete n[i]; return { album: n }; })
+      })),
+      caseSlots: CASE_SLOTS.map((c, i) => ({
+        label: c.label, caption: c.caption, filled: !!st.caseImages[i], empty: !st.caseImages[i],
+        imgStyle: "width:100%;aspect-ratio:4/3;border:3px solid #0F0F0F;background-color:#EDEDED;background-repeat:no-repeat;background-position:center;background-size:cover;background-image:url(" + JSON.stringify(st.caseImages[i] || "") + ")",
+        onFile: e => {
+          const items = this.filesToItems(e.target.files);
+          if (items.length) this.setState(s => ({ caseImages: Object.assign({}, s.caseImages, { [i]: items[0].url }) }));
+        },
+        clear: () => this.setState(s => { const n = Object.assign({}, s.caseImages); delete n[i]; return { caseImages: n }; })
+      })),
       glossary: st.glossary, badges: st.badges, journalPrompts: st.journalPrompts,
       filterSummary: visible.length + " of 24 lessons shown · " + doneCount + " completed · progress and notes are saved on this device only",
       fMonth: st.fMonth, fType: st.fType, fState: st.fState,
